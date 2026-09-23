@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block title %}Q1 — Disponibilidad{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-layout-three-columns" style="color:var(--accent)"></i> Q1 — Disponibilidad de Asientos</h1>
+  <p>Conteo de asientos disponibles y ocupados por clase para un vuelo específico.<br>
+     <span style="color:var(--text-muted);font-size:.8rem;">Tabla: <code>seat_availability_by_flight</code> · Técnica: COUNTER</span>
+  </p>
+</div>
+
+<!-- ── Formulario ───────────────────────────────────────────────── -->
+<div class="card-glass mb-4 fade-in">
+  <form method="GET" action="/q1" class="row g-3 align-items-end">
+    <div class="col-md-8">
+      <label class="form-label">UUID del vuelo</label>
+      <input type="text" name="flight_id" class="form-control"
+             placeholder="ej. 550e8400-e29b-41d4-a716-446655440000"
+             value="{{ flight_id }}" id="input-flight-id" />
+    </div>
+    <div class="col-md-4">
+      <button type="submit" class="btn-primary-custom w-100">
+        <i class="bi bi-search"></i> Consultar disponibilidad
+      </button>
+    </div>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert-custom error mb-4 fade-in"><i class="bi bi-exclamation-triangle-fill"></i> {{ error }}</div>
+{% endif %}
+
+{% if results %}
+<!-- ── Gráfica de disponibilidad ─────────────────────────────────── -->
+<div class="row g-4 mb-4 fade-in">
+  <div class="col-md-6">
+    <div class="card-glass" style="height:300px;">
+      <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;">
+        Distribución por clase
+      </h2>
+      <div class="chart-container" style="height:230px;">
+        <canvas id="chart-by-class"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card-glass" style="height:300px;">
+      <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;">
+        Disponible vs Ocupado (global)
+      </h2>
+      <div class="chart-container" style="height:230px;">
+        <canvas id="chart-status"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Tabla de resultados ──────────────────────────────────────── -->
+<div class="card-glass fade-in">
+  <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;">
+    Detalle por clase y estado
+  </h2>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Clase</th>
+          <th>Estado</th>
+          <th style="text-align:right">Asientos</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in results %}
+        <tr>
+          <td><span class="badge-status {{ row.class }}">{{ row.class | title }}</span></td>
+          <td><span class="badge-status {{ row.status }}">{{ row.status | title }}</span></td>
+          <td style="text-align:right;font-weight:600;color:var(--text-primary)">{{ row.seat_count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% elif flight_id %}
+<div class="card-glass fade-in">
+  <div class="empty-state">
+    <i class="bi bi-inbox"></i>
+    <p>No se encontraron asientos para este vuelo. Verifica el UUID.</p>
+  </div>
+</div>
+{% else %}
+<div class="card-glass fade-in">
+  <div class="empty-state">
+    <i class="bi bi-search"></i>
+    <p>Ingresa el UUID de un vuelo para consultar la disponibilidad de asientos.</p>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_scripts %}
+{% if results %}
+<script>
+  const raw = {{ results | tojson }};
+
+  // ── Agrupar por clase ──────────────────────────────────────────
+  const classes = ['economica','ejecutiva','primera'];
+  const classLabels = ['Económica','Ejecutiva','Primera'];
+  const dispByClass = classes.map(c =>
+    raw.filter(r => r.class === c && r.status === 'disponible')
+       .reduce((a, b) => a + b.seat_count, 0)
+  );
+  const ocupByClass = classes.map(c =>
+    raw.filter(r => r.class === c && r.status === 'ocupado')
+       .reduce((a, b) => a + b.seat_count, 0)
+  );
+
+  new Chart(document.getElementById('chart-by-class'), {
+    type: 'bar',
+    data: {
+      labels: classLabels,
+      datasets: [
+        { label: 'Disponible', data: dispByClass,
+          backgroundColor: 'rgba(34,211,165,.7)', borderRadius: 6, borderSkipped: false },
+        { label: 'Ocupado',    data: ocupByClass,
+          backgroundColor: 'rgba(239,68,68,.6)', borderRadius: 6, borderSkipped: false },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'top' } },
+      scales: {
+        x: { grid: { display: false } },
+        y: { grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
+      }
+    }
+  });
+
+  // ── Dona total ─────────────────────────────────────────────────
+  const totalDisp = dispByClass.reduce((a,b)=>a+b,0);
+  const totalOcup = ocupByClass.reduce((a,b)=>a+b,0);
+  const totalBloq = raw.filter(r=>r.status==='bloqueado').reduce((a,b)=>a+b.seat_count,0);
+
+  new Chart(document.getElementById('chart-status'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Disponible','Ocupado','Bloqueado'],
+      datasets: [{
+        data: [totalDisp, totalOcup, totalBloq],
+        backgroundColor: ['rgba(34,211,165,.8)','rgba(239,68,68,.7)','rgba(245,158,11,.7)'],
+        borderWidth: 0, hoverOffset: 6,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'bottom' },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.label}: ${ctx.parsed} asientos`
+          }
+        }
+      },
+      cutout: '65%',
+    }
+  });
+</script>
+{% endif %}
+{% endblock %}

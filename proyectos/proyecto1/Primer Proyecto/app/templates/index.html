@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-grid-1x2-fill" style="color:var(--accent)"></i> Dashboard</h1>
+  <p>Estado del clúster Apache Cassandra y resumen del sistema de reservas aéreas</p>
+</div>
+
+<!-- ── Nodos del clúster ────────────────────────────────────────── -->
+<div class="row g-3 mb-4">
+  {% for node in nodes %}
+  <div class="col-md-4 fade-in fade-in-delay-{{ loop.index }}">
+    <div class="metric-card {% if loop.index == 1 %}blue{% elif loop.index == 2 %}purple{% else %}green{% endif %}">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div class="metric-icon"><i class="bi bi-server"></i></div>
+        <span class="node-dot up"></span>
+      </div>
+      <div class="metric-value" style="font-size:1rem;font-family:var(--font-mono)">
+        {{ node.host }}
+      </div>
+      <div class="metric-label mt-2">
+        DC: {{ node.dc }} · Rack: {{ node.rack }}
+        <br>Cassandra {{ node.version }} · <span style="color:var(--success)">UP</span>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="col-12">
+    <div class="alert-custom info">
+      <i class="bi bi-info-circle-fill"></i>
+      No se pudo conectar al clúster. ¿Está corriendo <code>docker compose up -d</code>?
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- ── Resumen de métricas ──────────────────────────────────────── -->
+<div class="row g-3 mb-4">
+  <div class="col-sm-6 col-xl-3 fade-in fade-in-delay-1">
+    <div class="metric-card blue">
+      <div class="metric-icon"><i class="bi bi-ticket-perforated-fill"></i></div>
+      <div class="metric-value" id="stat-reservations">—</div>
+      <div class="metric-label">Total Reservas</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3 fade-in fade-in-delay-2">
+    <div class="metric-card purple">
+      <div class="metric-icon"><i class="bi bi-airplane"></i></div>
+      <div class="metric-value" id="stat-flights">—</div>
+      <div class="metric-label">Vuelos registrados</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3 fade-in fade-in-delay-3">
+    <div class="metric-card green">
+      <div class="metric-icon"><i class="bi bi-people-fill"></i></div>
+      <div class="metric-value" id="stat-passengers">—</div>
+      <div class="metric-label">Pasajeros</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xl-3 fade-in fade-in-delay-4">
+    <div class="metric-card amber">
+      <div class="metric-icon"><i class="bi bi-currency-dollar"></i></div>
+      <div class="metric-value" id="stat-revenue">—</div>
+      <div class="metric-label">Ingresos del período</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Acceso rápido a queries ──────────────────────────────────── -->
+<h2 style="font-size:1rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;" class="fade-in">
+  Consultas disponibles
+</h2>
+<div class="row g-3 fade-in">
+  {% set queries = [
+    ('/q1', 'bi-layout-three-columns', 'blue',   'Q1', 'Disponibilidad de asientos',
+     'Conteo por clase y estado mediante COUNTER. Sin COUNT en tiempo real.'),
+    ('/q2', 'bi-clock-history',        'purple', 'Q2', 'Historial cronológico de pasajero',
+     'Tabla denormalizada con clustering por fecha. Soporta rango >= / <=.'),
+    ('/q3', 'bi-people-fill',          'green',  'Q3', 'Manifiesto de vuelo',
+     'Pasajeros ordenados por asiento. Tres entidades en una sola tabla.'),
+    ('/q4', 'bi-graph-up-arrow',       'amber',  'Q4', 'Ocupación por ruta y fechas',
+     'Bucketing por ruta+mes. COUNTER de reservas confirmadas.'),
+    ('/q5', 'bi-trophy-fill',          'blue',   'Q5', 'Top N vuelos por ingresos',
+     'Tabla de agregación con clustering DESC. LIMIT en CQL, sin ordenar en cliente.'),
+  ] %}
+  {% for url, icon, color, tag, name, desc in queries %}
+  <div class="col-md-6 col-xl-4">
+    <a href="{{ url }}" style="text-decoration:none;">
+      <div class="metric-card {{ color }}" style="cursor:pointer;">
+        <div class="d-flex align-items-center gap-10 mb-2">
+          <div class="metric-icon"><i class="bi {{ icon }}"></i></div>
+          <span class="topbar-badge">{{ tag }}</span>
+        </div>
+        <div style="font-weight:600;margin-bottom:6px;">{{ name }}</div>
+        <div style="font-size:.8rem;color:var(--text-muted);">{{ desc }}</div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  // Cargar métricas via API JSON
+  async function loadStats() {
+    try {
+      const r = await fetch('/api/q5?period={{ now_period }}&limit=1');
+      const data = await r.json();
+      if (data.length) {
+        document.getElementById('stat-revenue').textContent =
+          '$' + data.reduce((a,b) => a + b.total_revenue, 0).toLocaleString('es-GT', {maximumFractionDigits:0});
+      }
+    } catch(e) {}
+  }
+  loadStats();
+</script>
+{% endblock %}

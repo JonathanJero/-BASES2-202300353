@@ -1,0 +1,125 @@
+# =============================================================================
+# Clúster Apache Cassandra — 3 nodos + Flask Dashboard
+# Sistema de Gestión de Reservas y Boletos Aéreos
+# =============================================================================
+# Uso:
+#   docker compose up -d                  # Levanta todo
+#   docker compose up -d cassandra-node1  # Solo el primer nodo
+#   docker exec cassandra-node1 nodetool status
+# =============================================================================
+
+
+networks:
+  cassandra_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  cassandra_data1:
+  cassandra_data2:
+  cassandra_data3:
+
+# ─────────────────────────────────────────────────────────────
+# Variables comunes reutilizadas en los 3 nodos
+# ─────────────────────────────────────────────────────────────
+x-cassandra-common: &cassandra-common
+  image: cassandra:4.1
+  networks:
+    - cassandra_net
+  environment:
+    CASSANDRA_CLUSTER_NAME: "AeroCluster"
+    CASSANDRA_SEEDS:        "cassandra-node1"
+    CASSANDRA_DC:           "datacenter1"
+    CASSANDRA_RACK:         "rack1"
+    CASSANDRA_ENDPOINT_SNITCH: "GossipingPropertyFileSnitch"
+    # Memoria para entorno local optimizada para 100k+ registros
+    HEAP_NEWSIZE:   "256M"
+    MAX_HEAP_SIZE:  "1024M"
+  # Espera a que Cassandra esté lista antes de declarar el nodo sano
+  healthcheck:
+    test: ["CMD-SHELL", "cqlsh -e 'describe cluster' || exit 1"]
+    interval: 30s
+    timeout:  15s
+    retries:  15
+    start_period: 60s
+
+services:
+
+  # ─────────────────────────────────────────────────────────
+  # NODO 1 — Seed node (primer nodo en unirse al ring)
+  # Expone el puerto 9042 para conexiones externas (cqlsh, Python)
+  # ─────────────────────────────────────────────────────────
+  cassandra-node1:
+    <<: *cassandra-common
+    container_name: cassandra-node1
+    hostname: cassandra-node1
+    ports:
+      - "9042:9042"   # CQL native transport (cqlsh, driver Python)
+      - "7199:7199"   # JMX (nodetool remoto, opcional)
+    volumes:
+      - cassandra_data1:/var/lib/cassandra
+    networks:
+      cassandra_net:
+        ipv4_address: 172.20.0.10
+
+  # ─────────────────────────────────────────────────────────
+  # NODO 2 — Se une al ring después de que node1 esté sano
+  # ─────────────────────────────────────────────────────────
+  cassandra-node2:
+    <<: *cassandra-common
+    container_name: cassandra-node2
+    hostname: cassandra-node2
+    volumes:
+      - cassandra_data2:/var/lib/cassandra
+    networks:
+      cassandra_net:
+        ipv4_address: 172.20.0.11
+    depends_on:
+      cassandra-node1:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────────────────
+  # NODO 3 — Se une al ring después de que node2 esté sano
+  # ─────────────────────────────────────────────────────────
+  cassandra-node3:
+    <<: *cassandra-common
+    container_name: cassandra-node3
+    hostname: cassandra-node3
+    volumes:
+      - cassandra_data3:/var/lib/cassandra
+    networks:
+      cassandra_net:
+        ipv4_address: 172.20.0.12
+    depends_on:
+      cassandra-node2:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────────────────
+  # FLASK DASHBOARD — Se conecta al clúster cuando node1 está sano
+  # ─────────────────────────────────────────────────────────
+  flask-app:
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+    container_name: flask-dashboard
+    hostname: flask-dashboard
+    ports:
+      - "${FLASK_PORT:-5050}:5000"
+    networks:
+      - cassandra_net
+    volumes:
+      - ../app:/app
+      - ../scripts:/scripts
+      - ../tests:/tests
+    environment:
+      CASSANDRA_HOSTS:    "cassandra-node1,cassandra-node2,cassandra-node3"
+      CASSANDRA_KEYSPACE: "aero_reservas"
+      CASSANDRA_PORT:     "9042"
+      FLASK_ENV:          "development"
+      FLASK_DEBUG:        "1"
+    depends_on:
+      cassandra-node1:
+        condition: service_healthy
+    restart: on-failure

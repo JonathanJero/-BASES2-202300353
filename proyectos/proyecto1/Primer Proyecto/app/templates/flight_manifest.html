@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Q3 — Manifiesto{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-people-fill" style="color:var(--success)"></i> Q3 — Manifiesto de Vuelo</h1>
+  <p>Listado de pasajeros ordenado por asiento, con clase, estado de reserva y pago en una sola consulta.<br>
+     <span style="color:var(--text-muted);font-size:.8rem;">Tabla: <code>flight_manifest</code> · Clustering: <code>seat_number ASC</code> · Sin JOIN</span>
+  </p>
+</div>
+
+<div class="card-glass mb-4 fade-in">
+  <form method="GET" action="/q3" class="row g-3 align-items-end">
+    <div class="col-md-9">
+      <label class="form-label">UUID del vuelo</label>
+      <input type="text" name="flight_id" class="form-control"
+             placeholder="UUID del vuelo" value="{{ flight_id }}" />
+    </div>
+    <div class="col-md-3">
+      <button type="submit" class="btn-primary-custom w-100">
+        <i class="bi bi-list-check"></i> Ver manifiesto
+      </button>
+    </div>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert-custom error mb-4 fade-in"><i class="bi bi-exclamation-triangle-fill"></i> {{ error }}</div>
+{% endif %}
+
+{% if results %}
+{% set conf_count = results | selectattr('reservation_status','eq','confirmada') | list | length %}
+<div class="row g-3 mb-4 fade-in">
+  <div class="col-sm-4">
+    <div class="metric-card blue">
+      <div class="metric-icon"><i class="bi bi-people-fill"></i></div>
+      <div class="metric-value">{{ results | length }}</div>
+      <div class="metric-label">Total pasajeros</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card green">
+      <div class="metric-icon"><i class="bi bi-check-circle-fill"></i></div>
+      <div class="metric-value">{{ conf_count }}</div>
+      <div class="metric-label">Confirmados</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card amber">
+      <div class="metric-icon"><i class="bi bi-currency-dollar"></i></div>
+      <div class="metric-value">${{ "%.0f"|format(results | map(attribute='payment_amount') | sum) }}</div>
+      <div class="metric-label">Ingresos del vuelo</div>
+    </div>
+  </div>
+</div>
+
+<div class="card-glass fade-in">
+  <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;">
+    Manifiesto — {{ results | length }} pasajero{{ 's' if results|length != 1 }}
+  </h2>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Asiento</th>
+          <th>Clase</th>
+          <th>Pasajero</th>
+          <th>Pasaporte/DPI</th>
+          <th>Teléfono</th>
+          <th>Reserva</th>
+          <th>Pago</th>
+          <th style="text-align:right">Monto</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td><strong style="color:var(--accent);font-size:1rem">{{ r.seat_number }}</strong></td>
+          <td><span class="badge-status {{ r.class }}">{{ r.class | title }}</span></td>
+          <td style="color:var(--text-primary);font-weight:500">{{ r.passenger_name }}</td>
+          <td class="mono">{{ r.passenger_passport }}</td>
+          <td class="mono">{{ r.passenger_phone }}</td>
+          <td><span class="badge-status {{ r.reservation_status }}">{{ r.reservation_status | title }}</span></td>
+          <td><span class="badge-status {{ r.payment_status }}">{{ r.payment_status | title }}</span></td>
+          <td style="text-align:right;color:var(--success);font-weight:600">${{ "%.2f"|format(r.payment_amount) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% elif flight_id %}
+<div class="card-glass fade-in"><div class="empty-state"><i class="bi bi-inbox"></i><p>No se encontraron pasajeros para este vuelo.</p></div></div>
+{% else %}
+<div class="card-glass fade-in"><div class="empty-state"><i class="bi bi-airplane"></i><p>Ingresa el UUID del vuelo para ver el manifiesto.</p></div></div>
+{% endif %}
+{% endblock %}

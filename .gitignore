@@ -1,3 +1,31 @@
-node_modules/
+# OS & System
 .DS_Store
+Thumbs.db
+
+# Logs & Temp
 *.log
+test_reports/
+fault_tolerance_results.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+
+# Archivos de guia y enunciados (no necesarios para el proyecto)
+enunciado.txt
+*.pdf
+Hoja de calificacion Proyecto 1.pdf
+guia_defensa_oral.md
+guia_pruebas_calificacion.md
+guia_rapida_comandos.txt

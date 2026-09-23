@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Q2 — Historial Pasajero{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-clock-history" style="color:var(--accent2)"></i> Q2 — Historial Cronológico del Pasajero</h1>
+  <p>Vuelos y reservas de un pasajero ordenados por fecha, con estado de pago.<br>
+     <span style="color:var(--text-muted);font-size:.8rem;">Tabla: <code>reservations_by_passenger</code> · Clustering: <code>reservation_date DESC</code></span>
+  </p>
+</div>
+
+<!-- ── Formulario ───────────────────────────────────────────────── -->
+<div class="card-glass mb-4 fade-in">
+  <form method="GET" action="/q2" class="row g-3 align-items-end">
+    <div class="col-md-6">
+      <label class="form-label">UUID del pasajero</label>
+      <input type="text" name="passenger_id" class="form-control"
+             placeholder="UUID del pasajero" value="{{ passenger_id }}" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label">Desde</label>
+      <input type="date" name="date_from" class="form-control" value="{{ date_from }}" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label">Hasta</label>
+      <input type="date" name="date_to" class="form-control" value="{{ date_to }}" />
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn-primary-custom w-100">
+        <i class="bi bi-search"></i> Buscar
+      </button>
+    </div>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert-custom error mb-4 fade-in"><i class="bi bi-exclamation-triangle-fill"></i> {{ error }}</div>
+{% endif %}
+
+{% if results %}
+<!-- ── Resumen rápido ─────────────────────────────────────────────── -->
+{% set conf  = results | selectattr('reservation_status','eq','confirmada') | list %}
+{% set total_paid = results | map(attribute='payment_amount') | sum %}
+<div class="row g-3 mb-4 fade-in">
+  <div class="col-sm-4">
+    <div class="metric-card purple">
+      <div class="metric-icon"><i class="bi bi-ticket-perforated-fill"></i></div>
+      <div class="metric-value">{{ results | length }}</div>
+      <div class="metric-label">Total reservas en período</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card green">
+      <div class="metric-icon"><i class="bi bi-check-circle-fill"></i></div>
+      <div class="metric-value">{{ conf | length }}</div>
+      <div class="metric-label">Confirmadas</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card amber">
+      <div class="metric-icon"><i class="bi bi-currency-dollar"></i></div>
+      <div class="metric-value">${{ "%.0f"|format(total_paid) }}</div>
+      <div class="metric-label">Total pagado</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Timeline / Tabla ─────────────────────────────────────────── -->
+<div class="card-glass fade-in">
+  <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:16px;">
+    Historial de reservas ({{ results | length }} resultado{{ 's' if results|length != 1 }})
+  </h2>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Fecha reserva</th>
+          <th>Vuelo</th>
+          <th>Ruta</th>
+          <th>Salida</th>
+          <th>Asiento</th>
+          <th>Clase</th>
+          <th>Estado</th>
+          <th>Pago</th>
+          <th style="text-align:right">Monto</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td class="mono">{{ r.reservation_date[:10] if r.reservation_date else '—' }}</td>
+          <td><strong style="color:var(--text-primary)">{{ r.flight_code }}</strong></td>
+          <td>{{ r.origin }} <i class="bi bi-arrow-right" style="font-size:.7rem;color:var(--text-muted)"></i> {{ r.destination }}</td>
+          <td class="mono">{{ r.departure[:16].replace('T',' ') if r.departure else '—' }}</td>
+          <td style="font-weight:600">{{ r.seat_number }}</td>
+          <td><span class="badge-status {{ r.class }}">{{ r.class | title }}</span></td>
+          <td><span class="badge-status {{ r.reservation_status }}">{{ r.reservation_status | title }}</span></td>
+          <td><span class="badge-status {{ r.payment_status }}">{{ r.payment_status | title }}</span></td>
+          <td style="text-align:right;color:var(--success);font-weight:600">${{ "%.2f"|format(r.payment_amount) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% elif passenger_id %}
+<div class="card-glass fade-in">
+  <div class="empty-state">
+    <i class="bi bi-inbox"></i>
+    <p>No se encontraron reservas para este pasajero en el rango de fechas indicado.</p>
+  </div>
+</div>
+{% else %}
+<div class="card-glass fade-in">
+  <div class="empty-state">
+    <i class="bi bi-person-badge"></i>
+    <p>Ingresa el UUID de un pasajero y el rango de fechas para consultar su historial.</p>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

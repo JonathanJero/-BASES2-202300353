@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% block title %}Q5 — Top Ingresos{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-trophy-fill" style="color:var(--warning)"></i> Q5 — Top N Vuelos por Ingresos</h1>
+  <p>Ranking de vuelos con mayor ingreso total de pagos confirmados en un período.<br>
+     <span style="color:var(--text-muted);font-size:.8rem;">Tabla: <code>revenue_by_period</code> · Clustering: <code>total_revenue DESC</code> · LIMIT en CQL</span>
+  </p>
+</div>
+
+<div class="card-glass mb-4 fade-in">
+  <form method="GET" action="/q5" class="row g-3 align-items-end">
+    <div class="col-md-4">
+      <label class="form-label">Período (YYYY-MM)</label>
+      <input type="month" name="period" class="form-control" value="{{ period }}" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Top N vuelos</label>
+      <select name="limit" class="form-select">
+        {% for n in [5, 10, 15, 20] %}
+        <option value="{{ n }}" {% if n == limit %}selected{% endif %}>Top {{ n }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-4">
+      <button type="submit" class="btn-primary-custom w-100">
+        <i class="bi bi-bar-chart-line-fill"></i> Ver ranking
+      </button>
+    </div>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert-custom error mb-4 fade-in"><i class="bi bi-exclamation-triangle-fill"></i> {{ error }}</div>
+{% endif %}
+
+{% if results %}
+{% set total_all = results | map(attribute='total_revenue') | sum %}
+{% set top1 = results[0] %}
+
+<!-- ── Métricas rápidas ──────────────────────────────────────────── -->
+<div class="row g-3 mb-4 fade-in">
+  <div class="col-sm-4">
+    <div class="metric-card amber">
+      <div class="metric-icon"><i class="bi bi-trophy-fill"></i></div>
+      <div class="metric-value" style="font-size:1.1rem">{{ top1.flight_code }}</div>
+      <div class="metric-label">Vuelo más rentable · ${{ "%.0f"|format(top1.total_revenue) }}</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card green">
+      <div class="metric-icon"><i class="bi bi-currency-dollar"></i></div>
+      <div class="metric-value">${{ "%.0f"|format(total_all) }}</div>
+      <div class="metric-label">Ingresos top {{ results|length }} vuelos</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card blue">
+      <div class="metric-icon"><i class="bi bi-calendar-month"></i></div>
+      <div class="metric-value">{{ period }}</div>
+      <div class="metric-label">Período consultado</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Gráfica horizontal ───────────────────────────────────────── -->
+<div class="card-glass mb-4 fade-in" style="height:{{ [280, results|length * 42 + 60] | max }}px">
+  <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:12px;">
+    Top {{ results|length }} · Ingresos por vuelo ({{ period }})
+  </h2>
+  <div class="chart-container" style="height:{{ [220, results|length * 38 + 20] | max }}px">
+    <canvas id="chart-revenue"></canvas>
+  </div>
+</div>
+
+<!-- ── Tabla ranking ─────────────────────────────────────────────── -->
+<div class="card-glass fade-in">
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="text-align:center;width:50px">#</th>
+          <th>Vuelo</th>
+          <th>Ruta</th>
+          <th>Salida</th>
+          <th style="text-align:right">Ingresos</th>
+          <th style="min-width:180px">% del total top-N</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        {% set share = (r.total_revenue / total_all * 100) if total_all > 0 else 0 %}
+        <tr>
+          <td style="text-align:center">
+            {% if loop.index == 1 %}
+            <i class="bi bi-trophy-fill" style="color:#f59e0b"></i>
+            {% elif loop.index == 2 %}
+            <i class="bi bi-trophy-fill" style="color:#94a3b8"></i>
+            {% elif loop.index == 3 %}
+            <i class="bi bi-trophy-fill" style="color:#b45309"></i>
+            {% else %}
+            <span style="color:var(--text-muted);font-weight:600">{{ loop.index }}</span>
+            {% endif %}
+          </td>
+          <td><strong style="color:var(--accent)">{{ r.flight_code }}</strong></td>
+          <td>{{ r.origin }} <i class="bi bi-arrow-right" style="font-size:.7rem;color:var(--text-muted)"></i> {{ r.destination }}</td>
+          <td class="mono">{{ r.departure[:10] if r.departure else '—' }}</td>
+          <td style="text-align:right;font-weight:700;color:var(--success)">${{ "{:,.2f}".format(r.total_revenue) }}</td>
+          <td>
+            <div class="d-flex align-items-center gap-2">
+              <div class="progress-bar-custom" style="flex:1">
+                <div class="progress-bar-fill" style="width:{{ share }}%"></div>
+              </div>
+              <span style="font-size:.8rem;font-weight:600;min-width:40px;text-align:right;color:var(--accent)">
+                {{ "%.1f"|format(share) }}%
+              </span>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% else %}
+<div class="card-glass fade-in"><div class="empty-state"><i class="bi bi-bar-chart"></i><p>No hay datos de ingresos para el período <strong>{{ period }}</strong>.<br>Asegúrate de haber cargado los datos.</p></div></div>
+{% endif %}
+{% endblock %}
+
+{% block extra_scripts %}
+{% if results %}
+<script>
+  const raw = {{ results | tojson }};
+  const labels   = raw.map(r => `${r.flight_code} (${r.origin}→${r.destination})`);
+  const revenues = raw.map(r => r.total_revenue);
+  const maxRev   = Math.max(...revenues);
+
+  const colors = revenues.map((v, i) => {
+    const alpha = 0.4 + (v / maxRev) * 0.55;
+    return i === 0 ? `rgba(245,158,11,${alpha})`
+         : i === 1 ? `rgba(79,142,247,${alpha})`
+         : `rgba(124,90,247,${alpha})`;
+  });
+
+  new Chart(document.getElementById('chart-revenue'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Ingresos (USD)',
+        data: revenues,
+        backgroundColor: colors,
+        borderRadius: 5,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` $${ctx.parsed.x.toLocaleString('es-GT', {minimumFractionDigits:2})}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(255,255,255,.05)' },
+          ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' }
+        },
+        y: { grid: { display: false } }
+      }
+    }
+  });
+</script>
+{% endif %}
+{% endblock %}

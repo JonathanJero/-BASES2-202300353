@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}Q4 — Ocupación{% endblock %}
+
+{% block content %}
+<div class="page-header fade-in">
+  <h1><i class="bi bi-graph-up-arrow" style="color:var(--warning)"></i> Q4 — Ocupación por Ruta y Fechas</h1>
+  <p>% de capacidad reservada por vuelo para una ruta en un rango de fechas.<br>
+     <span style="color:var(--text-muted);font-size:.8rem;">Tabla: <code>occupancy_by_route</code> · Bucketing: <code>(route, bucket)</code> · COUNTER</span>
+  </p>
+</div>
+
+<div class="card-glass mb-4 fade-in">
+  <form method="GET" action="/q4" class="row g-3 align-items-end">
+    <div class="col-md-2">
+      <label class="form-label">Origen (IATA)</label>
+      <input type="text" name="origin" class="form-control"
+             placeholder="GUA" value="{{ origin }}" maxlength="3" style="text-transform:uppercase" />
+    </div>
+    <div class="col-md-2">
+      <label class="form-label">Destino (IATA)</label>
+      <input type="text" name="destination" class="form-control"
+             placeholder="MEX" value="{{ destination }}" maxlength="3" style="text-transform:uppercase" />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Desde</label>
+      <input type="date" name="date_from" class="form-control" value="{{ date_from }}" />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Hasta</label>
+      <input type="date" name="date_to" class="form-control" value="{{ date_to }}" />
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn-primary-custom w-100">
+        <i class="bi bi-search"></i> Consultar
+      </button>
+    </div>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert-custom error mb-4 fade-in"><i class="bi bi-exclamation-triangle-fill"></i> {{ error }}</div>
+{% endif %}
+
+{% if results %}
+{% set avg_occ = (results | map(attribute='occupancy_pct') | sum) / (results | length) %}
+{% set full_flights = results | selectattr('occupancy_pct','ge',90) | list | length %}
+
+<div class="row g-3 mb-4 fade-in">
+  <div class="col-sm-4">
+    <div class="metric-card blue">
+      <div class="metric-icon"><i class="bi bi-airplane"></i></div>
+      <div class="metric-value">{{ results | length }}</div>
+      <div class="metric-label">Vuelos en el período</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card amber">
+      <div class="metric-icon"><i class="bi bi-percent"></i></div>
+      <div class="metric-value">{{ "%.1f"|format(avg_occ) }}%</div>
+      <div class="metric-label">Ocupación promedio</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="metric-card green">
+      <div class="metric-icon"><i class="bi bi-bar-chart-fill"></i></div>
+      <div class="metric-value">{{ full_flights }}</div>
+      <div class="metric-label">Vuelos ≥ 90% ocupados</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Gráfica de barras ─────────────────────────────────────────── -->
+<div class="card-glass mb-4 fade-in" style="height:280px;">
+  <h2 style="font-size:.9rem;font-weight:600;color:var(--text-secondary);margin-bottom:12px;">
+    % Ocupación por vuelo ({{ origin }} → {{ destination }})
+  </h2>
+  <div class="chart-container" style="height:210px;">
+    <canvas id="chart-occupancy"></canvas>
+  </div>
+</div>
+
+<!-- ── Tabla ─────────────────────────────────────────────────────── -->
+<div class="card-glass fade-in">
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Vuelo ID</th>
+          <th>Salida</th>
+          <th style="text-align:right">Confirmadas</th>
+          <th style="text-align:right">Capacidad</th>
+          <th style="min-width:160px">Ocupación</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        {% set pct = r.occupancy_pct %}
+        <tr>
+          <td class="mono">{{ r.flight_id[:8] }}...</td>
+          <td class="mono">{{ r.departure[:16].replace('T',' ') if r.departure else '—' }}</td>
+          <td style="text-align:right;color:var(--text-primary);font-weight:600">{{ r.confirmed_count }}</td>
+          <td style="text-align:right">{{ r.capacity }}</td>
+          <td>
+            <div class="d-flex align-items-center gap-2">
+              <div class="progress-bar-custom" style="flex:1">
+                <div class="progress-bar-fill {% if pct >= 90 %}high{% elif pct >= 70 %}medium{% endif %}"
+                     style="width:{{ pct }}%"></div>
+              </div>
+              <span style="font-size:.8rem;font-weight:600;min-width:40px;text-align:right;
+                           color:{% if pct >= 90 %}var(--danger){% elif pct >= 70 %}var(--warning){% else %}var(--success){% endif %}">
+                {{ "%.1f"|format(pct) }}%
+              </span>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% elif origin and destination %}
+<div class="card-glass fade-in"><div class="empty-state"><i class="bi bi-inbox"></i><p>No se encontraron vuelos para esta ruta y período.</p></div></div>
+{% else %}
+<div class="card-glass fade-in"><div class="empty-state"><i class="bi bi-map"></i><p>Ingresa origen, destino y rango de fechas para consultar la ocupación.</p></div></div>
+{% endif %}
+{% endblock %}
+
+{% block extra_scripts %}
+{% if results %}
+<script>
+  const raw = {{ results | tojson }};
+  const labels = raw.map(r => r.departure ? r.departure.slice(0,10) : '?');
+  const pcts   = raw.map(r => r.occupancy_pct);
+  const colors = pcts.map(p => p >= 90 ? 'rgba(239,68,68,.75)'
+                               : p >= 70 ? 'rgba(245,158,11,.75)'
+                               : 'rgba(79,142,247,.7)');
+
+  new Chart(document.getElementById('chart-occupancy'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: '% Ocupación',
+        data: pcts,
+        backgroundColor: colors,
+        borderRadius: 4,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y.toFixed(1)}%` } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { maxRotation: 45 } },
+        y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,.05)' },
+             ticks: { callback: v => v + '%' } },
+      }
+    }
+  });
+</script>
+{% endif %}
+{% endblock %}
