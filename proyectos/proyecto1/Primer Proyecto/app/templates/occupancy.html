@@ -35,6 +35,18 @@
       </button>
     </div>
   </form>
+  {% if sample_routes %}
+  <div class="mt-3 pt-3" style="border-top:1px solid var(--border);">
+    <span style="font-size:0.8rem;color:var(--text-secondary);margin-right:8px;"><i class="bi bi-lightning-charge-fill" style="color:var(--warning)"></i> Rutas directas disponibles:</span>
+    <div class="d-inline-flex flex-wrap gap-2 mt-1">
+      {% for o, d in sample_routes %}
+      <a href="/q4?origin={{ o }}&destination={{ d }}&date_from=2026-01-01&date_to=2026-09-30" class="badge-status {% if o == origin and d == destination %}confirmada{% else %}economica{% endif %}" style="text-decoration:none;cursor:pointer;padding:6px 12px;font-size:0.8rem;">
+        {{ o }} → {{ d }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>
 
 {% if error %}

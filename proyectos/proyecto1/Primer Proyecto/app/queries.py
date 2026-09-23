@@ -13,7 +13,7 @@ from uuid import UUID
 from datetime import datetime
 from cassandra.cluster import PreparedStatement
 from cassandra import ConsistencyLevel
-from db import get_session
+import db
 
 logger = logging.getLogger(__name__)
 
@@ -23,8 +23,9 @@ _prepared: dict[str, PreparedStatement] = {}
 
 def _prepare(name: str, cql: str) -> PreparedStatement:
     """Prepara y cachea un statement por nombre."""
-    if name not in _prepared:
-        _prepared[name] = get_session().prepare(cql)
+    session = db.get_session()
+    if name not in _prepared or not isinstance(_prepared[name], PreparedStatement):
+        _prepared[name] = session.prepare(cql)
     return _prepared[name]
 
 
@@ -53,7 +54,7 @@ def q1_seat_availability(flight_id: str) -> list[dict]:
         WHERE flight_id = ?
     """)
 
-    session = get_session()
+    session = db.get_session()
     rows = session.execute(stmt, [UUID(flight_id)])
 
     result = [
@@ -104,7 +105,7 @@ def q2_passenger_history(passenger_id: str,
           AND reservation_date <= ?
     """)
 
-    session = get_session()
+    session = db.get_session()
     rows = session.execute(stmt, [UUID(passenger_id), date_from, date_to])
 
     return [
@@ -156,7 +157,7 @@ def q3_flight_manifest(flight_id: str) -> list[dict]:
         WHERE flight_id = ?
     """)
 
-    session = get_session()
+    session = db.get_session()
     rows = session.execute(stmt, [UUID(flight_id)])
 
     return [
@@ -220,7 +221,7 @@ def q4_occupancy_by_route(origin: str,
         SELECT max_capacity FROM flight_capacity WHERE flight_id = ?
     """)
 
-    session = get_session()
+    session = db.get_session()
     results = []
 
     for bucket in buckets:
@@ -273,7 +274,7 @@ def q5_top_revenue_flights(period: str, limit: int = 10) -> list[dict]:
         LIMIT ?
     """)
 
-    session = get_session()
+    session = db.get_session()
     rows = session.execute(stmt, [period, limit])
 
     return [

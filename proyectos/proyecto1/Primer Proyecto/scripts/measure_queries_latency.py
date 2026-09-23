@@ -234,8 +234,16 @@ def display_results(q_info, trace, latencies, is_demo=False):
         print(f"    Total Duration: {trace.duration.microseconds / 1000.0:.2f} ms")
         print("    Trace Events:")
         for event in trace.events:
-            elapsed = f"{event.source_elapsed.microseconds / 1000.0:.2f} ms"
-            print(f"      + {elapsed:>10}  |  {event.activity} [{event.source}]")
+            desc = getattr(event, 'description', getattr(event, 'activity', ''))
+            src = getattr(event, 'source', '')
+            se = getattr(event, 'source_elapsed', 0)
+            if hasattr(se, 'microseconds'):
+                ms = se.microseconds / 1000.0
+            elif isinstance(se, (int, float)):
+                ms = se / 1000.0
+            else:
+                ms = 0.0
+            print(f"      + {ms:>8.3f} ms  |  {desc} [{src}]")
 
     print("\n  [Métricas de Latencia en Tiempo Real]")
     p50 = statistics.median(latencies)

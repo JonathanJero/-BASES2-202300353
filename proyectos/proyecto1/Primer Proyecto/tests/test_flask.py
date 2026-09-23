@@ -97,6 +97,9 @@ def client():
         flask_app.app.config["WTF_CSRF_ENABLED"] = False
         yield flask_app.app.test_client()
 
+    import queries
+    queries._prepared.clear()
+
 
 # =============================================================================
 # Tests de rutas HTML
