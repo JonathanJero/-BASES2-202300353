@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 560" width="100%" height="100%" style="background:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.1" flood-color="#000000" />
+    </filter>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#dc2626" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#ea580c" />
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#475569" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="425" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#003366">ARQUITECTURA DISTRIBUIDA DE APACHE CASSANDRA 4.1</text>
+  <text x="425" y="52" text-anchor="middle" font-size="12" fill="#64748b">Anillo Descentralizado (Peer-to-Peer) y Flujo de Almacenamiento LSM-Tree</text>
+
+  <!-- PANEL 1: ANILLO DE NODOS -->
+  <rect x="30" y="75" width="790" height="230" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+  <rect x="30" y="75" width="790" height="32" rx="10" fill="#003366" />
+  <rect x="30" y="97" width="790" height="10" fill="#003366" />
+  <text x="425" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">ANILLO DE TOKENS (Murmur3Partitioner) &amp; PROTOCOLO GOSSIP</text>
+
+  <!-- Nodos del Anillo -->
+  <!-- Nodo 1 -->
+  <g transform="translate(80, 130)" filter="url(#shadow)">
+    <rect width="150" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="75" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#60a5fa">NODO 1</text>
+    <text x="75" y="42" text-anchor="middle" font-size="10" fill="#94a3b8">DC: datacenter1</text>
+    <text x="75" y="58" text-anchor="middle" font-size="9" fill="#cbd5e1">Tokens: 0..2^63/4</text>
+  </g>
+
+  <!-- Nodo 2 -->
+  <g transform="translate(620, 130)" filter="url(#shadow)">
+    <rect width="150" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="75" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#60a5fa">NODO 2</text>
+    <text x="75" y="42" text-anchor="middle" font-size="10" fill="#94a3b8">DC: datacenter1</text>
+    <text x="75" y="58" text-anchor="middle" font-size="9" fill="#cbd5e1">Tokens: 2^63/4..2^63/2</text>
+  </g>
+
+  <!-- Nodo 4 -->
+  <g transform="translate(80, 215)" filter="url(#shadow)">
+    <rect width="150" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="75" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#60a5fa">NODO 4</text>
+    <text x="75" y="42" text-anchor="middle" font-size="10" fill="#94a3b8">DC: datacenter1</text>
+    <text x="75" y="58" text-anchor="middle" font-size="9" fill="#cbd5e1">Tokens: 3*2^63/4..Max</text>
+  </g>
+
+  <!-- Nodo 3 -->
+  <g transform="translate(620, 215)" filter="url(#shadow)">
+    <rect width="150" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="75" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#60a5fa">NODO 3</text>
+    <text x="75" y="42" text-anchor="middle" font-size="10" fill="#94a3b8">DC: datacenter1</text>
+    <text x="75" y="58" text-anchor="middle" font-size="9" fill="#cbd5e1">Tokens: 2^63/2..3*2^63/4</text>
+  </g>
+
+  <!-- Gossip connections & Ring -->
+  <!-- Top Node1 to Node2 -->
+  <line x1="230" y1="167" x2="610" y2="167" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <rect x="365" y="155" width="120" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe" />
+  <text x="425" y="171" text-anchor="middle" font-size="10" font-weight="600" fill="#1d4ed8">Gossip Protocol</text>
+
+  <!-- Bottom Node4 to Node3 -->
+  <line x1="230" y1="252" x2="610" y2="252" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <rect x="365" y="240" width="120" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe" />
+  <text x="425" y="256" text-anchor="middle" font-size="10" font-weight="600" fill="#1d4ed8">Gossip Protocol</text>
+
+  <!-- Vertical connections -->
+  <line x1="155" y1="205" x2="155" y2="215" stroke="#2563eb" stroke-width="2" />
+  <line x1="695" y1="205" x2="695" y2="215" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Center Ring Label -->
+  <circle cx="425" cy="210" r="24" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="425" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e40af">RING</text>
+
+  <!-- PANEL 2: RUTA DE ESCRITURA EN NODO (LSM-TREE) -->
+  <rect x="30" y="325" width="790" height="215" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+  <rect x="30" y="325" width="790" height="32" rx="10" fill="#1e293b" />
+  <rect x="30" y="347" width="790" height="10" fill="#1e293b" />
+  <text x="425" y="346" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">RUTA INTERNA DE ESCRITURA POR NODO (LSM-Tree Storage Engine)</text>
+
+  <!-- Componentes del flujo -->
+  <!-- 1. Cliente -->
+  <g transform="translate(55, 390)" filter="url(#shadow)">
+    <rect width="120" height="65" rx="8" fill="#059669" />
+    <text x="60" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">Cliente CQL</text>
+    <text x="60" y="45" text-anchor="middle" font-size="9" fill="#d1fae5">Port 9042</text>
+  </g>
+
+  <!-- Flecha Cliente -> Coordinador -->
+  <line x1="175" y1="422" x2="230" y2="422" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)" />
+  <text x="202" y="414" text-anchor="middle" font-size="8" font-weight="bold" fill="#059669">INSERT</text>
+
+  <!-- 2. Coordinador -->
+  <g transform="translate(235, 390)" filter="url(#shadow)">
+    <rect width="135" height="65" rx="8" fill="#0284c7" />
+    <text x="67" y="26" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">Nodo Coordinador</text>
+    <text x="67" y="44" text-anchor="middle" font-size="9" fill="#e0f2fe">Calcula Hash</text>
+    <text x="67" y="56" text-anchor="middle" font-size="8" fill="#bae6fd">Murmur3</text>
+  </g>
+
+  <!-- Flechas hacia CommitLog y Memtable -->
+  <!-- Hacia CommitLog -->
+  <path d="M 370 410 L 435 390" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)" />
+  <text x="400" y="392" font-size="8" font-weight="bold" fill="#dc2626">1. Log</text>
+
+  <!-- Hacia Memtable -->
+  <path d="M 370 435 L 435 455" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)" />
+  <text x="400" y="458" font-size="8" font-weight="bold" fill="#ea580c">2. RAM</text>
+
+  <!-- 3. CommitLog -->
+  <g transform="translate(440, 370)" filter="url(#shadow)">
+    <rect width="155" height="52" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5" />
+    <text x="77" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#991b1b">CommitLog (Disco)</text>
+    <text x="77" y="38" text-anchor="middle" font-size="9" fill="#b91c1c">Escritura Secuencial Append</text>
+  </g>
+
+  <!-- 4. Memtable -->
+  <g transform="translate(440, 435)" filter="url(#shadow)">
+    <rect width="155" height="52" rx="6" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5" />
+    <text x="77" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#9a3412">Memtable (RAM)</text>
+    <text x="77" y="38" text-anchor="middle" font-size="9" fill="#c2410c">Estructura SkipList en Memoria</text>
+  </g>
+
+  <!-- Flecha Memtable -> SSTables (Flush) -->
+  <path d="M 595 460 L 655 435" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow-slate)" />
+  <text x="625" y="460" font-size="8" font-weight="bold" fill="#475569">3. Flush</text>
+
+  <!-- 5. SSTables -->
+  <g transform="translate(660, 390)" filter="url(#shadow)">
+    <rect width="145" height="65" rx="8" fill="#334155" />
+    <text x="72" y="26" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">SSTables (Disco)</text>
+    <text x="72" y="42" text-anchor="middle" font-size="9" fill="#94a3b8">Archivos Inmutables</text>
+    <text x="72" y="54" text-anchor="middle" font-size="8" fill="#cbd5e1">Compaction de fondo</text>
+  </g>
+</svg>

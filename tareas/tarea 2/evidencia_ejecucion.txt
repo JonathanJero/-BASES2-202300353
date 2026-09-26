@@ -1,0 +1,92 @@
+==================================================================
+           EVIDENCIA DE EJECUCIÓN - STREAM_PULSE CASSANDRA        
+  Fecha de Ejecución: Sat Sep 26 08:32:30 CST 2026                                     
+==================================================================
+
+>>> APLICANDO 01_schema.cql...
+Esquema creado satisfactoriamente.
+
+>>> APLICANDO 02_seed_data.cql (Población de +20 registros)...
+Datos de prueba insertados con éxito.
+
+>>> VERIFICANDO TOTAL DE REGISTROS POR TABLA:
+
+ total_videos_by_genre
+-----------------------
+                    10
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+ total_user_watch_history
+--------------------------
+                       10
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+ total_video_daily_metrics
+---------------------------
+                         8
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+>>> EJECUTANDO 03_crud_operations.cql (Operaciones CRUD)...
+
+ user_id                              | watched_at                      | video_id                             | video_title           | duration_watched_seconds | completed | device
+--------------------------------------+---------------------------------+--------------------------------------+-----------------------+--------------------------+-----------+-------------
+ a1111111-1111-1111-1111-111111111111 | 2026-09-26 14:00:00.000000+0000 | b5555555-5555-5555-5555-555555555555 | El Misterio del Valle |                     1800 |     False | Apple-TV-4K
+
+(1 rows)
+
+ video_title           | duration_watched_seconds | total_duration_seconds | completed
+-----------------------+--------------------------+------------------------+-----------
+ El Misterio del Valle |                     7800 |                   7800 |      True
+
+(1 rows)
+
+ user_id | video_title | watched_at
+---------+-------------+------------
+
+
+(0 rows)
+
+>>> EJECUTANDO 04_queries.cql (3 Consultas Relevantes del Negocio)...
+
+ video_title          | genre  | watched_at                      | duration_watched_seconds | total_duration_seconds | completed | device
+----------------------+--------+---------------------------------+--------------------------+------------------------+-----------+-----------------
+ Interstellar Odyssey | Sci-Fi | 2026-09-25 21:30:00.000000+0000 |                     9900 |                   9900 |      True | SmartTV-Samsung
+       Cyberpunk 2099 | Sci-Fi | 2026-09-24 20:15:00.000000+0000 |                     8520 |                   8520 |      True | SmartTV-Samsung
+     Sombra de Guerra | Accion | 2026-09-23 19:00:00.000000+0000 |                     4000 |                   8100 |     False |      Mobile-iOS
+
+(3 rows)
+
+ release_year | title                | director          | rating_stars | duration_minutes | tags
+--------------+----------------------+-------------------+--------------+------------------+----------------------------------
+         2024 | Interstellar Odyssey | Christopher Nolan |          4.9 |              165 | {'ciencia', 'espacio', 'futuro'}
+         2023 |       Cyberpunk 2099 |  Denis Villeneuve |          4.7 |              142 |  {'cyberpunk', 'distopía', 'ia'}
+         2021 |      Quantum Paradox |      Alex Garland |          4.5 |              118 |  {'física', 'intriga', 'tiempo'}
+
+(3 rows)
+
+ metric_date | video_title          | total_views | total_minutes_watched | unique_users | completion_rate
+-------------+----------------------+-------------+-----------------------+--------------+-----------------
+  2026-09-25 | Interstellar Odyssey |        1540 |                240000 |         1420 |            89.4
+  2026-09-24 | Interstellar Odyssey |        1380 |                215000 |         1290 |            87.2
+  2026-09-23 | Interstellar Odyssey |        1210 |                192000 |         1150 |              85
+
+(3 rows)
+
+==================================================================
+           EJECUCIÓN COMPLETADA CON ÉXITO                         
+==================================================================

@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="100%" height="100%" style="background:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-4%" y="-4%" width="108%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.08" flood-color="#000000" />
+    </filter>
+    <marker id="arrow-conn" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#2563eb" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="460" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#003366">MODELO DE DATOS COLUMNAR - STREAMPULSE (CASSANDRA 4.1)</text>
+  <text x="460" y="50" text-anchor="middle" font-size="12" fill="#64748b">KEYSPACE: streampulse | Factor de Replicación: 1 (SimpleStrategy)</text>
+
+  <!-- TABLA 1: user_watch_history -->
+  <g transform="translate(25, 75)" filter="url(#card-shadow)">
+    <rect width="270" height="380" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <path d="M 0 8 Q 0 0 8 0 L 262 0 Q 270 0 270 8 L 270 38 L 0 38 Z" fill="#003366" />
+    <text x="135" y="24" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">user_watch_history</text>
+    
+    <!-- Header desc -->
+    <rect x="0" y="38" width="270" height="24" fill="#f1f5f9" />
+    <text x="135" y="54" text-anchor="middle" font-size="9.5" fill="#475569" font-style="italic">Historial cronológico inverso por usuario</text>
+    
+    <!-- Rows -->
+    <!-- PK -->
+    <rect x="0" y="62" width="270" height="28" fill="#dbeafe" />
+    <text x="10" y="80" font-size="10" font-weight="bold" fill="#1e40af">PK</text>
+    <text x="38" y="80" font-size="10" font-weight="600" fill="#0f172a">user_id</text>
+    <text x="260" y="80" text-anchor="end" font-size="9.5" fill="#64748b">UUID</text>
+
+    <!-- CK 1 -->
+    <rect x="0" y="90" width="270" height="28" fill="#ffedd5" />
+    <text x="10" y="108" font-size="9" font-weight="bold" fill="#c2410c">CK↓</text>
+    <text x="38" y="108" font-size="10" font-weight="600" fill="#0f172a">watched_at</text>
+    <text x="260" y="108" text-anchor="end" font-size="9.5" fill="#64748b">TIMESTAMP</text>
+
+    <!-- CK 2 -->
+    <rect x="0" y="118" width="270" height="28" fill="#ffedd5" />
+    <text x="10" y="136" font-size="9" font-weight="bold" fill="#c2410c">CK↑</text>
+    <text x="38" y="136" font-size="10" font-weight="600" fill="#0f172a">video_id</text>
+    <text x="260" y="136" text-anchor="end" font-size="9.5" fill="#64748b">UUID</text>
+
+    <!-- Data Columns -->
+    <text x="38" y="164" font-size="10" fill="#334155">video_title</text>
+    <text x="260" y="164" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    <line x1="10" y1="174" x2="260" y2="174" stroke="#f1f5f9" />
+
+    <text x="38" y="194" font-size="10" fill="#334155">genre</text>
+    <text x="260" y="194" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    <line x1="10" y1="204" x2="260" y2="204" stroke="#f1f5f9" />
+
+    <text x="38" y="224" font-size="10" fill="#334155">duration_watched_seconds</text>
+    <text x="260" y="224" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="234" x2="260" y2="234" stroke="#f1f5f9" />
+
+    <text x="38" y="254" font-size="10" fill="#334155">total_duration_seconds</text>
+    <text x="260" y="254" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="264" x2="260" y2="264" stroke="#f1f5f9" />
+
+    <text x="38" y="284" font-size="10" fill="#334155">completed</text>
+    <text x="260" y="284" text-anchor="end" font-size="9.5" fill="#64748b">BOOLEAN</text>
+    <line x1="10" y1="294" x2="260" y2="294" stroke="#f1f5f9" />
+
+    <text x="38" y="314" font-size="10" fill="#334155">device</text>
+    <text x="260" y="314" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    
+    <!-- Footer Query Match -->
+    <rect x="0" y="335" width="270" height="45" fill="#eff6ff" />
+    <text x="135" y="352" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e40af">Consulta Primaria Atendida:</text>
+    <text x="135" y="368" text-anchor="middle" font-size="8.5" fill="#1d4ed8">Feed "Continuar Viendo" por user_id (O(1))</text>
+  </g>
+
+  <!-- TABLA 2: videos_by_genre -->
+  <g transform="translate(325, 75)" filter="url-card-shadow)">
+    <rect width="270" height="380" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <path d="M 0 8 Q 0 0 8 0 L 262 0 Q 270 0 270 8 L 270 38 L 0 38 Z" fill="#003366" />
+    <text x="135" y="24" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">videos_by_genre</text>
+    
+    <!-- Header desc -->
+    <rect x="0" y="38" width="270" height="24" fill="#f1f5f9" />
+    <text x="135" y="54" text-anchor="middle" font-size="9.5" fill="#475569" font-style="italic">Catálogo agrupado por temática y año</text>
+
+    <!-- Rows -->
+    <!-- PK -->
+    <rect x="0" y="62" width="270" height="28" fill="#dbeafe" />
+    <text x="10" y="80" font-size="10" font-weight="bold" fill="#1e40af">PK</text>
+    <text x="38" y="80" font-size="10" font-weight="600" fill="#0f172a">genre</text>
+    <text x="260" y="80" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+
+    <!-- CK 1 -->
+    <rect x="0" y="90" width="270" height="28" fill="#ffedd5" />
+    <text x="10" y="108" font-size="9" font-weight="bold" fill="#c2410c">CK↓</text>
+    <text x="38" y="108" font-size="10" font-weight="600" fill="#0f172a">release_year</text>
+    <text x="260" y="108" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+
+    <!-- CK 2 -->
+    <rect x="0" y="118" width="270" height="28" fill="#ffedd5" />
+    <text x="10" y="136" font-size="9" font-weight="bold" fill="#c2410c">CK↑</text>
+    <text x="38" y="136" font-size="10" font-weight="600" fill="#0f172a">video_id</text>
+    <text x="260" y="136" text-anchor="end" font-size="9.5" fill="#64748b">UUID</text>
+
+    <!-- Data Columns -->
+    <text x="38" y="164" font-size="10" fill="#334155">title</text>
+    <text x="260" y="164" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    <line x1="10" y1="174" x2="260" y2="174" stroke="#f1f5f9" />
+
+    <text x="38" y="194" font-size="10" fill="#334155">director</text>
+    <text x="260" y="194" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    <line x1="10" y1="204" x2="260" y2="204" stroke="#f1f5f9" />
+
+    <text x="38" y="224" font-size="10" fill="#334155">rating_stars</text>
+    <text x="260" y="224" text-anchor="end" font-size="9.5" fill="#64748b">DOUBLE</text>
+    <line x1="10" y1="234" x2="260" y2="234" stroke="#f1f5f9" />
+
+    <text x="38" y="254" font-size="10" fill="#334155">duration_minutes</text>
+    <text x="260" y="254" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="264" x2="260" y2="264" stroke="#f1f5f9" />
+
+    <text x="38" y="284" font-size="10" fill="#334155">tags</text>
+    <text x="260" y="284" text-anchor="end" font-size="9.5" fill="#64748b">SET&lt;TEXT&gt;</text>
+    
+    <!-- Footer Query Match -->
+    <rect x="0" y="335" width="270" height="45" fill="#eff6ff" />
+    <text x="135" y="352" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e40af">Consulta Primaria Atendida:</text>
+    <text x="135" y="368" text-anchor="middle" font-size="8.5" fill="#1d4ed8">Navegación de Catálogo por Género</text>
+  </g>
+
+  <!-- TABLA 3: video_daily_metrics -->
+  <g transform="translate(625, 75)" filter="url-card-shadow)">
+    <rect width="270" height="380" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <path d="M 0 8 Q 0 0 8 0 L 262 0 Q 270 0 270 8 L 270 38 L 0 38 Z" fill="#003366" />
+    <text x="135" y="24" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">video_daily_metrics</text>
+    
+    <!-- Header desc -->
+    <rect x="0" y="38" width="270" height="24" fill="#f1f5f9" />
+    <text x="135" y="54" text-anchor="middle" font-size="9.5" fill="#475569" font-style="italic">Serie temporal analítica por contenido</text>
+
+    <!-- Rows -->
+    <!-- PK -->
+    <rect x="0" y="62" width="270" height="28" fill="#dbeafe" />
+    <text x="10" y="80" font-size="10" font-weight="bold" fill="#1e40af">PK</text>
+    <text x="38" y="80" font-size="10" font-weight="600" fill="#0f172a">video_id</text>
+    <text x="260" y="80" text-anchor="end" font-size="9.5" fill="#64748b">UUID</text>
+
+    <!-- CK 1 -->
+    <rect x="0" y="90" width="270" height="28" fill="#ffedd5" />
+    <text x="10" y="108" font-size="9" font-weight="bold" fill="#c2410c">CK↓</text>
+    <text x="38" y="108" font-size="10" font-weight="600" fill="#0f172a">metric_date</text>
+    <text x="260" y="108" text-anchor="end" font-size="9.5" fill="#64748b">DATE</text>
+
+    <!-- Data Columns -->
+    <text x="38" y="164" font-size="10" fill="#334155">video_title</text>
+    <text x="260" y="164" text-anchor="end" font-size="9.5" fill="#64748b">TEXT</text>
+    <line x1="10" y1="174" x2="260" y2="174" stroke="#f1f5f9" />
+
+    <text x="38" y="194" font-size="10" fill="#334155">total_views</text>
+    <text x="260" y="194" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="204" x2="260" y2="204" stroke="#f1f5f9" />
+
+    <text x="38" y="224" font-size="10" fill="#334155">total_minutes_watched</text>
+    <text x="260" y="224" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="234" x2="260" y2="234" stroke="#f1f5f9" />
+
+    <text x="38" y="254" font-size="10" fill="#334155">unique_users</text>
+    <text x="260" y="254" text-anchor="end" font-size="9.5" fill="#64748b">INT</text>
+    <line x1="10" y1="264" x2="260" y2="264" stroke="#f1f5f9" />
+
+    <text x="38" y="284" font-size="10" fill="#334155">completion_rate</text>
+    <text x="260" y="284" text-anchor="end" font-size="9.5" fill="#64748b">DOUBLE</text>
+    
+    <!-- Footer Query Match -->
+    <rect x="0" y="335" width="270" height="45" fill="#eff6ff" />
+    <text x="135" y="352" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e40af">Consulta Primaria Atendida:</text>
+    <text x="135" y="368" text-anchor="middle" font-size="8.5" fill="#1d4ed8">Métricas Diarias de Desempeño</text>
+  </g>
+</svg>

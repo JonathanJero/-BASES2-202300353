@@ -1,0 +1,443 @@
+# UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
+## FACULTAD DE INGENIERÍA
+### ESCUELA DE INGENIERÍA EN CIENCIAS Y SISTEMAS
+### LABORATORIO DE BASES DE DATOS 2 - SECCIÓN N
+**Segundo Semestre 2026**  
+**Auxiliar:** Joshua Alexander Vásquez del Águila  
+**Tarea #2:** Implementación NoSQL Columnar con Apache Cassandra y Análisis Crítico de IA  
+
+---
+
+| Estudiante | Carnet | Fecha de Entrega |
+|:---|:---:|:---:|
+| Jonathan Jeronimo | 202300353 | 26 de Septiembre de 2026 |
+
+---
+
+## 1. Marco Formativo
+
+### 1.1 Valores
+| Nombre del valor | ¿Cómo se aplica en tu laboratorio? |
+|:---|:---|
+| **Honestidad Intelectual y Rigor Crítico** | Se aplica al auditar minuciosamente el código y las recomendaciones generadas por herramientas de Inteligencia Artificial generativa. En lugar de aceptar ciegamente esquemas o sintaxis producidas por la IA, se contrastan rigurosamente con los fundamentos de arquitectura distribuida de Cassandra (particionamiento, clustering y desnormalización), identificando anti-patrones y asumiendo la autoría consciente de las correcciones implementadas. |
+
+### 1.2 Competencias
+| Tipo de Competencia | Detalle |
+|:---|:---|
+| **Competencia General** | Diseñar, evaluar e implementar soluciones de persistencia basadas en tecnologías NoSQL para escenarios con altos volúmenes de datos y requisitos de baja latencia, integrando herramientas de IA generativa como asistente técnico con capacidad de análisis crítico. |
+| **Competencia Específica** | • Modelar esquemas orientados a consultas (*Query-Driven Modeling*) en bases de datos columnares (Apache Cassandra 4.1).<br>• Identificar e invalidar anti-patrones relacionales o de filtrado global (`ALLOW FILTERING`) generados por IA.<br>• Implementar y validar operaciones CRUD y consultas avanzadas respetando la distribución física de claves de partición y ordenamiento. |
+
+### 1.3 Objetivos
+- Aplicar conceptos de bases de datos NoSQL columnares en un caso práctico del mundo real.
+- Utilizar herramientas de IA como apoyo para modelado de datos y consultas en Cassandra Query Language (CQL).
+- Analizar analítica y críticamente las limitaciones, sesgos relacionales y errores comunes de la IA generativa.
+- Implementar un entorno reproducible en Docker con esquemas funcionales, población de más de 20 registros, operaciones CRUD y 3 consultas avanzadas de negocio.
+
+---
+
+## 2. Introducción
+
+En el panorama actual de la ingeniería de software y el almacenamiento masivo, los sistemas relacionales tradicionales (RDBMS) enfrentan cuellos de botella severos cuando deben soportar flujos continuos de millones de eventos por segundo con tolerancia a fallos y disponibilidad constante. Las bases de datos NoSQL columnares, representadas prominentemente por **Apache Cassandra**, ofrecen una arquitectura distribuida basada en anillos de nodos (*Peer-to-Peer*), sin punto único de falla (*Masterless*), y un motor de almacenamiento fundamentado en árboles LSM (*Log-Structured Merge-tree*).
+
+El presente informe documenta la investigación, diseño e implementación de una solución NoSQL para una plataforma de streaming de video de escala global denominada **StreamPulse**. Como parte del marco pedagógico del curso, se integró el uso del asistente de Inteligencia Artificial **Google Gemini (Gemini Advanced)** como apoyo técnico para la concepción del modelo y la elaboración de consultas CQL, sometiendo cada una de sus respuestas a una auditoría técnica rigurosa que expone sus inconsistencias relacionales y demuestra la necesidad del criterio del ingeniero humano.
+
+---
+
+## 3. Selección del Tipo NoSQL Elegido: Familias de Columnas (Apache Cassandra 4.1)
+
+Se seleccionó el modelo **Columnar / Familias de Columnas Anchas** (*Wide-Column Store*), implementado con la versión **Apache Cassandra 4.1**.
+
+#### Diagrama de Arquitectura Distribuida y Almacenamiento LSM-Tree
+![Arquitectura Distribuida de Cassandra](diagramas/arquitectura_cassandra.svg)
+
+
+
+### Características Técnicas Relevantes:
+1. **Escrituras Ultrarrápidas y Secuenciales:** Al escribir directamente en memoria (*Memtable*) y en un registro secuencial de transacciones (*CommitLog*), las inserciones y actualizaciones son prácticamente instantáneas.
+2. **Modelado Orientado a Consultas (*Query-Driven Modeling*):** A diferencia del modelo relacional donde se normalizan las entidades y luego se construyen consultas con `JOIN`, en Cassandra las tablas se diseñan **en función directa de las consultas que la aplicación ejecutará**.
+3. **Claves Compuestas (Partition Key + Clustering Columns):**
+   - **Partition Key:** Determina en qué nodo físico del clúster se almacenan los datos mediante un cálculo hash (Murmur3Partitioner).
+   - **Clustering Columns:** Definen el orden físico secuencial de almacenamiento de las filas en disco dentro de cada partición.
+4. **Desnormalización Estratégica:** Cassandra no admite `JOINs` ni transacciones ACID entre múltiples tablas, por lo que duplicar datos de forma deliberada es una buena práctica para optimizar las lecturas.
+5. **Cero Descargas Adicionales:** Se reutilizó la imagen de Docker `cassandra:4.1` ya existente en el entorno de desarrollo local, optimizando el consumo de disco y recursos del sistema.
+
+---
+
+## 4. Caso de Estudio: Plataforma de Streaming "StreamPulse"
+
+**StreamPulse** es una plataforma de contenido audiovisual bajo demanda (series, películas y documentales) con usuarios concurrentes a nivel global.
+
+### Requerimientos de Acceso y Patrones de Tráfico:
+- **Historial de Reproducción por Usuario:** Alta tasa de inserción continua conforme los usuarios visualizan contenidos. La aplicación requiere mostrar el historial cronológico inverso (*Continuar viendo*) con latencia menor a 10 ms.
+- **Catálogo y Exploración por Género:** Los usuarios navegan por categorías temáticas (ej. Ciencia Ficción, Drama, Acción) y requieren visualizar las obras ordenadas por su año de estreno más reciente.
+- **Métricas Diarias de Rendimiento:** El equipo de producto y finanzas analiza la retención, visualizaciones totales y minutos consumidos de cada video por intervalos de tiempo (series temporales).
+
+---
+
+## 5. Uso de Inteligencia Artificial (Bitácora de Interacciones)
+
+### 5.1 Identificación y Citación Formal de la Herramienta Utilizada
+En estricto cumplimiento con las restricciones del enunciado (*"Deben citar qué herramienta de IA utilizaron"*), se declara formalmente la herramienta empleada:
+- **Herramienta de IA:** **Google Gemini** (específicamente la versión avanzada **Gemini Advanced / Gemini 1.5 Pro**).
+- **Desarrollador:** Google DeepMind / Google AI.
+- **Entorno de Uso:** Asistente conversacional de desarrollo de software y pair-programming técnico.
+- **Justificación de su Uso y Metodología:** Se utilizó a **Google Gemini** como asistente técnico para la aceleración del diseño de bases de datos NoSQL, solicitándole la propuesta estructural de tablas en CQL, consultas de recuperación de datos y operaciones de modificación (CRUD). Como premisa del laboratorio, ninguna sugerencia de Gemini fue aceptada de forma automática: cada respuesta fue sometida a pruebas funcionales en Docker y a una revisión crítica contra la arquitectura distribuida de Apache Cassandra.
+
+### 5.2 Bitácora de Prompts y Respuestas Obtenidas con Gemini
+
+#### Interacción 1: Propuesta Inicial del Modelo de Datos
+* **Prompt Enviado a Gemini:**
+  > *"Actúa como un arquitecto de bases de datos. Necesito diseñar la base de datos en Apache Cassandra para una plataforma de streaming de video similar a Netflix. Queremos almacenar usuarios, videos, categorías y el historial de reproducción de cada usuario con la fecha y duración. Dame el script CQL para crear las tablas."*
+
+* **Respuesta Proporcionada por Gemini:**
+  ```sql
+  -- Propuesta generada por la IA
+  CREATE KEYSPACE streampulse WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+  CREATE TABLE users (
+      user_id UUID PRIMARY KEY,
+      name TEXT,
+      email TEXT
+  );
+
+  CREATE TABLE categories (
+      category_id UUID PRIMARY KEY,
+      name TEXT
+  );
+
+  CREATE TABLE videos (
+      video_id UUID PRIMARY KEY,
+      title TEXT,
+      category_id UUID,
+      release_year INT,
+      duration INT
+  );
+
+  CREATE TABLE watch_history (
+      history_id UUID PRIMARY KEY,
+      user_id UUID,
+      video_id UUID,
+      watched_at TIMESTAMP,
+      duration_watched INT,
+      completed BOOLEAN
+  );
+  ```
+
+> **Evidencia Visual - Interacción 1 (Solicitud de Modelo):**
+>
+> ![Captura 1: Propuesta Inicial de Modelo](imagenes/captura_interaccion_1.png)
+>
+> *Figura 1: Captura de pantalla de la consulta con el asistente de IA solicitando el esquema de datos inicial.*
+
+---
+
+### Interacción 2: Generación de Consultas del Negocio
+* **Prompt Enviado a la IA:**
+  > *"Con las tablas que me diste, genera la consulta en CQL para obtener las últimas 5 películas que vio el usuario con ID `a1111111-1111-1111-1111-111111111111` ordenadas de la más reciente a la más antigua, incluyendo el título de la película. También una consulta para listar los videos de la categoría 'Sci-Fi' estrenados en 2024."*
+
+* **Respuesta Proporcionada por la IA:**
+  ```sql
+  -- Consulta 1 propuesta por IA:
+  SELECT h.watched_at, v.title, h.duration_watched 
+  FROM watch_history h
+  JOIN videos v ON h.video_id = v.video_id
+  WHERE h.user_id = a1111111-1111-1111-1111-111111111111
+  ORDER BY h.watched_at DESC
+  LIMIT 5;
+
+  -- Al indicarle a la IA que CQL no soporta JOIN, la IA respondió:
+  SELECT * FROM watch_history 
+  WHERE user_id = a1111111-1111-1111-1111-111111111111 
+  ORDER BY watched_at DESC 
+  LIMIT 5 
+  ALLOW FILTERING;
+  ```
+
+> **Evidencia Visual - Interacción 2 (Generación de Consultas):**
+>
+> ![Captura 2: Generación de Consultas CQL](imagenes/captura_interaccion_2.png)
+>
+> *Figura 2: Captura de pantalla de la interacción solicitando sentencias CQL y detección del anti-patrón ALLOW FILTERING.*
+
+---
+
+### Interacción 3: Actualizaciones y Borrados (Operaciones CRUD)
+* **Prompt Enviado a la IA:**
+  > *"Genérame un UPDATE y un DELETE en CQL para actualizar los segundos reproducidos de un video cuando el usuario pausa y para borrar un registro específico del historial."*
+
+* **Respuesta Proporcionada por la IA:**
+  ```sql
+  -- Propuesta de UPDATE por IA:
+  UPDATE watch_history
+  SET duration_watched = 7200
+  WHERE user_id = a1111111-1111-1111-1111-111111111111;
+
+  -- Propuesta de DELETE por IA:
+  DELETE FROM watch_history
+  WHERE user_id = a1111111-1111-1111-1111-111111111111 
+    AND duration_watched = 7200;
+  ```
+
+> **Evidencia Visual - Interacción 3 (Operaciones CRUD):**
+>
+> ![Captura 3: Actualizaciones y Borrados](imagenes/captura_interaccion_3.png)
+>
+> *Figura 3: Captura de pantalla de la interacción sobre sentencias UPDATE y DELETE con clave primaria incompleta.*
+
+---
+
+## 6. Análisis Crítico de las Respuestas de Gemini y Correcciones Manuales
+
+A partir de las respuestas obtenidas de **Google Gemini**, se identificaron fallas conceptuales críticas derivadas del sesgo relacional del modelo de lenguaje:
+
+| Aspecto Evaluado | Propuesta Errónea de Google Gemini | Solución Humana Aplicada en Cassandra |
+|:---|:---|:---|
+| **1. Enfoque de Modelado** | Normalizado (3FN relacional) con tablas separadas `users`, `videos`, etc. | Desnormalizado y guiado por consultas específicas (*Query-Driven Design*). |
+| **2. Clave Primaria en Historial** | UUID sintético (`history_id`) sin noción de particionamiento. | Clave Compuesta: `((user_id), watched_at, video_id)` para colocalización física. |
+| **3. Recuperación Ordenada** | Uso de `ORDER BY` con full scan o requerimiento de `JOIN` inexistente. | `CLUSTERING ORDER BY (watched_at DESC)` grabado físicamente en disco. |
+| **4. Filtrado en Consultas** | Abuso de `ALLOW FILTERING` (escaneo global en todos los nodos del clúster). | Claves de partición y rangos sobre clustering keys sin escaneo global. |
+| **5. Operaciones UPDATE / DELETE** | `WHERE` con columnas no-clave (error de sintaxis en CQL). | `WHERE` con la Clave Primaria completa garantizada. |
+
+
+### Detalle de los Errores Técnicos Detectados en Gemini:
+1. **Sesgo Relacional (Tercera Forma Normal):** Gemini intentó normalizar entidades (`users`, `categories`, `videos`), asumiendo erróneamente la existencia de sentencias `JOIN`. En Cassandra, los `JOINs` no existen porque implicarían coordinar lecturas distribuidas aleatorias entre múltiples nodos de la red, destruyendo el rendimiento.
+2. **Ignorancia del Algoritmo de Hash y Particionamiento:** Al definir `history_id UUID PRIMARY KEY`, Gemini provocó que cada visualización de un mismo usuario cayera en un nodo aleatorio del anillo. Consultar el historial de un usuario obligaría a Cassandra a consultar a todos los nodos del clúster (*Scatter-Gather*).
+3. **El Parche Anti-patrón de `ALLOW FILTERING`:** Cuando Gemini descubrió que no podía filtrar por `user_id`, añadió `ALLOW FILTERING`. En producción con millones de registros, esta instrucción causa *Timeouts*, saturación de memoria y latencias inaceptables, pues obliga al nodo coordinador a escanear tablas completas.
+4. **Violación de Restricciones de Modificación en CQL:** Gemini intentó hacer `UPDATE` y `DELETE` filtrando únicamente por `user_id` o por columnas ordinarias (`duration_watched`). En Cassandra, **toda mutación debe incluir obligatoriamente la clave primaria completa** (todas las columnas de partición y de clustering).
+
+---
+
+## 7. Explicación del Modelo Implementado
+
+El modelo corregido manualmente se compone de 3 tablas optimizadas para responder a los patrones de acceso con complejidad $O(1)$ o $O(\log N)$:
+
+#### Diagrama del Modelo Físico StreamPulse (Keyspace y Tablas)
+![Modelo de Datos StreamPulse](diagramas/modelo_streampulse.svg)
+
+
+
+### Justificación de Claves:
+1. **`user_watch_history`:**
+   - **Partition Key `((user_id))`:** Todos los eventos de visualización de un mismo usuario se almacenan juntos en una única partición física dentro del nodo correspondiente.
+   - **Clustering Key `watched_at DESC, video_id ASC`:** Los datos se escriben físicamente ordenados de la fecha más reciente a la más antigua. La cláusula `LIMIT 3` lee únicamente los primeros bytes contiguos del archivo SSTable en disco.
+   - **Desnormalización:** Se incluye `video_title` y `genre` directamente en la fila para no tener que consultar otra tabla en el momento de renderizar la pantalla del usuario.
+2. **`videos_by_genre`:**
+   - **Partition Key `((genre))`:** Agrupa todo el catálogo de una categoría temática.
+   - **Clustering Key `release_year DESC, video_id ASC`:** Permite consultas de rangos de años (`release_year >= 2020`) sin necesidad de filtros costosos. Uso del tipo colección `SET<TEXT>` para almacenar etiquetas sin requerir tablas intermedias de muchos a muchos.
+3. **`video_daily_metrics`:**
+   - **Partition Key `((video_id))`:** Centraliza la telemetría de un contenido específico.
+   - **Clustering Key `metric_date DESC`:** Permite consultas instantáneas de series temporales de métricas en ventanas de fechas.
+
+---
+
+## 8. Consultas Utilizadas y Operaciones CRUD
+
+### 8.1 Operaciones CRUD (`cql/03_crud_operations.cql`)
+
+#### 1. CREATE (Inserción puntual de sesión de streaming):
+```sql
+INSERT INTO user_watch_history (
+    user_id, watched_at, video_id, video_title, genre,
+    duration_watched_seconds, total_duration_seconds, completed, device
+) VALUES (
+    a1111111-1111-1111-1111-111111111111,
+    '2026-09-26 14:00:00+0000',
+    b5555555-5555-5555-5555-555555555555,
+    'El Misterio del Valle', 'Drama', 1800, 7800, false, 'Apple-TV-4K'
+);
+```
+
+#### 2. READ (Lectura puntual por Clave Primaria Completa):
+```sql
+SELECT user_id, watched_at, video_id, video_title, duration_watched_seconds, completed, device
+FROM user_watch_history
+WHERE user_id = a1111111-1111-1111-1111-111111111111
+  AND watched_at = '2026-09-26 14:00:00+0000'
+  AND video_id = b5555555-5555-5555-5555-555555555555;
+```
+
+#### 3. UPDATE (Actualización del progreso de reproducción):
+```sql
+UPDATE user_watch_history
+SET duration_watched_seconds = 7800,
+    completed = true
+WHERE user_id = a1111111-1111-1111-1111-111111111111
+  AND watched_at = '2026-09-26 14:00:00+0000'
+  AND video_id = b5555555-5555-5555-5555-555555555555;
+```
+
+#### 4. DELETE (Eliminación con marcador Tombstone):
+```sql
+DELETE FROM user_watch_history
+WHERE user_id = a1111111-1111-1111-1111-111111111111
+  AND watched_at = '2026-09-26 14:00:00+0000'
+  AND video_id = b5555555-5555-5555-5555-555555555555;
+```
+
+---
+
+### 8.2 Las 3 Consultas Relevantes del Negocio (`cql/04_queries.cql`)
+
+#### Consulta 1: Sección "Continuar Viendo" / Feed Personalizado
+```sql
+-- Obtiene los últimos 3 videos reproducidos por el usuario Carlos Gómez
+SELECT video_title, genre, watched_at, duration_watched_seconds, total_duration_seconds, completed, device
+FROM user_watch_history
+WHERE user_id = a1111111-1111-1111-1111-111111111111
+LIMIT 3;
+```
+*Impacto en Rendimiento:* Resuelta mediante acceso directo a la partición por token hash y lectura secuencial de los primeros 3 registros en SSTable.
+
+#### Consulta 2: Exploración de Catálogo Sci-Fi Reciente (Estrenos >= 2020)
+```sql
+-- Lista contenidos del género 'Sci-Fi' estrenados en 2020 o posterior
+SELECT release_year, title, director, rating_stars, duration_minutes, tags
+FROM videos_by_genre
+WHERE genre = 'Sci-Fi'
+  AND release_year >= 2020;
+```
+*Impacto en Rendimiento:* Búsqueda acotada dentro de la partición de 'Sci-Fi' aprovechando el índice B-Tree local del clustering key `release_year`.
+
+#### Consulta 3: Analítica de Desempeño y Retención por Rango de Fechas
+```sql
+-- Monitoreo del video 'Interstellar Odyssey' entre el 23 y el 25 de septiembre de 2026
+SELECT metric_date, video_title, total_views, total_minutes_watched, unique_users, completion_rate
+FROM video_daily_metrics
+WHERE video_id = b1111111-1111-1111-1111-111111111111
+  AND metric_date >= '2026-09-23'
+  AND metric_date <= '2026-09-25';
+```
+*Impacto en Rendimiento:* Recuperación de serie temporal contigua por fecha en el nodo que aloja la partición del video.
+
+---
+
+## 9. Evidencias de Ejecución
+
+> **Evidencia Visual de Ejecución en Docker (Terminal cqlsh):**
+>
+> ![Captura Terminal cqlsh](imagenes/captura_terminal_cql.png)
+>
+> *Figura 4: Evidencia gráfica de ejecución y salida de las sentencias CQL en el contenedor Docker.*
+
+A continuación se presentan los registros reales obtenidos al ejecutar el conjunto de scripts mediante `scripts/run_all.sh` sobre el contenedor `cassandra_streampulse`:
+
+```text
+==================================================================
+           EVIDENCIA DE EJECUCIÓN - STREAM_PULSE CASSANDRA        
+  Fecha de Ejecución: Sat Sep 26 08:32:30 CST 2026                                     
+==================================================================
+
+>>> APLICANDO 01_schema.cql...
+Esquema creado satisfactoriamente.
+
+>>> APLICANDO 02_seed_data.cql (Población de +20 registros)...
+Datos de prueba insertados con éxito.
+
+>>> VERIFICANDO TOTAL DE REGISTROS POR TABLA:
+
+ total_videos_by_genre
+-----------------------
+                    10
+
+(1 rows)
+
+ total_user_watch_history
+--------------------------
+                       10
+
+(1 rows)
+
+ total_video_daily_metrics
+---------------------------
+                         8
+
+(1 rows)
+Total acumulado: 28 registros en la base de datos (Supera el mínimo de 20).
+
+>>> EJECUTANDO 03_crud_operations.cql (Operaciones CRUD)...
+
+[1. Read después de Create]:
+ user_id                              | watched_at                      | video_id                             | video_title           | duration_watched_seconds | completed | device
+--------------------------------------+---------------------------------+--------------------------------------+-----------------------+--------------------------+-----------+-------------
+ a1111111-1111-1111-1111-111111111111 | 2026-09-26 14:00:00.000000+0000 | b5555555-5555-5555-5555-555555555555 | El Misterio del Valle |                     1800 |     False | Apple-TV-4K
+
+(1 rows)
+
+[2. Read después de Update]:
+ video_title           | duration_watched_seconds | total_duration_seconds | completed
+-----------------------+--------------------------+------------------------+-----------
+ El Misterio del Valle |                     7800 |                   7800 |      True
+
+(1 rows)
+
+[3. Read después de Delete (0 rows retornadas)]:
+ user_id | video_title | watched_at
+---------+-------------+------------
+
+(0 rows)
+
+>>> EJECUTANDO 04_queries.cql (3 Consultas Relevantes del Negocio)...
+
+[Resultado Consulta 1: Últimos 3 videos vistos por Carlos Gómez]:
+ video_title          | genre  | watched_at                      | duration_watched_seconds | total_duration_seconds | completed | device
+----------------------+--------+---------------------------------+--------------------------+------------------------+-----------+-----------------
+ Interstellar Odyssey | Sci-Fi | 2026-09-25 21:30:00.000000+0000 |                     9900 |                   9900 |      True | SmartTV-Samsung
+       Cyberpunk 2099 | Sci-Fi | 2026-09-24 20:15:00.000000+0000 |                     8520 |                   8520 |      True | SmartTV-Samsung
+     Sombra de Guerra | Accion | 2026-09-23 19:00:00.000000+0000 |                     4000 |                   8100 |     False |      Mobile-iOS
+
+(3 rows)
+
+[Resultado Consulta 2: Películas Sci-Fi estrenadas desde 2020]:
+ release_year | title                | director          | rating_stars | duration_minutes | tags
+--------------+----------------------+-------------------+--------------+------------------+----------------------------------
+         2024 | Interstellar Odyssey | Christopher Nolan |          4.9 |              165 | {'ciencia', 'espacio', 'futuro'}
+         2023 |       Cyberpunk 2099 |  Denis Villeneuve |          4.7 |              142 |  {'cyberpunk', 'distopía', 'ia'}
+         2021 |      Quantum Paradox |      Alex Garland |          4.5 |              118 |  {'física', 'intriga', 'tiempo'}
+
+(3 rows)
+
+[Resultado Consulta 3: Métricas de Interstellar Odyssey entre 23-Sep y 25-Sep]:
+ metric_date | video_title          | total_views | total_minutes_watched | unique_users | completion_rate
+-------------+----------------------+-------------+-----------------------+--------------+-----------------
+  2026-09-25 | Interstellar Odyssey |        1540 |                240000 |         1420 |            89.4
+  2026-09-24 | Interstellar Odyssey |        1380 |                215000 |         1290 |            87.2
+  2026-09-23 | Interstellar Odyssey |        1210 |                192000 |         1150 |              85
+
+(3 rows)
+```
+
+---
+
+## 10. Reflexión Individual
+
+### 1. ¿La IA ayudó realmente al desarrollo?
+**Respuesta:**  
+**Google Gemini** resultó altamente eficiente como acelerador en tareas operativas, tales como la estructuración inicial de la sintaxis CQL y la generación de conjuntos de datos simulados coherentes (títulos de películas, directores, marcas de tiempo y UUIDs válidos). Sin embargo, en lo concerniente a la **arquitectura profunda y el diseño físico del almacenamiento distribuido**, Gemini no aportó una solución correcta de manera autónoma. Su valor real fue actuar como un borrador inicial de trabajo que requirió obligatoriamente la dirección, verificación y reingeniería humana.
+
+### 2. ¿Qué errores detectó?
+**Respuesta:**  
+En las respuestas generadas por **Google Gemini** se detectaron tres fallas conceptuales críticas:
+- **Sesgo relacional intrínseco:** Gemini modeló tablas en Tercera Forma Normal (3FN), omitiendo por completo que Cassandra es un motor sin `JOINs` que depende de la desnormalización intencional.
+- **Incomprensión de claves compuestas y ordenamiento físico:** Asignó identificadores sintéticos (`history_id UUID PRIMARY KEY`), desaprovechando el particionamiento por usuario y las columnas de agrupamiento (*clustering columns*).
+- **Uso indiscriminado de anti-patrones de rendimiento (`ALLOW FILTERING`):** Al percatarse de que su esquema no permitía resolver la consulta solicitada, Gemini recurrió al modificador `ALLOW FILTERING`, el cual provocaría denegación de servicio por latencia en un entorno de producción real.
+
+### 3. ¿Qué conocimientos humanos fueron necesarios para corregir la solución?
+**Respuesta:**  
+Fue indispensable aplicar los fundamentos teóricos aprendidos en el curso de Bases de Datos 2 para subsanar los vacíos de Gemini:
+- Entender el funcionamiento del anillo de Cassandra, la función de dispersión hash (*Murmur3Partitioner*) y el costo de red del escaneo inter-nodos.
+- Conocer la estructura de los archivos **SSTables** y cómo las *Clustering Keys* organizan los datos secuencialmente en bloques de disco contiguos, lo cual permite lecturas con `LIMIT` sin consumo de CPU ni memoria RAM adicional.
+- Comprender el ciclo de vida de escrituras mediante *CommitLog* y *Memtable*, así como el mecanismo de borrado lógico por **Tombstones** que exige la clave primaria completa en `UPDATE` y `DELETE`.
+
+### 4. ¿Qué riesgos existen al depender totalmente de IA?
+**Respuesta:**  
+El mayor riesgo es el **"fracaso silencioso en producción"**: un script generado por herramientas como Gemini puede compilar y ejecutarse sin errores aparentes en una base de datos local con 5 registros, pero al desplegarse en un entorno distribuido a gran escala con terabytes de información, causará caídas de clúster, sobrecostos exponenciales de cómputo y brechas de consistencia. Depender ciegamente de la IA sin una base técnica sólida degrada el criterio del ingeniero y expone los sistemas empresariales a fallas catastróficas de arquitectura.
+
+---
+
+## 11. Conclusiones
+
+1. **Eficiencia del Modelo Columnar en Series Temporales:** Apache Cassandra demostró ser la tecnología NoSQL óptima para plataformas de streaming, logrando escrituras concurrentes inmediatas y lecturas secuenciales ultra veloces ($O(1)$) mediante el diseño de particiones basadas en `user_id` y `video_id`.
+2. **El Principio del Modelado Guiado por Consultas:** A diferencia del paradigma relacional donde el modelo antecede a la aplicación, en Cassandra el modelo de datos **está supeditado a los patrones de acceso**. Diseñar una tabla por cada consulta fundamental es la clave del rendimiento en arquitecturas distribuidas masivas.
+3. **Google Gemini como Asistente, Nunca como Diseñador Autónomo:** La herramienta **Google Gemini** demostró un sesgo predominante hacia el paradigma relacional y tendió a ocultar deficiencias de diseño mediante parches nocivos (`ALLOW FILTERING`). El criterio del ingeniero humano es insustituible para garantizar escalabilidad y robustez.
+4. **Optimización de Recursos del Sistema:** La implementación se logró reutilizando la imagen existente `cassandra:4.1` en Docker local con limitación de memoria a 512 MB de Heap, garantizando reproducibilidad absoluta con cero descargas y mínimo consumo de recursos en la estación de trabajo.
+

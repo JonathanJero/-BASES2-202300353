@@ -1,0 +1,58 @@
+digraph StreamPulseSchema {
+    rankdir=LR;
+    fontname="Helvetica,Arial,sans-serif";
+    node [fontname="Helvetica,Arial,sans-serif", fontsize=10, shape=plaintext];
+    edge [fontname="Helvetica,Arial,sans-serif", fontsize=9];
+
+    subgraph cluster_keyspace {
+        label = "KEYSPACE: streampulse (Replication: SimpleStrategy, Replication Factor: 1)";
+        style=filled;
+        color="#003366";
+        fillcolor="#f8fafc";
+        penwidth=2;
+
+        table_history [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="5">
+                <tr><td bgcolor="#003366" colspan="2"><font color="white"><b>user_watch_history</b></font></td></tr>
+                <tr><td bgcolor="#dbeafe" align="left"><b>PK</b></td><td align="left">user_id: UUID</td></tr>
+                <tr><td bgcolor="#fed7aa" align="left"><b>CK (DESC)</b></td><td align="left">watched_at: TIMESTAMP</td></tr>
+                <tr><td bgcolor="#fed7aa" align="left"><b>CK (ASC)</b></td><td align="left">video_id: UUID</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">video_title: TEXT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">genre: TEXT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">duration_watched_seconds: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">total_duration_seconds: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">completed: BOOLEAN</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">device: TEXT</td></tr>
+            </table>
+        >];
+
+        table_genre [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="5">
+                <tr><td bgcolor="#003366" colspan="2"><font color="white"><b>videos_by_genre</b></font></td></tr>
+                <tr><td bgcolor="#dbeafe" align="left"><b>PK</b></td><td align="left">genre: TEXT</td></tr>
+                <tr><td bgcolor="#fed7aa" align="left"><b>CK (DESC)</b></td><td align="left">release_year: INT</td></tr>
+                <tr><td bgcolor="#fed7aa" align="left"><b>CK (ASC)</b></td><td align="left">video_id: UUID</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">title: TEXT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">director: TEXT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">rating_stars: DOUBLE</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">duration_minutes: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">tags: SET&lt;TEXT&gt;</td></tr>
+            </table>
+        >];
+
+        table_metrics [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="5">
+                <tr><td bgcolor="#003366" colspan="2"><font color="white"><b>video_daily_metrics</b></font></td></tr>
+                <tr><td bgcolor="#dbeafe" align="left"><b>PK</b></td><td align="left">video_id: UUID</td></tr>
+                <tr><td bgcolor="#fed7aa" align="left"><b>CK (DESC)</b></td><td align="left">metric_date: DATE</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">video_title: TEXT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">total_views: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">total_minutes_watched: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">unique_users: INT</td></tr>
+                <tr><td bgcolor="#f1f5f9" align="left">Data</td><td align="left">completion_rate: DOUBLE</td></tr>
+            </table>
+        >];
+
+        table_history -> table_metrics [style=dashed, label=" Telemetría ", color="#2563eb"];
+    }
+}

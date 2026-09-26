@@ -1,0 +1,43 @@
+digraph CassandraArchitecture {
+    rankdir=TB;
+    compound=true;
+    fontname="Helvetica,Arial,sans-serif";
+    node [fontname="Helvetica,Arial,sans-serif", fontsize=11];
+    edge [fontname="Helvetica,Arial,sans-serif", fontsize=9];
+
+    subgraph cluster_ring {
+        label = "Anillo de Nodos Cassandra (Murmur3 Token Ring & Gossip Protocol)";
+        style=filled;
+        color="#e2e8f0";
+        fillcolor="#f8fafc";
+        
+        node [shape=box, style="filled,rounded", fillcolor="#003366", fontcolor=white, width=2.0, height=0.9];
+        Node1 [label="Nodo 1\nTokens: [0 ... 2^63/4]\nDC: datacenter1"];
+        Node2 [label="Nodo 2\nTokens: [2^63/4 ... 2^63/2]\nDC: datacenter1"];
+        Node3 [label="Nodo 3\nTokens: [2^63/2 ... 3*2^63/4]\nDC: datacenter1"];
+        Node4 [label="Nodo 4\nTokens: [3*2^63/4 ... 2^63-1]\nDC: datacenter1"];
+
+        Node1 -> Node2 [label=" Gossip Protocol ", dir=both, color="#2563eb", penwidth=1.5];
+        Node2 -> Node3 [label=" Gossip Protocol ", dir=both, color="#2563eb", penwidth=1.5];
+        Node3 -> Node4 [label=" Gossip Protocol ", dir=both, color="#2563eb", penwidth=1.5];
+        Node4 -> Node1 [label=" Gossip Protocol ", dir=both, color="#2563eb", penwidth=1.5];
+    }
+
+    subgraph cluster_write_path {
+        label = "Ruta de Escritura Interna por Cada Nodo (LSM-Tree)";
+        style=filled;
+        color="#cbd5e1";
+        fillcolor="#f1f5f9";
+        
+        Client [shape=ellipse, style=filled, fillcolor="#059669", fontcolor=white, label="Cliente / Driver CQL\n(Puerto 9042)"];
+        Coordinator [shape=box, style="filled,rounded", fillcolor="#0284c7", fontcolor=white, label="Nodo Coordinador"];
+        CommitLog [shape=cylinder, style=filled, fillcolor="#dc2626", fontcolor=white, label="CommitLog\n(Escritura Secuencial en Disco)"];
+        Memtable [shape=box, style="filled,rounded", fillcolor="#ea580c", fontcolor=white, label="Memtable\n(Buffer en Memoria RAM)"];
+        SSTables [shape=cylinder, style=filled, fillcolor="#475569", fontcolor=white, label="SSTables en Disco\n(Archivos Inmutables Ordenados)"];
+
+        Client -> Coordinator [label="Write Request", color="#059669", penwidth=2];
+        Coordinator -> CommitLog [label=" 1. Persistir log ", color="#dc2626", penwidth=1.5];
+        Coordinator -> Memtable [label=" 2. Guardar en RAM ", color="#ea580c", penwidth=1.5];
+        Memtable -> SSTables [label=" 3. Flush periódico ", style=dashed, color="#475569", penwidth=1.5];
+    }
+}
