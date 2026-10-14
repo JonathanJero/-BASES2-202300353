@@ -1,0 +1,81 @@
+platillo_id,nombre,precio,descripcion
+1,Tacos al Pastor,163.74,Delicioso tacos al pastor preparado con ingredientes frescos
+2,Sushi Variado,494.88,Delicioso sushi variado preparado con ingredientes frescos
+3,Pasta Carbonara,285.35,Delicioso pasta carbonara preparado con ingredientes frescos
+4,Paella Valenciana,262.14,Delicioso paella valenciana preparado con ingredientes frescos
+5,Pad Thai,471.12,Delicioso pad thai preparado con ingredientes frescos
+6,Ceviche Mixto,430.0,Delicioso ceviche mixto preparado con ingredientes frescos
+7,Ramen Tonkotsu,249.97,Delicioso ramen tonkotsu preparado con ingredientes frescos
+8,Pizza Margherita,120.62,Delicioso pizza margherita preparado con ingredientes frescos
+9,Curry de Pollo,82.94,Delicioso curry de pollo preparado con ingredientes frescos
+10,Hamburguesa Clásica,106.37,Delicioso hamburguesa clásica preparado con ingredientes frescos
+11,Bibimbap,245.69,Delicioso bibimbap preparado con ingredientes frescos
+12,Falafel,150.91,Delicioso falafel preparado con ingredientes frescos
+13,Churrasco Brasileño,117.51,Delicioso churrasco brasileño preparado con ingredientes frescos
+14,Pho Bo,376.21,Delicioso pho bo preparado con ingredientes frescos
+15,Gyros de Cordero,401.66,Delicioso gyros de cordero preparado con ingredientes frescos
+16,Kebab Mixto,296.86,Delicioso kebab mixto preparado con ingredientes frescos
+17,Bandeja Paisa,385.92,Delicioso bandeja paisa preparado con ingredientes frescos
+18,Pepián de Pollo,112.48,Delicioso pepián de pollo preparado con ingredientes frescos
+19,Risotto de Hongos,432.39,Delicioso risotto de hongos preparado con ingredientes frescos
+20,Croissant de Almendra,451.61,Delicioso croissant de almendra preparado con ingredientes frescos
+21,Enchiladas Verdes,418.69,Delicioso enchiladas verdes preparado con ingredientes frescos
+22,Sashimi Premium,272.18,Delicioso sashimi premium preparado con ingredientes frescos
+23,Lasagna Bolognesa,70.77,Delicioso lasagna bolognesa preparado con ingredientes frescos
+24,Tortilla Española,344.55,Delicioso tortilla española preparado con ingredientes frescos
+25,Tom Yum Kung,116.85,Delicioso tom yum kung preparado con ingredientes frescos
+26,Lomo Saltado,96.09,Delicioso lomo saltado preparado con ingredientes frescos
+27,Udon Tempura,182.09,Delicioso udon tempura preparado con ingredientes frescos
+28,Calzone Relleno,146.58,Delicioso calzone relleno preparado con ingredientes frescos
+29,Tikka Masala,152.57,Delicioso tikka masala preparado con ingredientes frescos
+30,Hot Dog Gourmet,140.69,Delicioso hot dog gourmet preparado con ingredientes frescos
+31,Kimchi Jjigae,384.27,Delicioso kimchi jjigae preparado con ingredientes frescos
+32,Hummus con Pita,478.4,Delicioso hummus con pita preparado con ingredientes frescos
+33,Feijoada,171.91,Delicioso feijoada preparado con ingredientes frescos
+34,Banh Mi,369.75,Delicioso banh mi preparado con ingredientes frescos
+35,Moussaka,35.37,Delicioso moussaka preparado con ingredientes frescos
+36,Baklava,337.23,Delicioso baklava preparado con ingredientes frescos
+37,Arepa Rellena,355.6,Delicioso arepa rellena preparado con ingredientes frescos
+38,Tamales Colorados,59.2,Delicioso tamales colorados preparado con ingredientes frescos
+39,Gnocchi al Pesto,85.57,Delicioso gnocchi al pesto preparado con ingredientes frescos
+40,Crème Brûlée,174.2,Delicioso crème brûlée preparado con ingredientes frescos
+41,Quesadillas de Flor,220.55,Delicioso quesadillas de flor preparado con ingredientes frescos
+42,Nigiri de Salmón,266.18,Delicioso nigiri de salmón preparado con ingredientes frescos
+43,Ravioli de Ricotta,450.71,Delicioso ravioli de ricotta preparado con ingredientes frescos
+44,Gazpacho Andaluz,360.67,Delicioso gazpacho andaluz preparado con ingredientes frescos
+45,Satay de Pollo,176.16,Delicioso satay de pollo preparado con ingredientes frescos
+46,Ají de Gallina,85.19,Delicioso ají de gallina preparado con ingredientes frescos
+47,Yakitori,460.58,Delicioso yakitori preparado con ingredientes frescos
+48,Focaccia,168.67,Delicioso focaccia preparado con ingredientes frescos
+49,Biryani,318.87,Delicioso biryani preparado con ingredientes frescos
+50,Mac and Cheese,132.99,Delicioso mac and cheese preparado con ingredientes frescos
+51,Japchae,92.78,Delicioso japchae preparado con ingredientes frescos
+52,Tabbouleh,102.0,Delicioso tabbouleh preparado con ingredientes frescos
+53,Moqueca de Camarón,381.44,Delicioso moqueca de camarón preparado con ingredientes frescos
+54,Bún Chả,314.7,Delicioso bún chả preparado con ingredientes frescos
+55,Spanakopita,225.45,Delicioso spanakopita preparado con ingredientes frescos
+56,Lahmacun,288.14,Delicioso lahmacun preparado con ingredientes frescos
+57,Patacones,251.29,Delicioso patacones preparado con ingredientes frescos
+58,Chuchitos,282.63,Delicioso chuchitos preparado con ingredientes frescos
+59,Tiramisu,342.12,Delicioso tiramisu preparado con ingredientes frescos
+60,Escargots,132.65,Delicioso escargots preparado con ingredientes frescos
+61,Mole Poblano,146.31,Delicioso mole poblano preparado con ingredientes frescos
+62,Tempura Variado,384.73,Delicioso tempura variado preparado con ingredientes frescos
+63,Panna Cotta,440.37,Delicioso panna cotta preparado con ingredientes frescos
+64,Croquetas de Jamón,68.48,Delicioso croquetas de jamón preparado con ingredientes frescos
+65,Mango Sticky Rice,239.97,Delicioso mango sticky rice preparado con ingredientes frescos
+66,Causa Limeña,360.77,Delicioso causa limeña preparado con ingredientes frescos
+67,Okonomiyaki,66.71,Delicioso okonomiyaki preparado con ingredientes frescos
+68,Bruschetta,295.16,Delicioso bruschetta preparado con ingredientes frescos
+69,Butter Chicken,59.03,Delicioso butter chicken preparado con ingredientes frescos
+70,Pulled Pork Sandwich,287.4,Delicioso pulled pork sandwich preparado con ingredientes frescos
+71,Tteokbokki,267.58,Delicioso tteokbokki preparado con ingredientes frescos
+72,Fattoush,299.17,Delicioso fattoush preparado con ingredientes frescos
+73,Açaí Bowl,100.43,Delicioso açaí bowl preparado con ingredientes frescos
+74,Gỏi Cuốn,184.22,Delicioso gỏi cuốn preparado con ingredientes frescos
+75,Souvlaki,274.56,Delicioso souvlaki preparado con ingredientes frescos
+76,Pide Turco,84.63,Delicioso pide turco preparado con ingredientes frescos
+77,Sancocho,126.54,Delicioso sancocho preparado con ingredientes frescos
+78,Rellenitos de Plátano,304.08,Delicioso rellenitos de plátano preparado con ingredientes frescos
+79,Canelones de Espinaca,72.74,Delicioso canelones de espinaca preparado con ingredientes frescos
+80,Profiteroles,269.88,Delicioso profiteroles preparado con ingredientes frescos

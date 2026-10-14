@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo Conceptual de Grafos — Neo4j</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    .canvas-container {
+      background: #ffffff;
+      width: 1700px;
+      height: 1100px;
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+    header {
+      padding: 32px 48px 16px 48px;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title-area h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .title-area p {
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+    .badge-bar {
+      display: flex;
+      gap: 12px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .badge-nodes { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    .badge-rels { background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8; }
+    .badge-engine { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+
+    svg.graph-svg {
+      width: 100%;
+      height: 980px;
+    }
+
+    /* Estilos de Nodos */
+    .node-circle {
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+      transition: all 0.2s;
+    }
+    .node-title {
+      font-weight: 800;
+      font-size: 16px;
+      fill: #ffffff;
+      text-anchor: middle;
+      letter-spacing: 0.5px;
+    }
+    .node-label {
+      font-size: 11px;
+      font-weight: 600;
+      fill: rgba(255, 255, 255, 0.9);
+      text-anchor: middle;
+    }
+
+    /* Cards de Propiedades */
+    .props-card {
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+    }
+    .props-bg {
+      fill: #f8fafc;
+      stroke: #cbd5e1;
+      stroke-width: 1.5;
+      rx: 10;
+    }
+    .prop-pk {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      fill: #0f172a;
+    }
+    .prop-item {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #475569;
+    }
+
+    /* Relaciones */
+    .rel-line {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .rel-badge-rect {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      rx: 8;
+      stroke-width: 1.5;
+    }
+    .rel-text {
+      font-size: 11px;
+      font-weight: 800;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      letter-spacing: 0.5px;
+    }
+    .rel-props-text {
+      font-size: 10px;
+      font-weight: 600;
+      text-anchor: middle;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    /* Footer / Leyenda */
+    footer.legend-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #f1f5f9;
+      border-top: 1px solid #e2e8f0;
+      padding: 12px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #334155;
+    }
+    .legend-items {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+    }
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="canvas-container">
+  <header>
+    <div class="title-area">
+      <h1>Modelo Conceptual de Grafos — Sistema de Recomendación de Restaurantes</h1>
+      <p>Diseño arquitectónico formal para Neo4j 5.x • Proyecto 2 — Bases de Datos 2 (Carnet 202300353)</p>
+    </div>
+    <div class="badge-bar">
+      <div class="badge badge-nodes">● 5 Entidades (Nodos)</div>
+      <div class="badge badge-rels">● 8 Tipos de Relaciones</div>
+      <div class="badge badge-engine">⚡ Motor: Neo4j Cypher</div>
+    </div>
+  </header>
+
+  <svg class="graph-svg" viewBox="0 0 1700 980">
+    <defs>
+      <!-- Marcadores de Flechas con Punta Fina y Precisa -->
+      <marker id="arr-blue" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#2563eb"/>
+      </marker>
+      <marker id="arr-rose" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#e11d48"/>
+      </marker>
+      <marker id="arr-amber" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#d97706"/>
+      </marker>
+      <marker id="arr-purple" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#9333ea"/>
+      </marker>
+      <marker id="arr-orange" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#ea580c"/>
+      </marker>
+      <marker id="arr-emerald" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#059669"/>
+      </marker>
+      <marker id="arr-cyan" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#0284c7"/>
+      </marker>
+      <marker id="arr-violet" viewBox="0 0 12 12" refX="28" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 1 2 L 11 6 L 1 10 z" fill="#7c3aed"/>
+      </marker>
+    </defs>
+
+    <!-- ==================== ARISTAS / RELACIONES ==================== -->
+
+    <!-- 1. ES_AMIGO_DE: Usuario -> Usuario (Bucle reflexivo amplio) -->
+    <path class="rel-line" d="M 230 230 C 120 120, 100 380, 220 300" stroke="#2563eb" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arr-blue)"/>
+    <g transform="translate(100, 245)">
+      <rect class="rel-badge-rect" x="-5" y="-12" width="125" height="24" fill="#eff6ff" stroke="#2563eb"/>
+      <text class="rel-text" x="57" y="1" fill="#1e40af">ES_AMIGO_DE</text>
+      <text class="rel-props-text" x="57" y="26" fill="#3b82f6">{fecha_amistad}</text>
+    </g>
+
+    <!-- 2. VISITÓ: Usuario -> Restaurante (Curva superior) -->
+    <path class="rel-line" d="M 360 230 C 540 120, 720 120, 900 230" stroke="#e11d48" stroke-width="3" marker-end="url(#arr-rose)"/>
+    <g transform="translate(630, 140)">
+      <rect class="rel-badge-rect" x="-50" y="-13" width="100" height="26" fill="#fff1f2" stroke="#e11d48"/>
+      <text class="rel-text" x="0" y="1" fill="#9f1239">VISITÓ</text>
+      <text class="rel-props-text" x="0" y="27" fill="#be123c">{fecha_visita, consumo, con_reserva}</text>
+    </g>
+
+    <!-- 3. CALIFICÓ: Usuario -> Restaurante (Curva intermedia) -->
+    <path class="rel-line" d="M 370 270 L 890 270" stroke="#d97706" stroke-width="3" marker-end="url(#arr-amber)"/>
+    <g transform="translate(630, 270)">
+      <rect class="rel-badge-rect" x="-55" y="-13" width="110" height="26" fill="#fffbeb" stroke="#d97706"/>
+      <text class="rel-text" x="0" y="1" fill="#92400e">CALIFICÓ</text>
+      <text class="rel-props-text" x="0" y="27" fill="#b45309">{puntuacion (1-5), fecha, comentario}</text>
+    </g>
+
+    <!-- 4. LE_GUSTA: Usuario -> TipoCocina (Curva larga inferior) -->
+    <path class="rel-line" d="M 330 330 C 440 500, 1050 560, 1370 420" stroke="#9333ea" stroke-width="3" marker-end="url(#arr-purple)"/>
+    <g transform="translate(850, 480)">
+      <rect class="rel-badge-rect" x="-55" y="-13" width="110" height="26" fill="#faf5ff" stroke="#9333ea"/>
+      <text class="rel-text" x="0" y="1" fill="#6b21a8">LE_GUSTA</text>
+      <text class="rel-props-text" x="0" y="27" fill="#7e22ce">{nivel_interes (1-5)}</text>
+    </g>
+
+    <!-- 5. TRABAJA_EN: Chef -> Restaurante (Diagonal ascendente) -->
+    <path class="rel-line" d="M 530 690 C 670 540, 780 430, 920 335" stroke="#ea580c" stroke-width="3" marker-end="url(#arr-orange)"/>
+    <g transform="translate(730, 490)">
+      <rect class="rel-badge-rect" x="-60" y="-13" width="120" height="26" fill="#fff7ed" stroke="#ea580c"/>
+      <text class="rel-text" x="0" y="1" fill="#9a3412">TRABAJA_EN</text>
+      <text class="rel-props-text" x="0" y="27" fill="#c2410c">{fecha_inicio, puesto}</text>
+    </g>
+
+    <!-- 6. PREPARA: Chef -> Platillo (Línea horizontal inferior) -->
+    <path class="rel-line" d="M 550 740 L 910 740" stroke="#059669" stroke-width="3" marker-end="url(#arr-emerald)"/>
+    <g transform="translate(730, 740)">
+      <rect class="rel-badge-rect" x="-50" y="-13" width="100" height="26" fill="#f0fdf4" stroke="#059669"/>
+      <text class="rel-text" x="0" y="1" fill="#065f46">PREPARA</text>
+      <text class="rel-props-text" x="0" y="27" fill="#047857">{estilo, especialidad}</text>
+    </g>
+
+    <!-- 7. OFRECE: Restaurante -> Platillo (Vertical descendente) -->
+    <path class="rel-line" d="M 980 345 L 980 665" stroke="#0284c7" stroke-width="3" marker-end="url(#arr-cyan)"/>
+    <g transform="translate(980, 500)">
+      <rect class="rel-badge-rect" x="-45" y="-13" width="90" height="26" fill="#f0f9ff" stroke="#0284c7"/>
+      <text class="rel-text" x="0" y="1" fill="#075985">OFRECE</text>
+      <text class="rel-props-text" x="0" y="27" fill="#0369a1">{precio, disponible}</text>
+    </g>
+
+    <!-- 8. PERTENECE_A: Restaurante -> TipoCocina (Diagonal derecha) -->
+    <path class="rel-line" d="M 1060 270 L 1340 350" stroke="#7c3aed" stroke-width="3" marker-end="url(#arr-violet)"/>
+    <g transform="translate(1210, 290)">
+      <rect class="rel-badge-rect" x="-60" y="-13" width="120" height="26" fill="#f5f3ff" stroke="#7c3aed"/>
+      <text class="rel-text" x="0" y="1" fill="#5b21b6">PERTENECE_A</text>
+    </g>
+
+    <!-- ==================== NODOS CON TARJETAS DE PROPIEDADES ==================== -->
+
+    <!-- NODO 1: USUARIO -->
+    <g transform="translate(300, 270)">
+      <circle class="node-circle" cx="0" cy="0" r="70" fill="#3b82f6" stroke="#1d4ed8" stroke-width="4"/>
+      <text class="node-title" x="0" y="-8">USUARIO</text>
+      <text class="node-label" x="0" y="16">:Usuario</text>
+    </g>
+    <!-- Card Usuario -->
+    <g class="props-card" transform="translate(200, 360)">
+      <rect class="props-bg" width="200" height="110"/>
+      <text class="prop-pk" x="14" y="24">🔑 user_id: Integer (PK)</text>
+      <text class="prop-item" x="14" y="44">• nombre: String</text>
+      <text class="prop-item" x="14" y="64">• email: String (UQ)</text>
+      <text class="prop-item" x="14" y="84">• edad: Integer</text>
+      <text class="prop-item" x="14" y="102">• pais: String</text>
+    </g>
+
+    <!-- NODO 2: RESTAURANTE -->
+    <g transform="translate(980, 270)">
+      <circle class="node-circle" cx="0" cy="0" r="75" fill="#ef4444" stroke="#b91c1c" stroke-width="4"/>
+      <text class="node-title" x="0" y="-8">RESTAURANTE</text>
+      <text class="node-label" x="0" y="16">:Restaurante</text>
+    </g>
+    <!-- Card Restaurante -->
+    <g class="props-card" transform="translate(1080, 140)">
+      <rect class="props-bg" width="210" height="110"/>
+      <text class="prop-pk" x="14" y="24">🔑 rest_id: Integer (PK)</text>
+      <text class="prop-item" x="14" y="44">• nombre: String</text>
+      <text class="prop-item" x="14" y="64">• anio_apertura: Integer</text>
+      <text class="prop-item" x="14" y="84">• rango_precios: Str ($,$$...)</text>
+      <text class="prop-item" x="14" y="102">• descripcion: String</text>
+    </g>
+
+    <!-- NODO 3: CHEF -->
+    <g transform="translate(470, 740)">
+      <circle class="node-circle" cx="0" cy="0" r="70" fill="#f97316" stroke="#c2410c" stroke-width="4"/>
+      <text class="node-title" x="0" y="-8">CHEF</text>
+      <text class="node-label" x="0" y="16">:Chef</text>
+    </g>
+    <!-- Card Chef -->
+    <g class="props-card" transform="translate(240, 720)">
+      <rect class="props-bg" width="190" height="92"/>
+      <text class="prop-pk" x="14" y="24">🔑 chef_id: Integer (PK)</text>
+      <text class="prop-item" x="14" y="44">• nombre: String</text>
+      <text class="prop-item" x="14" y="64">• fecha_nac: Date</text>
+      <text class="prop-item" x="14" y="84">• nacionalidad: String</text>
+    </g>
+
+    <!-- NODO 4: PLATILLO -->
+    <g transform="translate(980, 740)">
+      <circle class="node-circle" cx="0" cy="0" r="70" fill="#10b981" stroke="#047857" stroke-width="4"/>
+      <text class="node-title" x="0" y="-8">PLATILLO</text>
+      <text class="node-label" x="0" y="16">:Platillo</text>
+    </g>
+    <!-- Card Platillo -->
+    <g class="props-card" transform="translate(1080, 720)">
+      <rect class="props-bg" width="190" height="92"/>
+      <text class="prop-pk" x="14" y="24">🔑 platillo_id: Int (PK)</text>
+      <text class="prop-item" x="14" y="44">• nombre: String</text>
+      <text class="prop-item" x="14" y="64">• precio: Float</text>
+      <text class="prop-item" x="14" y="84">• descripcion: String</text>
+    </g>
+
+    <!-- NODO 5: TIPOC OCINA -->
+    <g transform="translate(1420, 380)">
+      <circle class="node-circle" cx="0" cy="0" r="70" fill="#a855f7" stroke="#7e22ce" stroke-width="4"/>
+      <text class="node-title" x="0" y="-8">TIPO COCINA</text>
+      <text class="node-label" x="0" y="16">:TipoCocina</text>
+    </g>
+    <!-- Card TipoCocina -->
+    <g class="props-card" transform="translate(1330, 470)">
+      <rect class="props-bg" width="190" height="74"/>
+      <text class="prop-pk" x="14" y="24">🔑 tipo_id: Integer (PK)</text>
+      <text class="prop-item" x="14" y="44">• nombre_tipo: Str (UQ)</text>
+      <text class="prop-item" x="14" y="64">• descripcion: String</text>
+    </g>
+
+  </svg>
+
+  <footer class="legend-bar">
+    <div class="legend-items">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6;"></div>Usuario (600)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444;"></div>Restaurante (250)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f97316;"></div>Chef (120)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div>Platillo (80)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a855f7;"></div>TipoCocina (20)</div>
+    </div>
+    <div style="font-weight:700; color:#0f172a;">
+      Total: 5 Labels de Nodos • 8 Relaciones Tipadas • >16,000 Aristas
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

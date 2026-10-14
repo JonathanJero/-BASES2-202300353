@@ -1,0 +1,3584 @@
+user_id,rest_id,puntuacion,fecha,comentario
+1,249,5,2024-11-18,Buena ubicación
+1,24,4,2026-03-02,Excelente comida y servicio
+1,80,3,2023-04-01,Precios razonables
+1,203,3,2021-11-26,Precios razonables
+2,220,3,2025-03-13,Excelente comida y servicio
+2,53,2,2024-11-12,Comida deliciosa
+2,112,4,2025-06-03,Lugar muy acogedor
+2,24,5,2025-03-22,Buena ubicación
+2,186,5,2022-01-28,Porciones generosas
+3,82,5,2024-03-05,Sabores auténticos
+3,196,4,2026-12-28,Buen ambiente
+3,240,3,2021-04-21,La comida podría mejorar
+3,35,5,2022-12-31,La comida podría mejorar
+3,103,4,2024-10-24,Tardaron mucho en servir
+4,157,5,2023-08-01,Servicio un poco lento
+4,154,4,2021-07-01,Lugar muy acogedor
+4,193,3,2022-01-16,Repetiría sin dudarlo
+4,102,4,2023-01-07,Sabores auténticos
+5,73,2,2023-12-06,Sabores auténticos
+5,80,1,2025-06-20,Tardaron mucho en servir
+5,100,5,2026-03-20,Buen ambiente
+5,173,3,2022-02-20,Porciones generosas
+5,211,5,2021-02-20,Precios razonables
+6,33,3,2025-07-04,Sabores auténticos
+6,148,5,2024-05-25,Sabores auténticos
+6,130,3,2022-04-20,Una experiencia gastronómica única
+6,99,5,2026-01-19,Tardaron mucho en servir
+6,176,4,2026-04-24,Repetiría sin dudarlo
+6,117,5,2025-02-03,Comida deliciosa
+7,109,4,2022-09-08,Excelente comida y servicio
+7,137,3,2023-11-23,Lugar muy acogedor
+7,195,4,2026-02-07,Sabores auténticos
+7,99,1,2024-02-28,Muy buena experiencia
+7,223,2,2026-06-29,Buena ubicación
+8,13,4,2024-04-28,Excelente comida y servicio
+8,228,4,2023-01-03,No cumplió mis expectativas
+8,154,4,2021-03-13,Buena ubicación
+8,176,3,2021-05-26,Una experiencia gastronómica única
+8,95,2,2021-05-30,Ingredientes frescos
+8,65,3,2023-10-16,Precios razonables
+9,137,2,2026-07-15,Sabores auténticos
+9,25,5,2024-11-15,Buena ubicación
+9,33,5,2023-09-27,Tardaron mucho en servir
+9,187,4,2021-06-16,Buen ambiente
+10,96,5,2022-02-19,Porciones generosas
+10,10,5,2021-11-19,Repetiría sin dudarlo
+10,38,5,2024-05-21,Sabores auténticos
+10,156,4,2023-01-24,Excelente relación calidad-precio
+10,186,5,2021-11-21,Sabores auténticos
+10,164,5,2023-02-24,Nada especial
+11,78,2,2021-07-20,Ambiente ruidoso
+11,158,4,2023-06-01,Sabores auténticos
+11,132,3,2023-01-31,Excelente relación calidad-precio
+11,139,4,2021-07-07,Una experiencia gastronómica única
+11,219,4,2023-01-13,No cumplió mis expectativas
+11,204,3,2025-07-26,Lugar muy acogedor
+12,201,3,2026-03-10,Una experiencia gastronómica única
+12,107,5,2024-07-27,Comida deliciosa
+12,169,3,2021-03-16,Repetiría sin dudarlo
+12,34,4,2024-03-24,Una experiencia gastronómica única
+13,151,4,2021-02-21,Repetiría sin dudarlo
+13,108,3,2024-11-19,Buena ubicación
+13,163,3,2026-08-06,Lugar muy acogedor
+13,153,4,2022-11-28,Porciones generosas
+13,85,3,2021-05-13,Nada especial
+13,139,5,2026-06-16,Ingredientes frescos
+13,100,5,2021-12-07,Lugar muy acogedor
+14,95,1,2022-11-14,Una experiencia gastronómica única
+14,78,2,2025-11-03,Sabores auténticos
+14,75,4,2021-04-06,No cumplió mis expectativas
+14,193,4,2026-07-04,La comida podría mejorar
+14,81,4,2022-06-24,Porciones generosas
+14,116,4,2022-05-21,Comida deliciosa
+14,173,4,2023-05-16,Comida deliciosa
+14,120,4,2023-01-02,Precios razonables
+15,141,4,2024-08-01,Ambiente ruidoso
+15,105,4,2024-07-25,Tardaron mucho en servir
+15,91,4,2025-05-26,La comida podría mejorar
+15,193,5,2026-07-20,Buena ubicación
+15,56,2,2026-01-15,Precios razonables
+15,108,5,2022-12-29,Porciones generosas
+15,231,3,2026-12-22,Repetiría sin dudarlo
+16,168,4,2025-09-10,Sabores auténticos
+16,45,4,2021-04-29,Una experiencia gastronómica única
+16,175,3,2026-08-24,Buen ambiente
+16,233,4,2025-08-02,Excelente comida y servicio
+16,26,4,2023-10-21,Precios razonables
+16,99,4,2026-04-17,Buen ambiente
+16,149,5,2021-04-04,Una experiencia gastronómica única
+17,142,4,2023-09-08,Precios razonables
+17,131,4,2023-03-30,Repetiría sin dudarlo
+17,222,2,2021-09-23,Excelente comida y servicio
+17,50,4,2026-03-04,Buena ubicación
+17,218,3,2025-12-23,La comida podría mejorar
+17,234,5,2026-03-05,Tardaron mucho en servir
+17,42,5,2024-09-18,Precios razonables
+18,119,5,2025-07-23,Tardaron mucho en servir
+18,185,5,2025-04-28,Buen ambiente
+18,247,5,2023-12-02,Ingredientes frescos
+18,18,4,2026-12-28,Excelente comida y servicio
+18,2,4,2021-09-02,No cumplió mis expectativas
+19,213,5,2026-09-27,Buena ubicación
+19,211,4,2022-05-24,Comida deliciosa
+19,186,2,2023-12-12,Nada especial
+19,197,5,2022-04-03,Precios razonables
+19,11,4,2024-10-23,Servicio un poco lento
+19,94,5,2026-05-31,Lugar muy acogedor
+19,103,3,2024-09-13,Buen ambiente
+20,231,3,2025-12-27,Repetiría sin dudarlo
+20,182,5,2023-11-23,Nada especial
+20,126,3,2021-05-27,Servicio un poco lento
+20,193,2,2024-03-27,Excelente comida y servicio
+20,63,2,2025-02-28,Nada especial
+20,194,4,2024-04-07,No cumplió mis expectativas
+20,67,4,2022-10-11,Nada especial
+21,122,5,2022-06-11,Servicio un poco lento
+21,183,4,2025-04-23,Excelente relación calidad-precio
+21,113,4,2021-04-25,Lugar muy acogedor
+21,173,4,2022-08-31,Nada especial
+21,76,1,2025-01-31,Tardaron mucho en servir
+21,40,5,2026-10-18,Porciones generosas
+22,159,4,2026-08-15,Repetiría sin dudarlo
+22,231,4,2025-03-29,Atención muy amable
+22,44,5,2026-11-22,Atención muy amable
+22,249,3,2025-04-05,Excelente comida y servicio
+22,89,4,2021-09-23,Repetiría sin dudarlo
+22,165,3,2023-04-26,La comida podría mejorar
+22,40,4,2022-05-05,Lugar muy acogedor
+23,128,1,2026-11-17,La comida podría mejorar
+23,118,5,2025-01-29,Muy buena experiencia
+23,146,4,2022-02-09,Repetiría sin dudarlo
+23,234,4,2024-01-17,Ingredientes frescos
+23,164,5,2021-11-22,Muy buena experiencia
+23,233,4,2026-11-12,La comida podría mejorar
+24,66,4,2023-10-01,La comida podría mejorar
+24,205,4,2026-02-12,Precios razonables
+24,190,1,2023-12-25,Ingredientes frescos
+24,47,4,2023-02-18,Buen ambiente
+24,177,5,2022-06-27,Tardaron mucho en servir
+25,16,5,2026-03-17,Comida deliciosa
+25,54,2,2021-07-29,Repetiría sin dudarlo
+25,59,3,2021-10-27,Lugar muy acogedor
+25,63,2,2025-12-16,Buen ambiente
+25,150,4,2022-02-14,Ingredientes frescos
+25,195,4,2026-06-19,No cumplió mis expectativas
+26,3,4,2023-03-09,Nada especial
+26,149,5,2026-02-12,Excelente comida y servicio
+26,111,3,2025-07-26,Una experiencia gastronómica única
+26,221,3,2022-12-25,Repetiría sin dudarlo
+26,232,4,2026-10-08,No cumplió mis expectativas
+26,29,5,2024-05-12,Excelente relación calidad-precio
+26,185,5,2023-10-17,Repetiría sin dudarlo
+26,227,3,2026-08-23,No cumplió mis expectativas
+27,29,5,2026-09-19,Atención muy amable
+27,194,4,2023-01-03,Buen ambiente
+27,243,5,2024-06-01,Comida deliciosa
+27,47,5,2025-12-21,Repetiría sin dudarlo
+27,125,4,2023-01-19,Lugar muy acogedor
+27,2,5,2023-08-08,Lugar muy acogedor
+27,82,3,2024-06-04,Repetiría sin dudarlo
+28,121,4,2024-08-19,Precios razonables
+28,27,4,2025-06-11,Precios razonables
+28,176,5,2022-10-06,Repetiría sin dudarlo
+28,77,4,2026-04-25,Una experiencia gastronómica única
+28,238,5,2024-01-09,La comida podría mejorar
+28,157,5,2026-04-18,No cumplió mis expectativas
+28,54,2,2024-06-08,Repetiría sin dudarlo
+28,147,5,2024-07-15,Buena ubicación
+29,109,5,2025-07-14,Muy buena experiencia
+29,145,5,2024-12-19,Servicio un poco lento
+29,101,5,2024-01-29,Excelente comida y servicio
+29,196,5,2023-04-09,Lugar muy acogedor
+29,107,4,2023-11-15,No cumplió mis expectativas
+29,2,5,2021-04-07,Repetiría sin dudarlo
+30,203,5,2026-08-23,Buena ubicación
+30,98,5,2022-03-14,Buen ambiente
+30,84,3,2024-08-26,Atención muy amable
+30,143,5,2026-04-09,Muy buena experiencia
+30,144,5,2025-05-17,Atención muy amable
+30,190,3,2025-03-17,Muy buena experiencia
+30,52,1,2024-11-04,Excelente relación calidad-precio
+31,95,5,2024-08-22,Sabores auténticos
+31,113,5,2022-09-09,Nada especial
+31,237,3,2023-03-31,Ingredientes frescos
+31,73,1,2023-10-02,Repetiría sin dudarlo
+31,29,5,2023-12-04,Ingredientes frescos
+31,121,4,2024-04-08,Excelente comida y servicio
+31,35,4,2021-10-06,Repetiría sin dudarlo
+31,226,5,2025-01-19,Buena ubicación
+32,48,4,2023-03-27,Excelente relación calidad-precio
+32,83,3,2021-04-05,Servicio un poco lento
+32,120,2,2025-08-10,Sabores auténticos
+32,59,2,2026-06-16,Muy buena experiencia
+32,118,5,2021-09-04,Tardaron mucho en servir
+33,5,5,2024-09-01,Ingredientes frescos
+33,145,4,2024-09-29,Buen ambiente
+33,112,5,2022-01-13,Ingredientes frescos
+33,9,5,2026-12-19,Precios razonables
+33,246,5,2021-12-26,Nada especial
+33,130,5,2023-02-21,Buen ambiente
+34,210,3,2024-09-15,Buen ambiente
+34,71,1,2024-10-23,Buena ubicación
+34,120,4,2025-11-07,Excelente comida y servicio
+34,116,4,2024-04-18,Excelente comida y servicio
+34,228,4,2025-05-17,Excelente comida y servicio
+34,226,1,2024-08-13,Sabores auténticos
+34,190,3,2023-07-02,Nada especial
+35,137,5,2024-12-23,Nada especial
+35,118,3,2022-08-31,Lugar muy acogedor
+35,168,3,2022-02-18,Excelente comida y servicio
+35,171,4,2021-06-11,Servicio un poco lento
+35,52,2,2021-10-11,Repetiría sin dudarlo
+35,198,5,2023-08-01,Lugar muy acogedor
+36,78,4,2023-06-09,Ambiente ruidoso
+36,42,3,2025-12-06,Comida deliciosa
+36,109,5,2025-03-17,Excelente comida y servicio
+36,70,2,2023-05-05,Porciones generosas
+36,60,1,2025-12-02,Porciones generosas
+37,53,1,2022-12-19,Tardaron mucho en servir
+37,198,5,2026-10-17,Comida deliciosa
+37,98,3,2023-05-09,Comida deliciosa
+37,152,5,2025-01-07,Repetiría sin dudarlo
+37,209,4,2023-05-12,Buen ambiente
+38,93,1,2025-09-17,Porciones generosas
+38,123,5,2022-02-14,Ambiente ruidoso
+38,66,2,2024-06-23,Buen ambiente
+38,131,4,2024-05-16,La comida podría mejorar
+38,29,5,2021-12-12,Porciones generosas
+38,242,5,2021-03-06,Excelente relación calidad-precio
+38,117,5,2024-08-17,Muy buena experiencia
+38,5,4,2023-10-17,Precios razonables
+39,3,3,2023-05-10,No cumplió mis expectativas
+39,33,4,2025-08-27,Precios razonables
+39,133,4,2022-12-17,Tardaron mucho en servir
+39,40,5,2023-01-14,Ambiente ruidoso
+39,36,5,2022-03-25,Precios razonables
+39,178,1,2023-04-16,No cumplió mis expectativas
+39,121,4,2025-03-09,Excelente relación calidad-precio
+39,196,4,2021-04-27,Excelente comida y servicio
+40,8,4,2025-07-28,Muy buena experiencia
+40,228,4,2026-11-22,Precios razonables
+40,121,3,2021-03-03,Ambiente ruidoso
+40,9,5,2022-01-13,Sabores auténticos
+40,189,5,2022-04-06,Atención muy amable
+40,224,4,2025-08-28,Ingredientes frescos
+41,35,4,2023-11-19,Servicio un poco lento
+41,220,3,2025-02-06,Una experiencia gastronómica única
+41,155,4,2022-01-30,Atención muy amable
+41,208,4,2023-03-15,Servicio un poco lento
+41,164,3,2022-06-16,Servicio un poco lento
+41,1,4,2021-12-03,Comida deliciosa
+41,80,3,2024-03-02,Una experiencia gastronómica única
+42,64,3,2024-05-18,Repetiría sin dudarlo
+42,58,3,2026-03-08,Nada especial
+42,65,2,2023-12-29,Servicio un poco lento
+42,48,4,2025-03-16,Servicio un poco lento
+43,189,4,2023-03-22,Precios razonables
+43,240,1,2021-05-20,La comida podría mejorar
+43,218,3,2024-08-14,Excelente comida y servicio
+43,9,5,2026-06-05,Ambiente ruidoso
+43,192,3,2025-07-20,Buena ubicación
+43,232,5,2026-01-31,Una experiencia gastronómica única
+43,205,3,2025-12-07,Comida deliciosa
+43,99,5,2026-10-09,Repetiría sin dudarlo
+44,229,4,2026-02-13,Comida deliciosa
+44,48,5,2024-11-03,Tardaron mucho en servir
+44,66,2,2025-02-05,Sabores auténticos
+44,88,4,2022-06-02,Comida deliciosa
+44,207,3,2026-02-17,Comida deliciosa
+44,224,2,2024-04-26,Servicio un poco lento
+45,79,4,2026-08-30,Precios razonables
+45,116,4,2026-09-24,Lugar muy acogedor
+45,112,2,2023-06-28,Excelente comida y servicio
+45,142,3,2024-12-20,Tardaron mucho en servir
+45,241,4,2022-09-14,Nada especial
+45,22,5,2026-11-21,Muy buena experiencia
+46,93,3,2022-11-10,Una experiencia gastronómica única
+46,139,3,2022-09-15,Ingredientes frescos
+46,59,4,2025-10-03,Lugar muy acogedor
+46,178,3,2025-06-30,No cumplió mis expectativas
+46,243,4,2026-11-08,Sabores auténticos
+46,136,5,2026-04-01,Repetiría sin dudarlo
+46,43,4,2024-05-13,Excelente comida y servicio
+46,96,2,2024-06-30,Lugar muy acogedor
+47,153,4,2022-10-19,La comida podría mejorar
+47,246,4,2022-10-16,Sabores auténticos
+47,18,4,2023-03-04,La comida podría mejorar
+47,16,5,2021-10-16,La comida podría mejorar
+47,194,5,2024-02-06,Servicio un poco lento
+47,106,5,2022-05-21,Nada especial
+47,36,5,2022-09-14,Lugar muy acogedor
+47,37,4,2024-02-03,Repetiría sin dudarlo
+48,164,4,2026-04-14,La comida podría mejorar
+48,31,5,2024-05-08,Comida deliciosa
+48,134,4,2026-02-05,Servicio un poco lento
+48,80,1,2024-10-30,Excelente relación calidad-precio
+49,98,2,2026-03-26,Sabores auténticos
+49,215,4,2026-06-19,No cumplió mis expectativas
+49,229,3,2022-02-27,Buen ambiente
+49,66,4,2025-01-25,La comida podría mejorar
+50,215,2,2024-02-22,Excelente relación calidad-precio
+50,180,5,2026-09-12,Repetiría sin dudarlo
+50,247,4,2023-10-27,Ambiente ruidoso
+50,111,2,2022-02-19,Atención muy amable
+50,108,3,2026-07-21,La comida podría mejorar
+50,15,5,2023-12-25,Comida deliciosa
+50,164,5,2026-06-22,Ingredientes frescos
+51,215,4,2022-03-18,Nada especial
+51,145,5,2022-02-08,Nada especial
+51,97,2,2023-09-05,Ambiente ruidoso
+51,156,4,2025-09-24,Porciones generosas
+51,133,5,2021-06-13,Ambiente ruidoso
+51,223,4,2025-12-09,Buena ubicación
+51,237,4,2026-11-12,Muy buena experiencia
+51,171,5,2025-11-04,Excelente comida y servicio
+52,146,3,2024-04-12,Sabores auténticos
+52,47,5,2026-02-14,Excelente relación calidad-precio
+52,7,4,2024-11-10,Ambiente ruidoso
+52,162,5,2023-10-16,Excelente relación calidad-precio
+52,243,4,2021-07-15,Repetiría sin dudarlo
+53,179,4,2024-08-11,Porciones generosas
+53,163,5,2022-12-06,Atención muy amable
+53,68,4,2024-09-29,Ambiente ruidoso
+53,197,4,2023-07-22,Repetiría sin dudarlo
+53,204,5,2022-02-19,Buen ambiente
+53,42,5,2024-07-05,Una experiencia gastronómica única
+53,54,2,2023-02-02,Porciones generosas
+54,68,2,2025-11-29,Ambiente ruidoso
+54,220,5,2022-11-22,Repetiría sin dudarlo
+54,182,1,2023-02-17,Nada especial
+54,125,3,2026-09-05,Ingredientes frescos
+54,90,3,2022-12-30,Porciones generosas
+55,179,4,2023-12-15,Servicio un poco lento
+55,20,5,2026-12-23,Ambiente ruidoso
+55,51,2,2025-04-27,Comida deliciosa
+55,24,5,2024-04-18,Una experiencia gastronómica única
+55,183,4,2021-12-03,Repetiría sin dudarlo
+55,154,5,2025-12-18,Muy buena experiencia
+55,235,3,2022-09-27,Excelente relación calidad-precio
+55,225,1,2023-07-09,La comida podría mejorar
+56,225,3,2021-02-20,No cumplió mis expectativas
+56,58,2,2021-03-27,Una experiencia gastronómica única
+56,113,4,2025-12-03,Sabores auténticos
+56,166,4,2023-02-27,Sabores auténticos
+56,208,3,2026-10-26,Nada especial
+57,161,5,2025-01-30,Excelente relación calidad-precio
+57,148,4,2025-02-02,La comida podría mejorar
+57,228,3,2025-01-02,Buen ambiente
+57,231,5,2022-07-05,Repetiría sin dudarlo
+57,100,5,2023-10-09,Ingredientes frescos
+57,192,4,2022-01-31,Tardaron mucho en servir
+57,67,3,2024-07-08,Comida deliciosa
+58,59,3,2023-07-07,Buena ubicación
+58,185,3,2021-08-06,Buena ubicación
+58,90,4,2026-07-30,Nada especial
+58,184,4,2022-12-03,Excelente comida y servicio
+58,180,4,2021-08-24,Ambiente ruidoso
+58,166,4,2022-08-29,Buen ambiente
+58,250,4,2021-09-25,Excelente relación calidad-precio
+58,142,4,2021-04-23,Una experiencia gastronómica única
+59,111,4,2024-06-23,Ingredientes frescos
+59,181,4,2024-06-01,Repetiría sin dudarlo
+59,196,3,2026-09-12,Sabores auténticos
+59,242,2,2024-07-12,Excelente comida y servicio
+59,35,5,2021-08-05,Ambiente ruidoso
+59,102,4,2021-10-18,Una experiencia gastronómica única
+59,56,1,2025-08-22,Precios razonables
+60,64,3,2021-05-01,Atención muy amable
+60,154,5,2024-09-21,Buen ambiente
+60,199,2,2025-07-11,Nada especial
+60,195,5,2025-05-06,Sabores auténticos
+60,46,4,2026-04-28,Servicio un poco lento
+61,47,4,2023-10-30,Atención muy amable
+61,25,3,2023-12-04,Porciones generosas
+61,80,2,2024-12-09,Buen ambiente
+61,91,3,2022-01-21,Tardaron mucho en servir
+61,46,4,2021-09-07,Ingredientes frescos
+61,182,2,2025-03-09,Comida deliciosa
+62,1,4,2024-06-08,Excelente comida y servicio
+62,247,5,2025-03-16,Buen ambiente
+62,136,5,2023-02-12,Una experiencia gastronómica única
+62,4,4,2023-06-14,Ambiente ruidoso
+62,2,3,2022-09-26,Una experiencia gastronómica única
+63,147,5,2022-12-29,Tardaron mucho en servir
+63,46,4,2025-12-29,Excelente comida y servicio
+63,229,4,2022-05-08,No cumplió mis expectativas
+63,113,5,2022-03-18,Ambiente ruidoso
+63,181,4,2026-10-25,Precios razonables
+63,217,5,2026-08-01,Lugar muy acogedor
+64,40,5,2025-05-12,Buena ubicación
+64,157,5,2021-09-26,Repetiría sin dudarlo
+64,236,3,2022-08-03,La comida podría mejorar
+64,87,5,2026-07-04,Lugar muy acogedor
+64,241,5,2021-06-20,Ambiente ruidoso
+64,117,2,2026-05-22,Nada especial
+64,238,2,2026-10-31,Buen ambiente
+64,169,4,2024-08-05,Tardaron mucho en servir
+65,148,3,2024-08-05,Servicio un poco lento
+65,180,4,2023-03-23,No cumplió mis expectativas
+65,137,5,2025-10-13,Porciones generosas
+65,134,4,2021-12-04,Atención muy amable
+65,101,1,2022-03-04,Repetiría sin dudarlo
+65,194,4,2025-05-12,No cumplió mis expectativas
+65,140,4,2024-03-22,Muy buena experiencia
+65,165,4,2021-06-20,Lugar muy acogedor
+66,79,4,2022-12-12,Repetiría sin dudarlo
+66,229,5,2026-12-29,Excelente comida y servicio
+66,151,1,2024-05-25,Porciones generosas
+66,192,3,2021-08-03,Sabores auténticos
+67,135,5,2022-02-09,Buena ubicación
+67,218,5,2023-06-27,Repetiría sin dudarlo
+67,46,3,2023-04-14,Atención muy amable
+67,131,3,2021-03-05,Muy buena experiencia
+67,95,5,2023-04-24,Comida deliciosa
+67,175,5,2021-01-20,La comida podría mejorar
+67,179,4,2024-09-16,Precios razonables
+67,12,5,2023-07-25,Ambiente ruidoso
+68,12,4,2025-09-28,Nada especial
+68,40,5,2024-06-22,Lugar muy acogedor
+68,37,5,2024-01-22,Sabores auténticos
+68,154,4,2025-08-31,Sabores auténticos
+68,64,2,2023-02-16,Atención muy amable
+68,160,3,2021-02-12,Porciones generosas
+68,172,1,2026-01-14,Servicio un poco lento
+69,19,5,2021-09-30,Precios razonables
+69,164,4,2022-11-17,Excelente relación calidad-precio
+69,30,5,2025-06-20,No cumplió mis expectativas
+69,41,5,2024-03-12,Nada especial
+69,231,3,2022-05-05,Porciones generosas
+70,244,3,2026-10-24,Muy buena experiencia
+70,23,4,2022-03-24,Comida deliciosa
+70,143,3,2025-05-09,Precios razonables
+70,217,2,2021-10-04,La comida podría mejorar
+70,128,4,2025-02-28,Buena ubicación
+71,114,5,2023-02-14,Lugar muy acogedor
+71,153,5,2021-06-29,Nada especial
+71,197,1,2022-09-18,Repetiría sin dudarlo
+71,11,5,2023-10-25,Precios razonables
+71,170,4,2023-04-02,Muy buena experiencia
+72,98,3,2023-03-08,Repetiría sin dudarlo
+72,40,5,2025-12-03,Excelente comida y servicio
+72,243,5,2021-10-12,La comida podría mejorar
+72,75,3,2024-03-24,Ingredientes frescos
+72,130,3,2024-07-24,Muy buena experiencia
+72,17,4,2021-09-24,Sabores auténticos
+72,58,2,2021-03-13,Una experiencia gastronómica única
+73,186,2,2022-03-02,La comida podría mejorar
+73,239,1,2021-01-15,Nada especial
+73,83,2,2025-05-07,Nada especial
+73,95,2,2023-07-09,Muy buena experiencia
+73,10,5,2021-10-30,Excelente comida y servicio
+74,240,4,2023-09-01,Atención muy amable
+74,147,4,2024-11-14,Buena ubicación
+74,166,4,2022-09-20,Buena ubicación
+74,99,4,2025-01-15,La comida podría mejorar
+74,73,1,2022-12-16,Porciones generosas
+74,176,5,2022-10-19,Ambiente ruidoso
+74,158,5,2025-11-04,No cumplió mis expectativas
+75,11,5,2023-07-19,Porciones generosas
+75,118,2,2024-12-16,Lugar muy acogedor
+75,106,5,2025-09-21,Sabores auténticos
+75,182,4,2026-01-27,Buena ubicación
+75,226,5,2026-03-14,Ambiente ruidoso
+76,84,3,2023-06-08,Lugar muy acogedor
+76,171,4,2025-01-28,Buena ubicación
+76,103,4,2025-07-31,Ambiente ruidoso
+76,35,5,2023-05-25,Porciones generosas
+76,186,2,2022-03-22,Ingredientes frescos
+76,136,4,2024-05-15,Una experiencia gastronómica única
+77,14,5,2026-10-21,Sabores auténticos
+77,52,1,2025-12-20,Excelente comida y servicio
+77,56,3,2025-04-30,Nada especial
+77,87,4,2024-01-25,Nada especial
+77,142,5,2025-07-05,Nada especial
+77,228,5,2023-03-22,Servicio un poco lento
+77,41,4,2026-04-04,La comida podría mejorar
+78,196,5,2026-12-14,Muy buena experiencia
+78,239,4,2021-09-25,Buen ambiente
+78,125,1,2021-08-05,Repetiría sin dudarlo
+78,81,5,2024-07-07,Ambiente ruidoso
+78,157,3,2022-09-09,Lugar muy acogedor
+79,216,4,2026-01-04,Atención muy amable
+79,17,4,2022-12-19,No cumplió mis expectativas
+79,93,3,2022-10-17,Servicio un poco lento
+79,160,3,2022-05-01,Ingredientes frescos
+79,233,5,2025-08-06,Precios razonables
+79,81,4,2026-04-08,Excelente relación calidad-precio
+80,250,5,2022-02-02,Muy buena experiencia
+80,30,4,2025-04-10,Atención muy amable
+80,170,4,2022-11-30,Excelente comida y servicio
+80,243,4,2025-01-24,Buena ubicación
+80,38,5,2023-01-15,Buena ubicación
+81,249,4,2024-10-23,Buen ambiente
+81,126,5,2021-10-10,Precios razonables
+81,243,2,2024-05-14,Porciones generosas
+81,172,5,2022-03-31,Lugar muy acogedor
+82,75,2,2026-07-20,Excelente comida y servicio
+82,183,4,2025-09-08,Precios razonables
+82,203,4,2023-11-02,Lugar muy acogedor
+82,243,4,2026-11-02,Excelente comida y servicio
+82,202,4,2022-11-15,Muy buena experiencia
+82,22,5,2024-06-09,Excelente relación calidad-precio
+83,111,4,2021-11-25,Repetiría sin dudarlo
+83,87,4,2022-06-20,Una experiencia gastronómica única
+83,11,3,2021-03-20,No cumplió mis expectativas
+83,70,2,2026-04-10,Porciones generosas
+83,192,4,2024-01-13,Porciones generosas
+83,195,3,2026-10-01,Sabores auténticos
+83,169,4,2024-11-02,Servicio un poco lento
+84,185,3,2026-01-17,Buen ambiente
+84,67,3,2024-07-29,Tardaron mucho en servir
+84,142,5,2021-04-05,Servicio un poco lento
+84,50,5,2022-03-15,La comida podría mejorar
+84,126,2,2025-03-10,Buen ambiente
+84,73,1,2023-08-29,Buen ambiente
+85,3,5,2021-10-16,Servicio un poco lento
+85,186,4,2026-03-03,Repetiría sin dudarlo
+85,4,5,2022-03-10,Una experiencia gastronómica única
+85,189,2,2022-07-23,Lugar muy acogedor
+86,48,3,2025-11-09,La comida podría mejorar
+86,24,4,2021-11-22,Porciones generosas
+86,184,3,2026-12-09,Lugar muy acogedor
+86,244,4,2023-03-20,Atención muy amable
+87,181,5,2025-12-18,Precios razonables
+87,48,5,2021-11-22,Precios razonables
+87,121,5,2023-12-15,Servicio un poco lento
+87,74,4,2023-02-15,Comida deliciosa
+87,188,5,2021-11-07,Lugar muy acogedor
+87,174,3,2024-08-09,La comida podría mejorar
+87,152,3,2024-04-30,Una experiencia gastronómica única
+87,222,4,2024-03-15,Lugar muy acogedor
+88,65,3,2023-10-28,No cumplió mis expectativas
+88,212,5,2021-09-22,Muy buena experiencia
+88,89,2,2024-11-10,Muy buena experiencia
+88,189,4,2025-10-28,Buen ambiente
+88,62,3,2026-01-01,Excelente comida y servicio
+88,136,5,2021-12-28,Repetiría sin dudarlo
+88,2,5,2025-01-20,Una experiencia gastronómica única
+89,146,3,2025-01-06,Atención muy amable
+89,68,2,2024-05-14,Atención muy amable
+89,187,3,2023-02-19,La comida podría mejorar
+89,215,4,2021-06-24,Ambiente ruidoso
+90,120,5,2025-07-10,Buena ubicación
+90,226,5,2026-03-18,Buena ubicación
+90,119,3,2025-04-29,Sabores auténticos
+90,84,5,2022-07-26,Repetiría sin dudarlo
+90,237,4,2022-09-04,Porciones generosas
+90,204,4,2025-11-15,Precios razonables
+90,217,3,2023-01-24,Lugar muy acogedor
+91,5,4,2023-03-22,Excelente comida y servicio
+91,101,4,2022-10-11,No cumplió mis expectativas
+91,121,5,2024-02-12,La comida podría mejorar
+91,39,4,2026-08-07,Sabores auténticos
+92,243,4,2022-03-11,Buen ambiente
+92,219,5,2026-05-07,Una experiencia gastronómica única
+92,41,4,2023-08-22,Tardaron mucho en servir
+92,125,5,2023-06-06,Sabores auténticos
+92,249,4,2024-06-15,Precios razonables
+92,171,3,2024-06-26,Una experiencia gastronómica única
+92,16,4,2022-05-15,Una experiencia gastronómica única
+93,136,5,2022-06-09,Ambiente ruidoso
+93,73,3,2026-04-24,Buen ambiente
+93,88,1,2025-02-24,Sabores auténticos
+93,186,3,2024-08-29,La comida podría mejorar
+93,96,5,2024-07-04,Atención muy amable
+94,143,3,2022-06-05,Repetiría sin dudarlo
+94,88,5,2023-07-27,Nada especial
+94,148,4,2023-10-18,Atención muy amable
+94,204,4,2021-03-21,Repetiría sin dudarlo
+94,85,4,2022-01-27,Porciones generosas
+94,179,5,2024-08-10,Buen ambiente
+95,126,3,2026-01-16,Porciones generosas
+95,119,5,2024-02-06,Servicio un poco lento
+95,155,4,2021-08-30,Atención muy amable
+95,231,3,2021-01-13,Repetiría sin dudarlo
+95,229,4,2026-05-31,Ingredientes frescos
+95,243,2,2024-01-23,Repetiría sin dudarlo
+95,246,4,2024-07-10,Una experiencia gastronómica única
+95,187,5,2023-03-31,Lugar muy acogedor
+96,155,4,2026-08-27,No cumplió mis expectativas
+96,31,4,2025-03-21,Sabores auténticos
+96,76,3,2021-02-14,No cumplió mis expectativas
+96,188,3,2022-08-14,No cumplió mis expectativas
+96,16,3,2025-09-23,Buen ambiente
+96,189,4,2022-08-28,Buena ubicación
+96,227,4,2022-10-05,Una experiencia gastronómica única
+96,50,4,2024-07-10,Comida deliciosa
+97,117,3,2022-06-11,Repetiría sin dudarlo
+97,71,4,2022-05-23,Muy buena experiencia
+97,51,4,2026-05-09,Ambiente ruidoso
+97,181,2,2025-03-17,Ingredientes frescos
+97,156,1,2025-11-14,Repetiría sin dudarlo
+97,73,2,2024-08-30,Una experiencia gastronómica única
+98,165,5,2021-06-11,Tardaron mucho en servir
+98,73,1,2022-06-25,Atención muy amable
+98,83,2,2021-10-06,Servicio un poco lento
+98,145,3,2026-11-12,Precios razonables
+99,24,4,2025-08-18,Repetiría sin dudarlo
+99,194,5,2026-07-11,Porciones generosas
+99,93,4,2026-11-20,Sabores auténticos
+99,249,4,2025-06-10,Servicio un poco lento
+99,92,4,2022-01-02,Lugar muy acogedor
+100,41,4,2021-04-10,Muy buena experiencia
+100,30,5,2023-07-13,Atención muy amable
+100,196,1,2023-06-17,La comida podría mejorar
+100,234,5,2022-07-18,Tardaron mucho en servir
+100,223,3,2025-05-07,Porciones generosas
+100,67,1,2024-04-01,Atención muy amable
+100,59,1,2025-08-27,Ingredientes frescos
+101,11,4,2026-07-07,Excelente comida y servicio
+101,52,2,2021-11-27,Nada especial
+101,151,5,2026-09-17,Precios razonables
+101,10,4,2022-09-16,Ingredientes frescos
+102,235,3,2025-03-14,Tardaron mucho en servir
+102,161,4,2023-04-06,Una experiencia gastronómica única
+102,191,3,2023-03-13,Repetiría sin dudarlo
+102,160,5,2025-05-28,Comida deliciosa
+103,116,4,2025-07-20,Lugar muy acogedor
+103,8,4,2021-06-20,Porciones generosas
+103,115,5,2023-04-23,Lugar muy acogedor
+103,155,5,2024-05-08,Lugar muy acogedor
+103,248,5,2024-05-27,Ambiente ruidoso
+103,167,4,2023-07-31,Nada especial
+104,56,1,2024-09-29,Lugar muy acogedor
+104,131,4,2025-05-11,Repetiría sin dudarlo
+104,7,4,2025-05-20,Una experiencia gastronómica única
+104,80,3,2026-07-07,Atención muy amable
+104,4,5,2024-03-14,La comida podría mejorar
+104,213,2,2022-03-16,Excelente comida y servicio
+105,159,5,2021-01-01,No cumplió mis expectativas
+105,13,4,2022-10-16,Comida deliciosa
+105,220,2,2023-06-01,Lugar muy acogedor
+105,3,5,2025-03-08,Buen ambiente
+106,107,5,2024-05-22,Servicio un poco lento
+106,168,3,2023-04-19,Comida deliciosa
+106,6,5,2021-05-05,Atención muy amable
+106,77,1,2022-04-07,Buen ambiente
+106,198,5,2026-02-08,Nada especial
+106,9,5,2024-01-24,Excelente relación calidad-precio
+107,180,5,2022-09-20,Lugar muy acogedor
+107,145,2,2025-03-26,Excelente comida y servicio
+107,123,1,2025-11-07,Buena ubicación
+107,17,4,2021-02-24,Nada especial
+108,169,5,2024-02-28,Atención muy amable
+108,17,4,2023-12-31,Excelente comida y servicio
+108,246,4,2023-02-10,La comida podría mejorar
+108,198,4,2021-01-08,Muy buena experiencia
+109,214,3,2021-07-13,No cumplió mis expectativas
+109,220,4,2025-02-13,Buena ubicación
+109,112,5,2022-11-03,Ambiente ruidoso
+109,144,4,2025-03-01,Ingredientes frescos
+109,244,4,2024-08-06,Ambiente ruidoso
+109,180,4,2025-07-04,Ambiente ruidoso
+109,126,4,2024-11-24,No cumplió mis expectativas
+109,203,2,2026-07-19,Ingredientes frescos
+110,93,2,2025-01-09,Buena ubicación
+110,247,4,2022-11-04,Muy buena experiencia
+110,111,3,2022-08-18,Una experiencia gastronómica única
+110,23,4,2022-10-16,Nada especial
+110,155,2,2023-04-24,Porciones generosas
+110,65,1,2025-09-13,Comida deliciosa
+110,227,5,2021-06-21,Tardaron mucho en servir
+111,148,4,2022-11-06,La comida podría mejorar
+111,2,5,2024-10-03,Atención muy amable
+111,66,1,2025-03-10,Ingredientes frescos
+111,240,5,2026-11-13,Porciones generosas
+112,148,5,2022-03-12,La comida podría mejorar
+112,90,4,2026-02-02,Servicio un poco lento
+112,192,5,2023-02-11,Excelente comida y servicio
+112,105,5,2026-08-29,Comida deliciosa
+112,177,4,2021-10-23,No cumplió mis expectativas
+113,194,4,2022-01-31,Lugar muy acogedor
+113,104,1,2021-05-08,No cumplió mis expectativas
+113,78,1,2023-01-31,Buen ambiente
+113,212,2,2026-01-28,Comida deliciosa
+113,54,2,2025-01-04,Porciones generosas
+114,179,4,2023-05-04,No cumplió mis expectativas
+114,153,4,2026-05-14,Una experiencia gastronómica única
+114,77,3,2026-07-06,Muy buena experiencia
+114,88,4,2024-12-10,Excelente comida y servicio
+115,180,4,2022-02-06,Sabores auténticos
+115,122,4,2024-12-08,Atención muy amable
+115,221,5,2025-04-06,Muy buena experiencia
+115,205,5,2021-12-22,Atención muy amable
+115,99,3,2022-01-13,Buen ambiente
+115,193,3,2022-01-21,Buena ubicación
+116,192,3,2026-01-23,Lugar muy acogedor
+116,87,4,2022-01-24,Excelente comida y servicio
+116,62,3,2021-04-26,Tardaron mucho en servir
+116,155,4,2026-08-19,Precios razonables
+116,121,4,2025-05-09,Ingredientes frescos
+116,9,5,2021-07-19,Excelente relación calidad-precio
+116,83,4,2026-10-18,Atención muy amable
+117,231,1,2024-09-19,Sabores auténticos
+117,116,2,2022-09-27,Buen ambiente
+117,76,1,2026-06-15,La comida podría mejorar
+117,219,1,2022-12-25,Porciones generosas
+117,42,3,2023-01-19,La comida podría mejorar
+118,222,5,2022-04-21,Comida deliciosa
+118,175,3,2022-06-25,Una experiencia gastronómica única
+118,150,4,2025-11-30,Atención muy amable
+118,217,4,2025-10-28,Excelente comida y servicio
+118,127,5,2025-02-17,Ingredientes frescos
+118,59,1,2026-04-25,Muy buena experiencia
+119,112,2,2025-01-04,Atención muy amable
+119,143,4,2023-09-24,Servicio un poco lento
+119,180,2,2022-10-26,Buen ambiente
+119,109,4,2023-03-16,Buena ubicación
+119,18,5,2025-03-10,Ingredientes frescos
+119,17,4,2021-10-01,Precios razonables
+120,106,2,2025-05-20,Excelente comida y servicio
+120,30,4,2026-09-21,Excelente comida y servicio
+120,144,2,2023-12-26,Nada especial
+120,11,5,2024-05-27,Servicio un poco lento
+120,60,2,2023-09-26,Atención muy amable
+120,52,3,2023-02-12,Atención muy amable
+120,38,4,2023-05-28,Comida deliciosa
+120,77,1,2021-10-18,Servicio un poco lento
+121,220,2,2026-10-04,Buen ambiente
+121,131,4,2023-10-09,Sabores auténticos
+121,38,5,2025-01-21,La comida podría mejorar
+121,221,5,2025-07-23,Muy buena experiencia
+121,195,5,2021-06-25,Repetiría sin dudarlo
+122,8,4,2023-07-10,Servicio un poco lento
+122,50,4,2026-09-19,Sabores auténticos
+122,172,4,2022-10-07,La comida podría mejorar
+122,186,4,2024-03-24,Atención muy amable
+122,239,5,2025-11-08,Una experiencia gastronómica única
+122,96,1,2021-09-29,Ingredientes frescos
+122,101,2,2022-08-20,Muy buena experiencia
+123,72,2,2024-09-01,No cumplió mis expectativas
+123,101,5,2026-04-09,Tardaron mucho en servir
+123,119,4,2022-07-17,Atención muy amable
+123,167,3,2026-06-29,Repetiría sin dudarlo
+123,207,4,2021-09-15,Excelente relación calidad-precio
+123,235,4,2024-01-17,No cumplió mis expectativas
+124,132,4,2024-11-28,No cumplió mis expectativas
+124,59,1,2024-10-04,Tardaron mucho en servir
+124,81,4,2024-02-15,Excelente relación calidad-precio
+124,238,4,2023-02-11,Una experiencia gastronómica única
+124,232,5,2022-07-25,No cumplió mis expectativas
+124,83,3,2025-01-20,Ingredientes frescos
+124,233,4,2023-04-18,Buena ubicación
+124,62,3,2022-12-12,Comida deliciosa
+125,164,5,2023-01-20,Atención muy amable
+125,64,2,2025-05-24,Atención muy amable
+125,53,3,2026-02-24,Ingredientes frescos
+125,154,3,2023-11-10,Una experiencia gastronómica única
+125,203,2,2022-05-25,Porciones generosas
+125,163,5,2025-05-30,Excelente comida y servicio
+126,49,5,2026-02-06,Ingredientes frescos
+126,208,4,2024-02-09,Tardaron mucho en servir
+126,240,4,2023-03-27,Excelente relación calidad-precio
+126,66,1,2025-10-18,Atención muy amable
+127,28,4,2021-08-12,Muy buena experiencia
+127,122,5,2024-02-11,Comida deliciosa
+127,112,4,2024-01-05,Servicio un poco lento
+127,100,5,2025-09-30,Lugar muy acogedor
+127,81,1,2021-09-03,Excelente comida y servicio
+127,31,4,2024-02-10,No cumplió mis expectativas
+127,36,4,2023-08-03,La comida podría mejorar
+127,47,5,2023-12-29,Ingredientes frescos
+128,216,3,2023-06-20,Precios razonables
+128,61,3,2025-04-19,Lugar muy acogedor
+128,39,5,2021-03-13,Precios razonables
+128,6,3,2024-01-10,Atención muy amable
+128,142,2,2023-10-06,Sabores auténticos
+128,150,3,2026-02-26,Una experiencia gastronómica única
+129,229,2,2023-09-06,No cumplió mis expectativas
+129,45,4,2025-05-03,Buena ubicación
+129,235,3,2022-02-16,Buen ambiente
+129,57,2,2025-12-25,Buena ubicación
+129,72,1,2025-04-24,Una experiencia gastronómica única
+130,6,4,2026-11-17,Repetiría sin dudarlo
+130,139,3,2026-08-07,Tardaron mucho en servir
+130,196,4,2025-12-17,Una experiencia gastronómica única
+130,70,2,2022-08-15,Buen ambiente
+130,53,3,2025-03-27,Precios razonables
+130,226,5,2023-04-29,Lugar muy acogedor
+130,173,3,2025-07-18,Excelente relación calidad-precio
+131,184,4,2026-04-08,Excelente comida y servicio
+131,75,3,2023-09-27,Buen ambiente
+131,231,4,2021-03-31,Porciones generosas
+131,60,3,2025-01-12,Porciones generosas
+131,98,1,2025-11-23,Buena ubicación
+132,23,5,2023-12-01,Atención muy amable
+132,112,3,2023-06-17,Nada especial
+132,66,3,2026-12-15,Lugar muy acogedor
+132,90,5,2025-04-12,Ambiente ruidoso
+132,59,1,2023-07-26,Buen ambiente
+132,69,3,2022-10-13,Buen ambiente
+132,94,4,2021-07-25,Excelente relación calidad-precio
+133,135,2,2022-08-04,Sabores auténticos
+133,239,3,2023-02-01,La comida podría mejorar
+133,66,2,2022-11-14,Tardaron mucho en servir
+133,116,2,2022-01-13,Una experiencia gastronómica única
+134,147,5,2022-12-22,No cumplió mis expectativas
+134,168,4,2025-09-30,Precios razonables
+134,201,3,2023-03-12,Una experiencia gastronómica única
+134,224,5,2021-10-03,Comida deliciosa
+135,210,4,2025-02-20,Precios razonables
+135,201,3,2023-02-05,La comida podría mejorar
+135,46,5,2024-08-26,Precios razonables
+135,137,5,2026-10-04,Excelente comida y servicio
+135,32,5,2021-08-21,Porciones generosas
+135,200,2,2021-07-18,Atención muy amable
+136,217,5,2024-02-18,Buena ubicación
+136,34,4,2022-12-19,Comida deliciosa
+136,62,3,2022-10-26,Una experiencia gastronómica única
+136,221,5,2021-10-02,Porciones generosas
+136,156,2,2024-03-22,Buena ubicación
+137,205,4,2026-11-21,Buena ubicación
+137,126,5,2026-10-30,Ambiente ruidoso
+137,174,5,2025-07-18,Excelente relación calidad-precio
+137,194,4,2025-07-28,Precios razonables
+137,102,4,2026-08-09,Servicio un poco lento
+137,141,5,2023-04-28,Buen ambiente
+137,139,4,2025-02-14,No cumplió mis expectativas
+137,186,2,2025-08-17,Porciones generosas
+138,77,1,2025-11-19,Servicio un poco lento
+138,96,4,2022-07-27,No cumplió mis expectativas
+138,7,4,2022-08-06,Excelente comida y servicio
+138,81,5,2025-12-04,Excelente relación calidad-precio
+138,125,4,2026-03-26,Buena ubicación
+138,51,2,2023-04-19,Buena ubicación
+138,193,2,2021-07-30,La comida podría mejorar
+139,230,4,2024-12-06,Buena ubicación
+139,164,5,2025-11-11,Buen ambiente
+139,237,4,2024-12-24,Tardaron mucho en servir
+139,26,5,2021-06-15,Atención muy amable
+139,76,1,2024-09-19,Lugar muy acogedor
+140,237,5,2024-01-10,Muy buena experiencia
+140,130,1,2023-06-15,Tardaron mucho en servir
+140,43,4,2026-01-11,Porciones generosas
+140,3,4,2026-03-01,Ambiente ruidoso
+140,26,5,2024-03-13,Ambiente ruidoso
+140,38,3,2026-10-19,Nada especial
+141,227,4,2026-10-07,Muy buena experiencia
+141,113,4,2026-09-04,Buen ambiente
+141,195,5,2022-09-21,Porciones generosas
+141,125,3,2025-12-07,Excelente relación calidad-precio
+142,37,5,2024-02-04,Porciones generosas
+142,196,3,2021-06-30,No cumplió mis expectativas
+142,235,1,2022-06-29,Lugar muy acogedor
+142,51,2,2023-03-05,Sabores auténticos
+142,24,5,2022-09-14,Sabores auténticos
+143,146,1,2026-05-31,Buen ambiente
+143,66,2,2022-11-10,Atención muy amable
+143,235,2,2026-02-26,Repetiría sin dudarlo
+143,54,3,2025-03-05,Atención muy amable
+143,1,5,2023-11-24,Nada especial
+143,17,5,2024-09-16,Repetiría sin dudarlo
+143,42,5,2026-11-01,Excelente relación calidad-precio
+143,220,5,2023-10-02,La comida podría mejorar
+144,112,5,2024-05-16,Atención muy amable
+144,124,5,2025-07-16,Muy buena experiencia
+144,70,4,2024-05-15,Excelente relación calidad-precio
+144,85,2,2022-08-30,Ingredientes frescos
+145,217,3,2022-09-20,Comida deliciosa
+145,201,4,2026-09-03,Ambiente ruidoso
+145,57,2,2025-06-26,Sabores auténticos
+145,226,4,2024-05-10,Buen ambiente
+145,245,3,2026-05-25,Buen ambiente
+146,238,4,2025-08-24,Atención muy amable
+146,228,5,2024-09-29,Ambiente ruidoso
+146,15,4,2023-08-24,Atención muy amable
+146,112,5,2026-07-08,Porciones generosas
+146,104,4,2025-07-19,Sabores auténticos
+146,209,5,2024-03-19,La comida podría mejorar
+147,206,5,2022-02-17,Buen ambiente
+147,43,3,2021-02-04,Servicio un poco lento
+147,87,4,2026-07-11,Buen ambiente
+147,41,5,2022-09-15,Muy buena experiencia
+147,154,1,2022-12-29,Muy buena experiencia
+147,84,2,2025-02-11,Ambiente ruidoso
+147,152,4,2021-12-25,Muy buena experiencia
+147,97,3,2024-06-22,Repetiría sin dudarlo
+148,10,5,2023-02-27,Precios razonables
+148,150,5,2026-07-02,Comida deliciosa
+148,22,4,2024-04-08,Una experiencia gastronómica única
+148,11,5,2021-10-21,Una experiencia gastronómica única
+149,36,4,2026-10-10,Comida deliciosa
+149,17,4,2023-07-06,No cumplió mis expectativas
+149,119,1,2024-10-19,Precios razonables
+149,156,4,2026-01-28,Ambiente ruidoso
+149,219,5,2024-06-09,No cumplió mis expectativas
+149,67,3,2025-07-01,Sabores auténticos
+150,204,3,2026-03-05,Servicio un poco lento
+150,217,5,2021-05-31,Buen ambiente
+150,80,1,2022-04-28,Servicio un poco lento
+150,171,2,2026-01-13,Servicio un poco lento
+150,84,2,2021-10-28,No cumplió mis expectativas
+151,177,4,2022-05-18,Ingredientes frescos
+151,82,5,2024-05-24,Lugar muy acogedor
+151,149,5,2021-05-19,Ambiente ruidoso
+151,62,1,2023-02-24,Ambiente ruidoso
+151,184,2,2021-05-09,Excelente relación calidad-precio
+151,124,4,2026-08-01,Buena ubicación
+152,201,3,2025-09-26,Repetiría sin dudarlo
+152,182,5,2023-01-24,Excelente comida y servicio
+152,221,5,2022-11-04,Excelente relación calidad-precio
+152,83,4,2026-06-18,Repetiría sin dudarlo
+152,116,2,2022-07-29,La comida podría mejorar
+152,35,5,2026-07-22,Excelente relación calidad-precio
+152,209,5,2023-01-10,Sabores auténticos
+153,198,5,2025-03-08,Repetiría sin dudarlo
+153,3,3,2026-06-01,Tardaron mucho en servir
+153,162,3,2022-08-29,Repetiría sin dudarlo
+153,93,4,2026-08-31,Excelente relación calidad-precio
+154,101,5,2021-06-11,Buena ubicación
+154,228,5,2024-04-03,Ingredientes frescos
+154,136,5,2026-02-13,Muy buena experiencia
+154,152,3,2021-03-15,Sabores auténticos
+154,157,4,2021-09-15,Atención muy amable
+154,238,5,2025-09-06,Buena ubicación
+154,51,4,2023-08-04,Repetiría sin dudarlo
+154,112,5,2023-07-02,Buena ubicación
+155,77,2,2023-11-07,Porciones generosas
+155,229,3,2026-12-14,La comida podría mejorar
+155,167,1,2026-01-15,La comida podría mejorar
+155,219,4,2025-10-28,Muy buena experiencia
+155,10,5,2024-01-26,Ingredientes frescos
+155,210,5,2025-09-04,Excelente comida y servicio
+156,223,5,2021-07-29,Atención muy amable
+156,244,5,2023-05-25,Ingredientes frescos
+156,188,4,2024-03-23,Comida deliciosa
+156,204,5,2025-05-13,Ingredientes frescos
+156,197,5,2022-12-27,Ingredientes frescos
+156,164,4,2021-02-28,Sabores auténticos
+156,202,2,2023-10-03,Atención muy amable
+156,79,1,2022-06-16,Excelente relación calidad-precio
+157,169,3,2025-10-13,Lugar muy acogedor
+157,75,3,2025-01-20,Comida deliciosa
+157,172,5,2024-03-28,No cumplió mis expectativas
+157,66,4,2021-10-08,Buen ambiente
+157,107,5,2022-05-13,Excelente comida y servicio
+158,17,5,2023-01-04,Comida deliciosa
+158,200,5,2024-10-14,Comida deliciosa
+158,198,4,2026-12-30,Buena ubicación
+158,204,4,2026-05-26,Una experiencia gastronómica única
+158,195,3,2021-12-08,Ambiente ruidoso
+159,91,3,2023-10-23,Excelente comida y servicio
+159,46,5,2021-12-20,Buen ambiente
+159,100,3,2024-11-02,Precios razonables
+159,207,4,2026-12-31,Lugar muy acogedor
+160,237,4,2025-11-07,Comida deliciosa
+160,194,5,2025-07-07,Lugar muy acogedor
+160,162,3,2026-06-04,Nada especial
+160,90,5,2021-10-02,La comida podría mejorar
+160,8,5,2026-07-18,Ingredientes frescos
+160,88,5,2025-05-06,Repetiría sin dudarlo
+160,219,4,2023-03-27,Muy buena experiencia
+161,116,4,2025-03-06,Repetiría sin dudarlo
+161,49,4,2021-01-31,Repetiría sin dudarlo
+161,1,5,2021-12-16,Servicio un poco lento
+161,147,5,2026-11-03,Ingredientes frescos
+162,152,4,2024-10-27,Comida deliciosa
+162,35,5,2021-05-14,Repetiría sin dudarlo
+162,122,3,2025-10-10,No cumplió mis expectativas
+162,127,1,2022-03-13,Muy buena experiencia
+163,171,4,2022-09-19,Excelente relación calidad-precio
+163,247,3,2025-08-15,Buen ambiente
+163,36,5,2025-01-30,Buen ambiente
+163,179,4,2024-05-13,Sabores auténticos
+163,67,1,2024-03-13,Repetiría sin dudarlo
+163,209,3,2022-01-17,Servicio un poco lento
+164,155,3,2024-09-29,Repetiría sin dudarlo
+164,154,5,2023-01-19,Nada especial
+164,219,3,2021-11-19,La comida podría mejorar
+164,26,3,2024-06-29,Ingredientes frescos
+164,93,5,2021-11-23,Ingredientes frescos
+164,30,5,2024-05-02,Ingredientes frescos
+164,25,5,2022-02-16,Porciones generosas
+164,250,5,2021-06-16,No cumplió mis expectativas
+165,24,3,2021-01-17,Comida deliciosa
+165,169,5,2021-06-24,Atención muy amable
+165,86,5,2025-07-21,Ingredientes frescos
+165,69,1,2022-10-13,Nada especial
+165,190,5,2023-10-12,Buen ambiente
+165,14,4,2023-01-29,Nada especial
+165,36,5,2022-03-02,Excelente comida y servicio
+166,56,3,2026-09-19,La comida podría mejorar
+166,187,5,2021-01-22,Tardaron mucho en servir
+166,182,5,2023-02-08,Atención muy amable
+166,33,5,2021-09-01,Sabores auténticos
+166,44,4,2025-05-11,Lugar muy acogedor
+166,189,5,2024-04-13,Ambiente ruidoso
+166,246,2,2025-08-13,Nada especial
+167,69,3,2023-11-11,Una experiencia gastronómica única
+167,64,2,2022-04-15,Porciones generosas
+167,158,4,2023-11-03,Servicio un poco lento
+167,220,4,2022-05-07,La comida podría mejorar
+167,228,2,2021-06-14,La comida podría mejorar
+167,32,5,2021-07-10,Buen ambiente
+168,35,3,2023-05-11,Comida deliciosa
+168,248,5,2021-02-26,Sabores auténticos
+168,56,1,2023-04-26,Buena ubicación
+168,71,1,2022-05-20,Ambiente ruidoso
+168,246,3,2025-08-11,Porciones generosas
+168,29,5,2024-02-01,Buena ubicación
+168,148,4,2022-08-21,Lugar muy acogedor
+169,91,3,2026-06-26,Excelente relación calidad-precio
+169,49,4,2023-10-30,Excelente comida y servicio
+169,223,4,2022-10-12,Muy buena experiencia
+169,171,5,2021-09-02,Buena ubicación
+169,220,4,2023-04-15,Sabores auténticos
+169,243,2,2024-03-22,Servicio un poco lento
+169,170,3,2022-12-27,Sabores auténticos
+170,122,2,2026-02-05,Ambiente ruidoso
+170,202,3,2023-07-08,Buena ubicación
+170,196,3,2024-02-03,Atención muy amable
+170,136,5,2024-01-10,Precios razonables
+171,57,3,2025-04-25,La comida podría mejorar
+171,113,5,2026-09-19,Servicio un poco lento
+171,232,2,2025-02-27,Tardaron mucho en servir
+171,35,4,2022-02-09,Excelente relación calidad-precio
+171,5,5,2026-10-17,No cumplió mis expectativas
+171,200,5,2021-03-25,Buen ambiente
+171,61,3,2022-03-15,La comida podría mejorar
+172,65,4,2026-12-11,Precios razonables
+172,208,4,2026-12-05,Excelente comida y servicio
+172,63,1,2021-03-22,Repetiría sin dudarlo
+172,194,5,2025-09-16,Nada especial
+172,246,3,2026-05-25,Lugar muy acogedor
+172,172,3,2024-06-08,Sabores auténticos
+173,179,4,2025-01-01,Comida deliciosa
+173,206,4,2023-03-15,La comida podría mejorar
+173,70,2,2024-10-08,Ambiente ruidoso
+173,151,4,2023-09-15,Ingredientes frescos
+173,52,2,2023-07-22,Sabores auténticos
+173,161,5,2021-03-09,Buen ambiente
+174,145,4,2021-06-29,Lugar muy acogedor
+174,230,4,2021-10-25,Comida deliciosa
+174,36,5,2025-12-13,Servicio un poco lento
+174,60,2,2023-05-29,Lugar muy acogedor
+175,25,4,2024-02-23,Nada especial
+175,10,5,2023-05-07,Buen ambiente
+175,66,2,2023-08-28,Una experiencia gastronómica única
+175,3,4,2023-10-23,Una experiencia gastronómica única
+175,236,4,2023-09-15,Muy buena experiencia
+175,151,4,2024-02-09,Ingredientes frescos
+176,169,5,2026-06-29,Lugar muy acogedor
+176,194,5,2024-09-16,Comida deliciosa
+176,179,2,2023-07-29,Nada especial
+176,187,3,2025-10-16,Ambiente ruidoso
+176,2,5,2026-01-27,Ingredientes frescos
+177,7,3,2024-02-02,Lugar muy acogedor
+177,190,3,2022-10-05,La comida podría mejorar
+177,25,5,2023-01-05,Lugar muy acogedor
+177,161,5,2023-03-21,Servicio un poco lento
+177,147,3,2021-09-08,Buena ubicación
+178,159,5,2023-04-17,Ambiente ruidoso
+178,35,5,2024-05-12,Sabores auténticos
+178,9,4,2021-09-17,Precios razonables
+178,31,4,2021-02-01,Precios razonables
+178,186,4,2026-12-24,Precios razonables
+179,28,4,2025-11-16,La comida podría mejorar
+179,22,5,2022-11-12,Excelente relación calidad-precio
+179,196,5,2026-12-15,Nada especial
+179,41,5,2024-09-13,Buena ubicación
+179,55,1,2026-12-23,Nada especial
+179,19,4,2026-01-14,Sabores auténticos
+179,40,4,2025-12-29,Excelente relación calidad-precio
+180,67,3,2021-03-24,Lugar muy acogedor
+180,156,4,2025-03-19,Ingredientes frescos
+180,55,2,2022-01-08,Nada especial
+180,238,2,2022-06-04,Muy buena experiencia
+180,188,3,2026-12-26,Comida deliciosa
+180,205,4,2025-06-05,Nada especial
+181,14,4,2022-06-02,La comida podría mejorar
+181,133,5,2026-09-14,Una experiencia gastronómica única
+181,47,5,2021-10-31,La comida podría mejorar
+181,138,4,2021-12-09,Repetiría sin dudarlo
+181,225,4,2022-01-19,Excelente relación calidad-precio
+182,86,4,2023-04-21,Servicio un poco lento
+182,141,5,2023-06-23,Buen ambiente
+182,35,5,2025-12-17,Buen ambiente
+182,212,4,2021-11-25,Repetiría sin dudarlo
+182,46,4,2024-02-06,Repetiría sin dudarlo
+182,12,3,2021-02-17,Excelente comida y servicio
+183,221,2,2022-11-07,Nada especial
+183,208,2,2023-02-19,Atención muy amable
+183,186,5,2022-02-07,Buena ubicación
+183,8,5,2025-03-02,Muy buena experiencia
+184,7,5,2026-08-27,No cumplió mis expectativas
+184,185,5,2023-12-05,Precios razonables
+184,39,3,2022-08-29,Una experiencia gastronómica única
+184,91,4,2026-05-07,No cumplió mis expectativas
+184,81,4,2021-11-10,Servicio un poco lento
+184,98,3,2024-03-29,Tardaron mucho en servir
+184,173,4,2021-06-23,Repetiría sin dudarlo
+184,30,4,2021-06-15,Tardaron mucho en servir
+185,120,3,2023-10-04,Porciones generosas
+185,7,4,2024-10-30,Buen ambiente
+185,12,4,2026-10-15,Excelente relación calidad-precio
+185,154,4,2025-07-18,Porciones generosas
+185,13,5,2023-08-24,Sabores auténticos
+185,1,4,2024-01-09,Tardaron mucho en servir
+185,170,3,2024-08-10,Ambiente ruidoso
+186,94,5,2025-03-18,Muy buena experiencia
+186,80,3,2021-06-11,Atención muy amable
+186,211,2,2023-05-02,La comida podría mejorar
+186,44,4,2026-02-28,Una experiencia gastronómica única
+187,202,5,2026-11-24,Precios razonables
+187,5,4,2021-09-06,Excelente relación calidad-precio
+187,198,5,2022-05-17,Porciones generosas
+187,160,3,2026-12-06,Comida deliciosa
+187,200,5,2026-12-08,Excelente comida y servicio
+187,163,3,2023-11-26,Precios razonables
+188,243,4,2023-02-08,Tardaron mucho en servir
+188,122,4,2025-06-26,Excelente relación calidad-precio
+188,128,3,2021-09-26,Servicio un poco lento
+188,226,4,2024-04-23,Precios razonables
+188,239,4,2024-06-13,Sabores auténticos
+188,64,2,2021-03-26,La comida podría mejorar
+188,133,5,2022-06-19,Ambiente ruidoso
+188,50,5,2026-12-05,Sabores auténticos
+189,27,3,2021-06-17,Porciones generosas
+189,80,2,2025-05-16,Precios razonables
+189,246,4,2025-03-11,No cumplió mis expectativas
+189,200,5,2021-06-23,Precios razonables
+189,65,2,2023-07-28,Ambiente ruidoso
+190,140,5,2021-04-06,Buen ambiente
+190,175,4,2024-06-14,Sabores auténticos
+190,48,5,2024-04-05,Tardaron mucho en servir
+190,76,3,2026-12-13,Tardaron mucho en servir
+190,50,5,2021-04-03,La comida podría mejorar
+190,246,5,2025-02-17,La comida podría mejorar
+191,179,5,2026-03-23,Una experiencia gastronómica única
+191,129,5,2021-09-10,Repetiría sin dudarlo
+191,133,1,2021-08-24,No cumplió mis expectativas
+191,46,4,2023-06-05,Lugar muy acogedor
+191,213,5,2024-12-25,Lugar muy acogedor
+191,71,3,2023-11-22,Nada especial
+191,85,3,2022-05-16,Porciones generosas
+191,186,5,2022-08-03,Comida deliciosa
+192,25,5,2022-05-22,Ingredientes frescos
+192,183,1,2023-03-25,La comida podría mejorar
+192,154,4,2023-03-22,Atención muy amable
+192,117,3,2025-07-17,Repetiría sin dudarlo
+193,11,5,2021-12-10,Una experiencia gastronómica única
+193,226,5,2026-07-28,Repetiría sin dudarlo
+193,105,5,2022-01-26,Buena ubicación
+193,219,5,2025-07-26,Ingredientes frescos
+193,9,5,2026-11-19,Excelente comida y servicio
+194,234,1,2021-05-01,Nada especial
+194,48,4,2025-08-27,Comida deliciosa
+194,54,2,2026-11-16,Excelente comida y servicio
+194,211,3,2025-03-26,Repetiría sin dudarlo
+195,164,5,2022-05-06,Sabores auténticos
+195,180,5,2023-05-26,Porciones generosas
+195,128,4,2024-11-17,Servicio un poco lento
+195,68,4,2021-11-09,No cumplió mis expectativas
+195,187,4,2022-05-20,Tardaron mucho en servir
+195,73,3,2024-03-20,Comida deliciosa
+195,211,4,2023-07-15,La comida podría mejorar
+196,136,5,2025-07-27,Lugar muy acogedor
+196,123,3,2022-10-08,Lugar muy acogedor
+196,88,4,2026-09-03,Servicio un poco lento
+196,215,2,2026-01-23,Excelente relación calidad-precio
+196,7,4,2025-09-10,Buen ambiente
+196,151,2,2021-05-30,No cumplió mis expectativas
+196,36,4,2025-07-27,Muy buena experiencia
+197,162,4,2025-06-08,Sabores auténticos
+197,6,4,2021-07-09,Tardaron mucho en servir
+197,200,4,2022-04-23,Servicio un poco lento
+197,203,4,2021-03-15,Muy buena experiencia
+197,87,5,2021-08-15,Tardaron mucho en servir
+197,61,4,2025-01-19,Porciones generosas
+198,227,4,2026-02-10,Buen ambiente
+198,156,3,2023-05-22,Comida deliciosa
+198,23,5,2023-06-15,Excelente relación calidad-precio
+198,210,5,2024-12-28,Muy buena experiencia
+198,224,5,2026-09-17,Ingredientes frescos
+198,196,3,2022-03-22,Atención muy amable
+198,7,5,2026-06-11,Sabores auténticos
+199,165,3,2021-06-15,Comida deliciosa
+199,232,3,2021-01-21,Tardaron mucho en servir
+199,37,5,2023-03-06,Repetiría sin dudarlo
+199,160,3,2026-05-08,Ingredientes frescos
+199,54,3,2026-12-06,Servicio un poco lento
+199,135,4,2023-05-19,La comida podría mejorar
+199,213,4,2022-05-24,Muy buena experiencia
+199,68,1,2025-02-26,Buena ubicación
+200,156,4,2021-09-23,No cumplió mis expectativas
+200,211,3,2023-01-15,Excelente comida y servicio
+200,13,5,2026-01-30,Excelente relación calidad-precio
+200,130,4,2022-11-10,Porciones generosas
+201,181,4,2024-04-29,Ingredientes frescos
+201,147,4,2026-02-12,Buen ambiente
+201,160,5,2024-04-25,Servicio un poco lento
+201,242,4,2025-02-08,Nada especial
+201,161,4,2023-10-14,Servicio un poco lento
+201,108,3,2022-02-26,No cumplió mis expectativas
+201,197,1,2026-08-12,No cumplió mis expectativas
+201,207,4,2023-03-08,Precios razonables
+202,28,5,2024-04-20,Servicio un poco lento
+202,48,5,2025-10-27,Porciones generosas
+202,215,4,2021-08-13,Sabores auténticos
+202,200,4,2021-04-05,Ingredientes frescos
+202,207,4,2025-06-19,Comida deliciosa
+203,196,3,2023-06-04,No cumplió mis expectativas
+203,107,4,2023-07-24,Tardaron mucho en servir
+203,249,4,2024-08-27,Una experiencia gastronómica única
+203,229,5,2023-09-27,Tardaron mucho en servir
+203,8,4,2021-03-13,No cumplió mis expectativas
+203,165,5,2024-11-12,Sabores auténticos
+203,114,5,2022-04-28,Servicio un poco lento
+204,157,2,2025-01-09,Ingredientes frescos
+204,112,4,2025-11-14,Excelente relación calidad-precio
+204,88,2,2025-04-16,Nada especial
+204,8,4,2025-07-25,Buen ambiente
+204,141,5,2023-06-07,Excelente comida y servicio
+204,206,4,2025-10-11,Comida deliciosa
+204,218,4,2022-08-20,Lugar muy acogedor
+204,201,5,2024-07-08,Nada especial
+205,237,5,2025-06-21,Ingredientes frescos
+205,193,2,2024-06-26,Tardaron mucho en servir
+205,31,4,2021-06-16,Excelente comida y servicio
+205,65,3,2022-11-04,Atención muy amable
+205,216,5,2021-01-05,Excelente comida y servicio
+205,50,5,2026-10-06,Sabores auténticos
+206,101,5,2025-05-05,Tardaron mucho en servir
+206,233,3,2021-11-29,Lugar muy acogedor
+206,227,5,2024-10-03,Excelente comida y servicio
+206,100,1,2021-09-29,Porciones generosas
+206,17,5,2024-02-18,Buen ambiente
+206,15,4,2021-10-27,Repetiría sin dudarlo
+206,30,3,2025-07-29,Precios razonables
+206,214,5,2026-11-08,Lugar muy acogedor
+207,244,4,2024-02-21,Excelente relación calidad-precio
+207,114,1,2026-07-22,Buena ubicación
+207,165,4,2024-02-28,Porciones generosas
+207,106,3,2026-01-14,Servicio un poco lento
+207,161,5,2025-08-14,Servicio un poco lento
+207,37,5,2024-11-12,Excelente comida y servicio
+207,13,5,2022-01-13,Atención muy amable
+207,187,5,2026-04-27,Porciones generosas
+208,42,5,2023-12-16,Excelente comida y servicio
+208,145,4,2026-11-17,Ingredientes frescos
+208,180,3,2023-03-11,Lugar muy acogedor
+208,239,3,2023-08-09,Buen ambiente
+209,245,5,2023-04-10,Ambiente ruidoso
+209,239,5,2025-07-02,Comida deliciosa
+209,81,4,2021-11-21,Buena ubicación
+209,92,1,2022-11-04,Comida deliciosa
+209,184,2,2022-11-01,Excelente comida y servicio
+210,29,5,2024-07-25,Servicio un poco lento
+210,57,2,2024-11-13,Porciones generosas
+210,193,2,2023-06-13,Buena ubicación
+210,109,2,2024-04-30,No cumplió mis expectativas
+210,61,2,2021-07-21,Precios razonables
+210,212,5,2024-08-16,Muy buena experiencia
+210,132,2,2025-06-09,No cumplió mis expectativas
+211,12,4,2023-04-20,Excelente relación calidad-precio
+211,250,5,2025-06-20,Atención muy amable
+211,210,4,2022-08-04,Buena ubicación
+211,25,5,2026-08-09,Tardaron mucho en servir
+211,111,3,2023-02-04,Buen ambiente
+211,71,1,2022-10-24,Buen ambiente
+211,73,4,2023-01-18,Comida deliciosa
+211,14,5,2023-12-06,Tardaron mucho en servir
+212,44,5,2025-11-29,La comida podría mejorar
+212,147,5,2023-08-07,Ingredientes frescos
+212,140,3,2022-04-16,Tardaron mucho en servir
+212,88,3,2024-07-28,Sabores auténticos
+212,189,1,2023-07-27,Nada especial
+212,213,5,2021-04-04,Atención muy amable
+212,126,5,2025-10-22,Porciones generosas
+213,117,4,2026-07-27,La comida podría mejorar
+213,123,5,2026-10-24,Servicio un poco lento
+213,180,5,2021-03-05,Ambiente ruidoso
+213,16,5,2025-03-21,Ingredientes frescos
+214,22,4,2024-12-01,Repetiría sin dudarlo
+214,169,4,2021-12-20,Porciones generosas
+214,216,4,2025-02-08,Excelente comida y servicio
+214,44,5,2026-01-07,Comida deliciosa
+214,47,5,2025-07-17,Nada especial
+215,188,5,2021-10-25,Nada especial
+215,19,4,2025-06-18,Buena ubicación
+215,134,5,2021-06-11,Ingredientes frescos
+215,167,4,2024-01-05,La comida podría mejorar
+215,198,4,2024-03-28,Ingredientes frescos
+216,244,5,2024-09-17,Muy buena experiencia
+216,41,5,2023-07-31,Ingredientes frescos
+216,33,4,2023-10-25,Tardaron mucho en servir
+216,229,5,2022-06-17,No cumplió mis expectativas
+217,87,4,2024-03-07,Ambiente ruidoso
+217,217,4,2026-09-10,Buena ubicación
+217,189,5,2021-05-27,Buena ubicación
+217,157,2,2023-01-04,La comida podría mejorar
+217,132,5,2025-07-04,Buena ubicación
+217,142,4,2023-03-14,Ingredientes frescos
+217,162,5,2023-02-04,Excelente comida y servicio
+217,17,5,2026-01-26,Excelente relación calidad-precio
+218,200,4,2026-03-05,Atención muy amable
+218,20,5,2026-07-11,Porciones generosas
+218,247,4,2025-11-23,Tardaron mucho en servir
+218,158,4,2022-09-23,Servicio un poco lento
+218,17,4,2023-03-15,Atención muy amable
+218,185,5,2021-06-06,Ingredientes frescos
+218,161,3,2026-11-18,Excelente comida y servicio
+219,165,2,2024-01-09,Excelente comida y servicio
+219,48,5,2025-01-16,Porciones generosas
+219,175,4,2024-09-21,Buena ubicación
+219,161,4,2021-05-06,Comida deliciosa
+219,203,3,2022-12-22,Repetiría sin dudarlo
+219,61,4,2024-01-05,Excelente relación calidad-precio
+219,95,3,2026-11-15,Porciones generosas
+220,152,4,2023-01-31,La comida podría mejorar
+220,101,4,2022-06-30,Ingredientes frescos
+220,51,3,2024-01-08,Porciones generosas
+220,36,5,2023-06-30,Lugar muy acogedor
+220,91,4,2022-02-27,Repetiría sin dudarlo
+220,212,4,2023-12-04,Buen ambiente
+220,209,4,2024-09-04,Precios razonables
+221,195,3,2022-11-18,Nada especial
+221,87,3,2023-06-27,La comida podría mejorar
+221,185,3,2025-02-24,Comida deliciosa
+221,239,3,2026-08-29,Comida deliciosa
+221,124,4,2025-05-22,Ambiente ruidoso
+221,46,4,2026-06-29,Tardaron mucho en servir
+221,234,3,2025-05-02,Ingredientes frescos
+221,242,3,2024-08-05,Atención muy amable
+222,212,4,2022-05-07,Tardaron mucho en servir
+222,67,3,2021-11-02,Comida deliciosa
+222,58,4,2026-06-07,Precios razonables
+222,2,3,2026-11-07,Repetiría sin dudarlo
+222,50,5,2024-01-08,Muy buena experiencia
+222,79,1,2025-01-31,Lugar muy acogedor
+223,79,2,2022-03-16,Lugar muy acogedor
+223,23,5,2025-02-08,Una experiencia gastronómica única
+223,84,5,2025-09-15,Atención muy amable
+223,76,3,2026-11-19,Comida deliciosa
+223,117,3,2025-10-12,Buena ubicación
+223,28,5,2021-07-07,Excelente comida y servicio
+223,212,5,2023-12-25,Servicio un poco lento
+224,73,1,2024-12-20,Precios razonables
+224,244,4,2026-12-08,Comida deliciosa
+224,198,4,2026-11-16,Atención muy amable
+224,203,4,2022-06-24,Atención muy amable
+225,70,3,2026-11-28,Ingredientes frescos
+225,93,5,2024-11-27,Porciones generosas
+225,34,4,2022-07-15,Repetiría sin dudarlo
+225,61,3,2025-10-20,Sabores auténticos
+226,245,4,2025-08-29,Buena ubicación
+226,84,4,2024-02-19,No cumplió mis expectativas
+226,222,5,2022-07-21,Atención muy amable
+226,198,5,2026-09-21,Repetiría sin dudarlo
+227,139,5,2024-07-23,Una experiencia gastronómica única
+227,162,3,2026-08-19,Servicio un poco lento
+227,87,3,2022-05-02,Buen ambiente
+227,188,5,2025-10-20,Repetiría sin dudarlo
+227,151,1,2021-01-26,Muy buena experiencia
+227,109,1,2024-06-10,Ambiente ruidoso
+228,151,5,2022-06-22,Comida deliciosa
+228,166,5,2024-07-23,Buen ambiente
+228,225,3,2024-08-20,Repetiría sin dudarlo
+228,60,2,2026-11-08,Lugar muy acogedor
+228,19,5,2025-10-10,Ingredientes frescos
+229,175,4,2025-04-19,Porciones generosas
+229,26,5,2026-07-03,Servicio un poco lento
+229,73,2,2023-06-29,Sabores auténticos
+229,78,2,2025-12-12,No cumplió mis expectativas
+229,218,4,2022-09-06,Excelente comida y servicio
+230,94,3,2025-02-19,No cumplió mis expectativas
+230,217,3,2021-10-13,Tardaron mucho en servir
+230,132,3,2022-12-10,Ingredientes frescos
+230,190,5,2022-03-10,Servicio un poco lento
+230,181,3,2021-09-15,Servicio un poco lento
+231,156,1,2024-06-02,Una experiencia gastronómica única
+231,37,3,2025-03-25,Excelente comida y servicio
+231,225,5,2026-10-30,La comida podría mejorar
+231,216,4,2026-06-29,Precios razonables
+231,166,3,2026-03-13,Ambiente ruidoso
+232,137,4,2021-12-23,Buena ubicación
+232,43,4,2023-01-11,Ambiente ruidoso
+232,197,4,2024-08-07,Excelente relación calidad-precio
+232,121,5,2025-01-27,Ingredientes frescos
+233,124,5,2024-08-25,Servicio un poco lento
+233,35,5,2026-09-24,Buena ubicación
+233,98,4,2023-09-15,Comida deliciosa
+233,40,4,2023-01-15,Buena ubicación
+233,221,5,2026-04-05,Precios razonables
+233,147,2,2023-05-31,Lugar muy acogedor
+234,202,4,2023-02-02,Excelente comida y servicio
+234,184,3,2022-12-08,Servicio un poco lento
+234,187,4,2023-05-27,Sabores auténticos
+234,56,4,2022-02-17,Sabores auténticos
+234,238,5,2021-11-05,No cumplió mis expectativas
+234,145,3,2022-08-13,La comida podría mejorar
+234,168,5,2024-08-24,Ambiente ruidoso
+235,203,3,2024-06-15,Excelente relación calidad-precio
+235,148,4,2026-06-27,Buena ubicación
+235,220,5,2026-07-13,La comida podría mejorar
+235,229,3,2025-05-30,No cumplió mis expectativas
+235,139,3,2021-03-22,Nada especial
+236,67,3,2022-04-23,Precios razonables
+236,222,5,2025-12-03,Excelente comida y servicio
+236,65,1,2022-12-16,Buena ubicación
+236,148,2,2021-08-16,Repetiría sin dudarlo
+236,208,3,2026-04-04,Tardaron mucho en servir
+236,244,5,2022-04-06,Lugar muy acogedor
+237,182,4,2026-10-27,La comida podría mejorar
+237,230,2,2021-04-26,Comida deliciosa
+237,210,2,2025-02-01,Porciones generosas
+237,84,5,2021-08-11,Ingredientes frescos
+237,36,4,2021-06-04,Muy buena experiencia
+237,149,3,2026-06-26,Una experiencia gastronómica única
+237,244,5,2026-03-23,Tardaron mucho en servir
+238,130,5,2025-03-05,Tardaron mucho en servir
+238,222,4,2023-08-28,Ingredientes frescos
+238,146,4,2021-09-07,Muy buena experiencia
+238,113,3,2024-02-14,No cumplió mis expectativas
+238,90,3,2025-05-08,Buen ambiente
+238,176,5,2024-08-06,Comida deliciosa
+238,54,2,2024-11-21,Precios razonables
+238,178,5,2022-01-19,Excelente comida y servicio
+239,165,5,2024-11-27,Excelente comida y servicio
+239,148,2,2023-03-26,Atención muy amable
+239,43,4,2026-09-26,Lugar muy acogedor
+239,200,2,2023-03-16,Excelente comida y servicio
+239,238,4,2026-04-10,Buen ambiente
+240,176,5,2022-08-18,Porciones generosas
+240,152,1,2022-09-11,Servicio un poco lento
+240,128,2,2022-10-07,Comida deliciosa
+240,24,5,2026-03-01,Sabores auténticos
+240,156,4,2022-07-26,Muy buena experiencia
+241,156,2,2022-04-07,Porciones generosas
+241,198,4,2022-06-15,Precios razonables
+241,191,1,2021-05-11,Buena ubicación
+241,173,2,2024-11-05,Tardaron mucho en servir
+242,239,3,2024-04-17,Nada especial
+242,64,1,2025-04-07,Repetiría sin dudarlo
+242,51,2,2021-02-24,Precios razonables
+242,237,4,2024-05-19,Tardaron mucho en servir
+242,160,2,2024-03-01,Precios razonables
+242,192,2,2024-03-11,Excelente comida y servicio
+242,187,5,2025-06-06,Tardaron mucho en servir
+243,237,4,2022-07-06,Servicio un poco lento
+243,87,4,2025-03-19,Servicio un poco lento
+243,221,1,2023-03-05,Ambiente ruidoso
+243,3,5,2024-12-04,Porciones generosas
+243,148,5,2021-09-28,Excelente comida y servicio
+244,184,2,2026-07-27,Excelente comida y servicio
+244,171,5,2023-07-27,Buena ubicación
+244,146,2,2024-02-03,Lugar muy acogedor
+244,153,4,2025-01-10,Ingredientes frescos
+244,89,3,2025-02-10,Porciones generosas
+245,196,3,2021-11-03,Servicio un poco lento
+245,237,1,2026-05-28,Muy buena experiencia
+245,34,4,2025-01-22,Una experiencia gastronómica única
+245,55,1,2023-08-04,Ingredientes frescos
+245,217,4,2021-09-05,Precios razonables
+245,7,5,2021-09-09,Buena ubicación
+246,111,1,2023-07-24,Servicio un poco lento
+246,110,2,2024-02-27,Tardaron mucho en servir
+246,221,4,2022-03-15,Repetiría sin dudarlo
+246,152,3,2022-10-12,Excelente comida y servicio
+247,180,3,2022-05-26,Excelente comida y servicio
+247,182,4,2025-07-20,Atención muy amable
+247,222,4,2026-01-24,Ambiente ruidoso
+247,74,2,2024-06-16,Una experiencia gastronómica única
+247,9,3,2025-12-19,Nada especial
+248,96,3,2026-05-19,Comida deliciosa
+248,73,1,2023-10-26,Buena ubicación
+248,109,4,2022-03-29,Muy buena experiencia
+248,216,4,2022-05-01,Tardaron mucho en servir
+248,45,4,2023-04-29,Excelente comida y servicio
+248,243,5,2025-08-17,Ingredientes frescos
+249,26,5,2026-06-26,Precios razonables
+249,116,4,2021-06-24,Ingredientes frescos
+249,103,1,2022-02-04,Ambiente ruidoso
+249,71,2,2022-08-30,Nada especial
+249,196,1,2022-03-20,Repetiría sin dudarlo
+250,119,1,2026-01-30,Comida deliciosa
+250,22,4,2026-03-08,La comida podría mejorar
+250,51,2,2021-07-15,No cumplió mis expectativas
+250,131,4,2026-12-14,Excelente relación calidad-precio
+251,77,1,2021-03-13,Nada especial
+251,52,2,2024-11-30,Ingredientes frescos
+251,206,5,2024-12-26,Buena ubicación
+251,103,4,2025-10-26,Una experiencia gastronómica única
+251,45,4,2021-05-02,Lugar muy acogedor
+251,30,4,2021-01-23,Repetiría sin dudarlo
+251,181,3,2023-04-01,Una experiencia gastronómica única
+252,41,4,2025-11-27,Porciones generosas
+252,211,4,2022-09-02,Buen ambiente
+252,208,4,2021-09-20,Tardaron mucho en servir
+252,236,3,2022-07-21,Atención muy amable
+252,241,1,2021-08-24,Excelente relación calidad-precio
+252,113,4,2025-10-10,Comida deliciosa
+252,237,3,2024-09-15,Nada especial
+253,194,2,2026-06-13,Buena ubicación
+253,18,4,2023-10-31,Muy buena experiencia
+253,204,1,2023-12-12,Nada especial
+253,30,4,2021-10-06,Nada especial
+254,147,2,2022-12-07,Muy buena experiencia
+254,1,4,2026-08-18,Muy buena experiencia
+254,81,5,2024-05-04,Una experiencia gastronómica única
+254,64,3,2025-06-06,Una experiencia gastronómica única
+254,171,4,2026-07-12,La comida podría mejorar
+254,182,4,2023-03-25,Buena ubicación
+255,113,5,2022-02-23,Sabores auténticos
+255,176,5,2022-02-12,Servicio un poco lento
+255,31,4,2024-03-20,Muy buena experiencia
+255,209,4,2023-12-27,La comida podría mejorar
+255,107,3,2022-12-15,Repetiría sin dudarlo
+255,98,4,2023-05-14,Tardaron mucho en servir
+255,155,4,2024-03-30,Nada especial
+255,143,4,2022-04-12,Una experiencia gastronómica única
+256,207,3,2025-10-31,Servicio un poco lento
+256,4,3,2026-03-29,Muy buena experiencia
+256,18,5,2022-12-04,Comida deliciosa
+256,183,2,2021-08-13,Precios razonables
+256,211,4,2021-04-23,Excelente relación calidad-precio
+256,234,2,2021-12-09,La comida podría mejorar
+256,68,2,2026-10-03,Una experiencia gastronómica única
+257,227,2,2025-12-26,Excelente comida y servicio
+257,200,5,2026-08-25,Nada especial
+257,150,5,2026-09-13,Excelente comida y servicio
+257,115,5,2021-10-17,Ingredientes frescos
+257,231,5,2023-12-02,No cumplió mis expectativas
+257,38,5,2022-10-21,Comida deliciosa
+257,230,4,2024-12-29,Tardaron mucho en servir
+257,29,5,2023-08-13,Nada especial
+258,249,3,2021-04-16,Excelente relación calidad-precio
+258,130,4,2025-09-12,Atención muy amable
+258,96,3,2022-01-19,Precios razonables
+258,113,5,2025-04-07,Nada especial
+258,239,2,2025-07-10,Buen ambiente
+258,3,5,2021-12-11,Precios razonables
+258,139,4,2026-08-09,Nada especial
+259,203,5,2022-09-09,Buena ubicación
+259,43,5,2025-05-26,Nada especial
+259,154,5,2026-05-09,Muy buena experiencia
+259,172,3,2024-12-23,La comida podría mejorar
+259,109,5,2023-11-26,Buen ambiente
+259,144,5,2025-10-01,Comida deliciosa
+260,110,3,2026-06-20,No cumplió mis expectativas
+260,12,5,2023-07-08,Repetiría sin dudarlo
+260,127,5,2024-12-21,Comida deliciosa
+260,231,5,2026-03-01,Nada especial
+260,142,5,2025-06-19,Precios razonables
+260,165,3,2021-07-05,Una experiencia gastronómica única
+261,180,4,2023-12-21,Una experiencia gastronómica única
+261,164,4,2023-12-25,Buena ubicación
+261,73,2,2022-09-14,Buen ambiente
+261,214,4,2022-09-19,Ingredientes frescos
+261,157,3,2025-04-30,Servicio un poco lento
+261,97,3,2024-12-27,Nada especial
+261,99,5,2025-07-24,Excelente relación calidad-precio
+262,140,5,2023-12-26,Ingredientes frescos
+262,33,4,2026-08-18,La comida podría mejorar
+262,1,5,2025-11-21,Servicio un poco lento
+262,129,5,2025-06-07,Atención muy amable
+262,248,3,2026-11-30,Buena ubicación
+262,147,4,2021-10-07,Sabores auténticos
+262,246,1,2021-09-17,Buen ambiente
+262,203,3,2023-05-29,Comida deliciosa
+263,230,5,2023-04-18,Sabores auténticos
+263,194,2,2023-05-24,Atención muy amable
+263,186,5,2021-01-02,Repetiría sin dudarlo
+263,64,1,2023-10-16,Muy buena experiencia
+263,92,5,2024-08-08,Ingredientes frescos
+263,170,4,2025-06-29,Repetiría sin dudarlo
+263,154,5,2021-03-31,Precios razonables
+263,164,4,2024-02-15,No cumplió mis expectativas
+264,38,5,2023-03-03,No cumplió mis expectativas
+264,68,2,2025-09-02,Porciones generosas
+264,32,5,2026-04-10,Atención muy amable
+264,158,5,2021-09-25,Tardaron mucho en servir
+264,25,4,2023-11-26,Una experiencia gastronómica única
+264,110,4,2021-06-21,Ingredientes frescos
+264,82,4,2021-01-12,Porciones generosas
+265,214,3,2026-10-19,Comida deliciosa
+265,142,5,2024-08-30,Una experiencia gastronómica única
+265,38,4,2025-06-04,Porciones generosas
+265,25,5,2025-09-26,Una experiencia gastronómica única
+265,70,3,2023-10-17,Nada especial
+265,21,4,2025-12-09,No cumplió mis expectativas
+265,114,5,2025-04-11,Nada especial
+266,177,4,2024-07-08,Muy buena experiencia
+266,229,2,2022-07-07,Una experiencia gastronómica única
+266,222,4,2021-08-28,Atención muy amable
+266,24,5,2023-10-07,Porciones generosas
+266,84,5,2021-07-02,Ambiente ruidoso
+266,88,2,2026-04-28,Buen ambiente
+267,175,5,2025-06-06,Lugar muy acogedor
+267,187,4,2023-10-16,Sabores auténticos
+267,16,5,2022-05-31,Comida deliciosa
+267,59,2,2023-12-01,Repetiría sin dudarlo
+267,214,4,2021-08-17,Porciones generosas
+267,153,4,2021-07-21,Excelente comida y servicio
+267,138,4,2024-05-18,Servicio un poco lento
+268,136,3,2025-03-22,Porciones generosas
+268,249,4,2024-01-28,Ingredientes frescos
+268,149,4,2025-11-02,Atención muy amable
+268,65,2,2024-08-31,Sabores auténticos
+268,46,4,2021-02-28,No cumplió mis expectativas
+268,13,4,2025-01-31,Atención muy amable
+269,88,5,2024-07-30,La comida podría mejorar
+269,138,3,2026-09-06,Una experiencia gastronómica única
+269,229,1,2022-06-20,La comida podría mejorar
+269,8,5,2025-02-22,Excelente relación calidad-precio
+269,147,5,2025-04-11,Servicio un poco lento
+269,116,5,2023-01-25,Sabores auténticos
+269,201,3,2024-03-30,Muy buena experiencia
+270,102,4,2023-07-27,Muy buena experiencia
+270,162,1,2025-10-09,Precios razonables
+270,86,5,2022-05-01,Precios razonables
+270,155,3,2023-01-12,Buena ubicación
+271,247,4,2024-07-18,Una experiencia gastronómica única
+271,226,2,2021-04-24,Comida deliciosa
+271,123,2,2024-02-25,Comida deliciosa
+271,178,2,2026-08-24,Excelente relación calidad-precio
+271,169,4,2026-10-19,Porciones generosas
+271,122,5,2021-01-26,Ingredientes frescos
+271,80,1,2026-04-28,Nada especial
+272,102,2,2025-01-07,Buena ubicación
+272,124,5,2021-02-25,Excelente relación calidad-precio
+272,183,4,2025-08-01,Excelente relación calidad-precio
+272,127,5,2025-10-07,Buen ambiente
+272,144,2,2022-03-31,Precios razonables
+272,33,3,2026-12-06,Excelente relación calidad-precio
+272,51,2,2026-05-15,Repetiría sin dudarlo
+272,224,3,2024-11-17,Nada especial
+273,222,5,2022-11-23,Ambiente ruidoso
+273,193,5,2026-10-07,Precios razonables
+273,137,3,2022-05-21,Ingredientes frescos
+273,13,5,2023-08-11,Tardaron mucho en servir
+273,119,3,2023-11-04,Ambiente ruidoso
+273,142,5,2024-01-05,Muy buena experiencia
+273,90,1,2025-10-25,Excelente relación calidad-precio
+274,168,5,2023-03-18,Buen ambiente
+274,95,2,2023-03-04,Servicio un poco lento
+274,74,4,2026-01-07,No cumplió mis expectativas
+274,167,5,2026-07-06,Una experiencia gastronómica única
+274,120,5,2021-12-14,Buena ubicación
+274,87,4,2025-06-19,Lugar muy acogedor
+275,171,5,2026-06-28,Precios razonables
+275,76,1,2025-04-04,Precios razonables
+275,166,5,2026-04-29,Ambiente ruidoso
+275,165,5,2021-09-06,Buen ambiente
+275,174,4,2025-05-05,La comida podría mejorar
+276,66,1,2025-05-03,Una experiencia gastronómica única
+276,85,5,2023-07-30,Repetiría sin dudarlo
+276,183,5,2026-08-23,Servicio un poco lento
+276,163,3,2023-07-29,Repetiría sin dudarlo
+277,226,5,2022-03-02,Tardaron mucho en servir
+277,79,1,2025-06-12,Buena ubicación
+277,4,4,2024-03-19,Tardaron mucho en servir
+277,10,5,2025-10-07,Ambiente ruidoso
+277,220,5,2024-02-17,Excelente relación calidad-precio
+278,235,4,2026-12-18,Lugar muy acogedor
+278,172,5,2025-01-21,Buen ambiente
+278,245,4,2023-06-10,Buena ubicación
+278,93,5,2022-03-15,Excelente comida y servicio
+278,67,3,2024-08-05,La comida podría mejorar
+278,68,3,2022-05-21,Servicio un poco lento
+279,117,5,2025-10-10,Nada especial
+279,246,4,2022-09-27,Una experiencia gastronómica única
+279,129,2,2024-07-12,Atención muy amable
+279,132,4,2022-06-29,Atención muy amable
+279,170,2,2026-01-15,Servicio un poco lento
+279,66,2,2023-08-11,Muy buena experiencia
+279,224,5,2025-04-11,Excelente relación calidad-precio
+279,138,3,2022-06-26,Lugar muy acogedor
+280,167,5,2022-09-11,Comida deliciosa
+280,58,4,2026-08-10,Excelente comida y servicio
+280,152,4,2022-10-06,Nada especial
+280,116,3,2022-12-08,Tardaron mucho en servir
+280,42,5,2021-07-22,Nada especial
+280,134,4,2023-05-19,Precios razonables
+280,61,1,2021-07-03,Comida deliciosa
+280,146,1,2023-08-01,Precios razonables
+281,5,4,2025-11-13,Porciones generosas
+281,17,4,2021-05-03,Tardaron mucho en servir
+281,178,5,2026-05-24,Porciones generosas
+281,134,2,2021-12-09,No cumplió mis expectativas
+282,96,2,2023-08-22,Ingredientes frescos
+282,99,3,2024-07-31,La comida podría mejorar
+282,204,4,2021-12-15,Nada especial
+282,24,5,2021-07-14,Atención muy amable
+282,74,2,2022-07-21,Lugar muy acogedor
+283,80,3,2022-02-05,Muy buena experiencia
+283,105,1,2021-03-11,Buena ubicación
+283,222,5,2025-07-14,Precios razonables
+283,151,1,2024-02-17,Repetiría sin dudarlo
+283,81,5,2025-04-03,Buena ubicación
+283,214,5,2024-09-19,Excelente comida y servicio
+284,112,4,2025-09-25,Excelente relación calidad-precio
+284,111,2,2021-02-23,Porciones generosas
+284,249,5,2024-05-10,Buen ambiente
+284,230,5,2023-07-10,No cumplió mis expectativas
+285,207,2,2024-01-07,Una experiencia gastronómica única
+285,115,4,2026-11-12,Una experiencia gastronómica única
+285,139,1,2023-03-09,Sabores auténticos
+285,83,4,2023-04-09,No cumplió mis expectativas
+286,37,4,2026-02-24,Excelente comida y servicio
+286,97,4,2025-11-11,Ingredientes frescos
+286,137,4,2022-04-30,Atención muy amable
+286,186,4,2026-06-11,Una experiencia gastronómica única
+286,146,2,2021-05-06,Ambiente ruidoso
+286,145,5,2025-10-23,Precios razonables
+286,160,4,2021-11-14,Nada especial
+286,104,4,2025-03-25,Excelente comida y servicio
+287,61,3,2025-01-08,Buena ubicación
+287,33,5,2026-11-09,Nada especial
+287,6,5,2023-02-05,Porciones generosas
+287,242,1,2021-11-19,Ingredientes frescos
+287,23,5,2025-02-18,Servicio un poco lento
+287,34,5,2026-03-04,Ambiente ruidoso
+287,111,3,2024-07-11,Comida deliciosa
+287,226,4,2026-02-15,No cumplió mis expectativas
+288,172,3,2023-01-28,Buen ambiente
+288,192,2,2022-08-16,Excelente relación calidad-precio
+288,36,3,2025-07-08,Servicio un poco lento
+288,125,4,2022-12-27,Precios razonables
+289,155,4,2026-01-15,Muy buena experiencia
+289,242,5,2023-12-19,Ambiente ruidoso
+289,123,3,2022-06-25,Comida deliciosa
+289,86,5,2024-11-20,No cumplió mis expectativas
+289,132,4,2021-07-05,Repetiría sin dudarlo
+290,200,2,2025-02-12,Atención muy amable
+290,130,5,2021-03-15,Muy buena experiencia
+290,33,3,2025-06-24,La comida podría mejorar
+290,1,5,2024-11-02,Sabores auténticos
+290,217,3,2021-08-05,Buena ubicación
+290,148,3,2022-07-12,Excelente relación calidad-precio
+290,37,5,2026-04-10,Precios razonables
+291,42,5,2021-01-21,Muy buena experiencia
+291,236,2,2026-11-01,Tardaron mucho en servir
+291,144,3,2023-12-09,Buena ubicación
+291,157,3,2022-07-13,Sabores auténticos
+291,84,2,2025-03-09,Excelente comida y servicio
+291,228,4,2021-08-30,Ambiente ruidoso
+291,185,5,2021-08-30,Buen ambiente
+291,227,2,2025-03-03,Excelente comida y servicio
+292,46,3,2023-02-01,Sabores auténticos
+292,217,2,2021-06-28,Ambiente ruidoso
+292,119,3,2025-12-10,Muy buena experiencia
+292,227,5,2022-07-12,Lugar muy acogedor
+292,207,1,2026-03-09,Buen ambiente
+292,28,5,2024-07-09,Excelente comida y servicio
+292,209,1,2026-06-05,Excelente relación calidad-precio
+292,169,5,2021-12-21,Tardaron mucho en servir
+293,202,5,2022-07-31,Nada especial
+293,80,2,2025-08-20,Nada especial
+293,144,4,2023-05-24,Sabores auténticos
+293,183,3,2023-11-20,Excelente relación calidad-precio
+293,84,5,2022-04-19,Sabores auténticos
+293,179,5,2021-12-27,Una experiencia gastronómica única
+293,76,3,2026-10-10,Servicio un poco lento
+293,59,4,2023-04-09,No cumplió mis expectativas
+294,22,4,2021-07-05,Servicio un poco lento
+294,55,2,2025-07-10,La comida podría mejorar
+294,231,4,2021-10-09,Buena ubicación
+294,198,5,2023-05-24,Ambiente ruidoso
+294,186,4,2026-11-17,La comida podría mejorar
+294,199,3,2022-09-13,Sabores auténticos
+294,19,5,2025-07-20,Excelente relación calidad-precio
+294,10,5,2025-11-19,Muy buena experiencia
+295,115,5,2026-08-24,Lugar muy acogedor
+295,50,5,2022-12-26,Repetiría sin dudarlo
+295,151,5,2025-04-17,No cumplió mis expectativas
+295,141,4,2022-07-19,Ingredientes frescos
+295,57,1,2024-09-30,Muy buena experiencia
+295,184,4,2025-12-25,Excelente relación calidad-precio
+295,65,3,2025-05-31,Ambiente ruidoso
+296,159,3,2023-01-19,Excelente comida y servicio
+296,86,4,2024-09-27,Repetiría sin dudarlo
+296,91,2,2026-07-14,No cumplió mis expectativas
+296,21,5,2022-02-21,La comida podría mejorar
+296,94,2,2021-12-08,Comida deliciosa
+296,246,4,2026-09-10,Porciones generosas
+296,102,2,2021-03-20,Servicio un poco lento
+297,207,4,2022-12-27,Precios razonables
+297,76,3,2025-07-22,Una experiencia gastronómica única
+297,181,4,2023-08-16,Repetiría sin dudarlo
+297,242,5,2024-01-03,Buen ambiente
+297,114,4,2021-01-03,Buen ambiente
+297,175,4,2023-01-17,Buena ubicación
+298,201,5,2021-02-13,Precios razonables
+298,204,5,2021-07-27,Buen ambiente
+298,231,3,2024-10-13,Lugar muy acogedor
+298,145,5,2023-01-20,Ambiente ruidoso
+298,92,5,2023-11-30,Buena ubicación
+298,224,4,2024-10-23,Muy buena experiencia
+299,73,2,2023-02-23,Servicio un poco lento
+299,12,4,2021-07-22,Ambiente ruidoso
+299,245,5,2025-02-08,Excelente comida y servicio
+299,214,5,2021-09-27,Muy buena experiencia
+299,127,1,2025-05-28,No cumplió mis expectativas
+299,26,5,2023-06-05,No cumplió mis expectativas
+299,196,5,2021-02-19,Lugar muy acogedor
+300,31,4,2021-07-06,Tardaron mucho en servir
+300,1,5,2024-03-10,Buen ambiente
+300,72,1,2024-05-13,Una experiencia gastronómica única
+300,90,5,2023-06-26,Repetiría sin dudarlo
+300,33,5,2022-12-15,Ingredientes frescos
+300,241,4,2023-09-25,Ambiente ruidoso
+300,9,5,2024-10-26,Servicio un poco lento
+300,225,1,2025-05-08,Buen ambiente
+301,16,5,2021-02-23,Excelente comida y servicio
+301,105,4,2025-10-22,Ingredientes frescos
+301,247,2,2025-05-04,Buena ubicación
+301,125,4,2021-06-30,La comida podría mejorar
+302,129,5,2023-03-05,Nada especial
+302,69,3,2024-06-10,Nada especial
+302,178,4,2025-03-16,La comida podría mejorar
+302,175,1,2025-05-28,Atención muy amable
+302,33,4,2022-10-06,Repetiría sin dudarlo
+302,184,3,2023-06-12,Precios razonables
+302,228,4,2021-02-15,Buen ambiente
+303,55,1,2022-03-10,Buena ubicación
+303,98,4,2023-01-23,Nada especial
+303,81,2,2023-02-05,Nada especial
+303,66,3,2022-09-05,La comida podría mejorar
+303,34,5,2024-06-14,Repetiría sin dudarlo
+303,231,5,2021-10-13,Excelente comida y servicio
+303,101,5,2021-05-11,Nada especial
+304,165,5,2021-07-10,Ambiente ruidoso
+304,230,3,2025-08-23,Tardaron mucho en servir
+304,229,3,2021-02-27,Servicio un poco lento
+304,108,5,2022-04-23,Buen ambiente
+305,101,1,2024-10-02,Buena ubicación
+305,114,3,2026-01-22,Repetiría sin dudarlo
+305,57,4,2023-02-02,Buen ambiente
+305,204,3,2025-10-01,No cumplió mis expectativas
+305,35,4,2021-07-10,La comida podría mejorar
+305,158,5,2023-09-12,Sabores auténticos
+305,238,4,2023-01-04,Excelente comida y servicio
+306,118,2,2026-03-08,Buena ubicación
+306,95,5,2022-06-01,Excelente comida y servicio
+306,91,5,2022-04-15,Buen ambiente
+306,134,5,2022-10-26,La comida podría mejorar
+306,48,5,2021-01-26,Precios razonables
+307,111,4,2022-12-02,Buen ambiente
+307,180,4,2026-11-19,Comida deliciosa
+307,246,4,2026-06-26,Excelente comida y servicio
+307,44,5,2022-01-22,Sabores auténticos
+307,26,4,2022-04-05,Tardaron mucho en servir
+308,55,3,2024-07-05,Nada especial
+308,138,5,2026-04-11,Precios razonables
+308,96,5,2022-01-21,Porciones generosas
+308,86,4,2021-07-02,Muy buena experiencia
+308,141,5,2024-10-23,La comida podría mejorar
+308,21,4,2023-06-04,Buen ambiente
+308,187,4,2025-03-18,Una experiencia gastronómica única
+309,131,3,2026-09-17,Excelente relación calidad-precio
+309,233,3,2024-06-27,Muy buena experiencia
+309,149,4,2026-10-06,Servicio un poco lento
+309,123,3,2026-05-07,Precios razonables
+309,231,1,2022-12-29,Ingredientes frescos
+310,158,5,2023-07-26,Servicio un poco lento
+310,76,3,2022-09-29,Muy buena experiencia
+310,138,3,2024-02-11,Excelente relación calidad-precio
+310,33,4,2024-02-16,Lugar muy acogedor
+310,161,5,2026-11-20,Comida deliciosa
+311,108,4,2023-03-15,Excelente comida y servicio
+311,250,4,2021-02-23,Servicio un poco lento
+311,245,1,2023-05-02,Muy buena experiencia
+311,93,3,2022-09-04,La comida podría mejorar
+312,34,5,2022-06-05,Comida deliciosa
+312,184,3,2023-03-06,Muy buena experiencia
+312,113,5,2022-06-20,Tardaron mucho en servir
+312,128,2,2024-10-06,Muy buena experiencia
+312,92,4,2025-06-10,Lugar muy acogedor
+313,175,5,2023-08-04,Buena ubicación
+313,212,4,2024-12-28,Porciones generosas
+313,15,5,2022-01-29,Una experiencia gastronómica única
+313,89,4,2022-06-25,Buen ambiente
+314,167,4,2021-10-31,Atención muy amable
+314,42,4,2021-06-17,Precios razonables
+314,154,4,2026-12-15,Lugar muy acogedor
+314,23,4,2021-04-30,Excelente relación calidad-precio
+315,216,3,2025-05-05,Porciones generosas
+315,248,3,2021-11-29,Lugar muy acogedor
+315,190,5,2025-09-16,Atención muy amable
+315,139,1,2021-08-17,Ambiente ruidoso
+315,211,4,2025-02-18,Sabores auténticos
+316,118,3,2025-06-02,Servicio un poco lento
+316,245,2,2026-09-29,Porciones generosas
+316,193,4,2021-09-05,No cumplió mis expectativas
+316,225,4,2023-11-10,No cumplió mis expectativas
+316,229,4,2025-12-12,Sabores auténticos
+316,11,4,2023-03-16,No cumplió mis expectativas
+316,99,4,2023-02-12,La comida podría mejorar
+317,107,4,2022-06-15,Precios razonables
+317,89,4,2025-11-13,Comida deliciosa
+317,3,3,2022-08-25,Excelente relación calidad-precio
+317,78,2,2025-08-11,Servicio un poco lento
+317,166,5,2024-11-08,Ingredientes frescos
+317,155,4,2023-12-28,Servicio un poco lento
+317,97,2,2026-10-10,Tardaron mucho en servir
+317,43,5,2021-06-10,Ingredientes frescos
+318,243,4,2025-07-28,Servicio un poco lento
+318,153,4,2024-06-28,Buen ambiente
+318,244,4,2025-04-07,Excelente relación calidad-precio
+318,176,3,2024-10-19,La comida podría mejorar
+318,159,5,2024-02-28,Buena ubicación
+318,26,5,2023-02-04,Ambiente ruidoso
+318,190,4,2025-02-02,Ingredientes frescos
+319,58,4,2021-05-23,La comida podría mejorar
+319,63,1,2025-02-07,Tardaron mucho en servir
+319,67,2,2021-04-25,Ambiente ruidoso
+319,244,5,2023-12-30,Ambiente ruidoso
+319,52,4,2025-05-19,Nada especial
+320,128,5,2024-01-04,Repetiría sin dudarlo
+320,85,5,2025-01-16,La comida podría mejorar
+320,204,4,2026-04-19,Excelente relación calidad-precio
+320,117,4,2026-08-22,Porciones generosas
+320,103,5,2021-09-18,Sabores auténticos
+320,151,3,2024-02-23,Servicio un poco lento
+321,46,3,2021-02-02,Nada especial
+321,88,3,2024-06-08,Tardaron mucho en servir
+321,74,1,2024-10-31,Precios razonables
+321,95,5,2022-08-08,Repetiría sin dudarlo
+322,148,3,2023-09-09,Excelente comida y servicio
+322,98,4,2024-02-06,Servicio un poco lento
+322,102,3,2022-05-02,Excelente relación calidad-precio
+322,78,1,2022-05-17,No cumplió mis expectativas
+322,217,2,2023-12-21,Ingredientes frescos
+322,115,4,2023-10-13,Precios razonables
+323,210,3,2021-08-17,Buena ubicación
+323,30,5,2023-06-21,Buena ubicación
+323,78,2,2021-03-16,Excelente comida y servicio
+323,199,4,2022-05-15,Atención muy amable
+323,82,5,2024-12-30,Precios razonables
+323,227,2,2022-05-08,Buen ambiente
+323,80,2,2026-01-04,Buen ambiente
+324,72,2,2022-12-23,Sabores auténticos
+324,82,5,2026-09-02,Buena ubicación
+324,41,4,2026-08-03,Muy buena experiencia
+324,54,1,2023-03-06,Precios razonables
+324,93,5,2021-04-14,Tardaron mucho en servir
+324,209,4,2024-10-30,Servicio un poco lento
+324,249,3,2025-12-27,Buena ubicación
+324,169,4,2025-10-28,Porciones generosas
+325,105,3,2021-09-11,Muy buena experiencia
+325,49,5,2025-01-02,Servicio un poco lento
+325,50,5,2021-09-15,Excelente comida y servicio
+325,120,5,2025-02-14,Repetiría sin dudarlo
+325,1,5,2021-07-06,Muy buena experiencia
+325,29,3,2022-09-15,Atención muy amable
+326,187,3,2023-03-10,Comida deliciosa
+326,33,4,2024-05-18,La comida podría mejorar
+326,17,5,2022-05-21,Lugar muy acogedor
+326,80,3,2026-12-08,Buen ambiente
+326,48,4,2022-11-05,Muy buena experiencia
+327,32,4,2022-09-24,Tardaron mucho en servir
+327,51,3,2022-12-22,Excelente comida y servicio
+327,97,4,2023-02-03,Nada especial
+327,160,5,2026-06-09,La comida podría mejorar
+327,89,3,2025-03-10,Una experiencia gastronómica única
+328,212,5,2022-08-31,Precios razonables
+328,229,3,2025-12-19,La comida podría mejorar
+328,221,4,2023-02-18,Tardaron mucho en servir
+328,169,4,2022-12-15,Excelente comida y servicio
+328,175,3,2026-04-25,La comida podría mejorar
+328,55,3,2023-07-13,Servicio un poco lento
+329,109,5,2026-04-08,Porciones generosas
+329,110,2,2021-07-20,Ingredientes frescos
+329,23,5,2021-07-06,Tardaron mucho en servir
+329,130,3,2026-08-02,Comida deliciosa
+329,90,5,2022-10-11,Lugar muy acogedor
+330,10,3,2023-06-30,Ingredientes frescos
+330,26,5,2023-01-20,Buen ambiente
+330,4,5,2026-07-13,Sabores auténticos
+330,126,5,2023-12-10,Ingredientes frescos
+330,32,5,2025-07-07,Atención muy amable
+330,40,4,2025-12-18,Excelente relación calidad-precio
+330,102,2,2023-05-10,Lugar muy acogedor
+331,37,5,2022-03-11,Una experiencia gastronómica única
+331,244,3,2022-09-23,Ambiente ruidoso
+331,42,5,2022-09-24,Precios razonables
+331,236,3,2024-12-19,Porciones generosas
+331,183,2,2023-01-20,Una experiencia gastronómica única
+332,55,2,2026-05-16,La comida podría mejorar
+332,96,2,2022-04-15,Ingredientes frescos
+332,168,2,2025-06-14,Atención muy amable
+332,13,4,2023-08-26,Excelente comida y servicio
+332,231,4,2024-07-15,La comida podría mejorar
+332,100,5,2024-06-02,Comida deliciosa
+333,83,4,2025-07-02,Muy buena experiencia
+333,39,5,2024-03-20,Porciones generosas
+333,4,4,2026-04-24,Ambiente ruidoso
+333,228,4,2024-07-09,Excelente relación calidad-precio
+333,169,5,2021-07-04,Ambiente ruidoso
+333,19,4,2021-10-25,Precios razonables
+333,57,4,2021-10-03,Ambiente ruidoso
+333,199,2,2024-01-02,Buen ambiente
+334,145,3,2025-10-21,Excelente relación calidad-precio
+334,197,1,2022-01-10,Nada especial
+334,236,5,2023-05-17,Nada especial
+334,173,3,2026-07-28,Ambiente ruidoso
+335,16,4,2023-11-05,Precios razonables
+335,123,4,2022-10-11,Excelente comida y servicio
+335,206,2,2026-07-26,Comida deliciosa
+335,1,4,2022-01-03,Servicio un poco lento
+335,208,3,2023-04-07,Nada especial
+336,193,4,2026-03-11,Ingredientes frescos
+336,184,4,2026-02-03,Porciones generosas
+336,111,1,2026-11-14,Atención muy amable
+336,232,3,2022-11-07,Sabores auténticos
+336,243,4,2026-06-05,La comida podría mejorar
+337,205,2,2025-05-14,Excelente comida y servicio
+337,155,4,2024-10-21,Nada especial
+337,198,5,2026-12-31,Una experiencia gastronómica única
+337,48,4,2025-09-18,Ambiente ruidoso
+338,216,4,2024-06-18,Lugar muy acogedor
+338,164,2,2022-01-11,Porciones generosas
+338,240,3,2023-02-11,Excelente comida y servicio
+338,54,4,2024-10-03,Precios razonables
+338,241,3,2022-08-16,Muy buena experiencia
+339,31,3,2024-11-30,Atención muy amable
+339,151,5,2024-01-21,No cumplió mis expectativas
+339,18,5,2026-02-12,No cumplió mis expectativas
+339,91,4,2021-07-24,Excelente comida y servicio
+339,216,2,2026-03-17,Porciones generosas
+340,80,2,2026-01-09,Nada especial
+340,140,4,2024-06-21,Buen ambiente
+340,171,4,2023-04-05,Porciones generosas
+340,196,5,2025-10-14,Muy buena experiencia
+340,112,3,2024-09-16,Muy buena experiencia
+340,128,1,2023-09-28,Ambiente ruidoso
+341,179,5,2024-01-21,Nada especial
+341,57,2,2023-02-03,Buena ubicación
+341,121,4,2022-03-27,Nada especial
+341,51,3,2022-07-17,Nada especial
+341,10,5,2023-07-02,Repetiría sin dudarlo
+341,151,3,2025-02-28,Nada especial
+342,185,4,2026-03-11,Sabores auténticos
+342,3,5,2025-10-14,No cumplió mis expectativas
+342,46,4,2021-11-17,Repetiría sin dudarlo
+342,95,4,2026-11-19,Una experiencia gastronómica única
+342,90,5,2024-10-05,Una experiencia gastronómica única
+342,29,4,2024-02-28,Sabores auténticos
+342,42,5,2023-10-13,No cumplió mis expectativas
+343,193,3,2023-06-26,No cumplió mis expectativas
+343,68,3,2021-10-26,No cumplió mis expectativas
+343,224,4,2025-06-09,Nada especial
+343,231,5,2023-09-29,Una experiencia gastronómica única
+343,242,3,2023-11-25,Excelente relación calidad-precio
+343,237,4,2024-03-13,La comida podría mejorar
+344,226,4,2022-12-03,Servicio un poco lento
+344,70,2,2024-09-06,Tardaron mucho en servir
+344,225,4,2026-05-08,Lugar muy acogedor
+344,105,5,2026-12-24,Tardaron mucho en servir
+344,68,3,2024-01-10,Comida deliciosa
+344,5,4,2022-03-01,Excelente comida y servicio
+344,135,5,2025-12-30,Servicio un poco lento
+344,195,2,2022-12-11,Comida deliciosa
+345,195,4,2023-03-01,No cumplió mis expectativas
+345,12,5,2025-08-18,Ambiente ruidoso
+345,123,3,2022-06-25,Servicio un poco lento
+345,84,1,2021-02-11,Muy buena experiencia
+345,78,2,2025-11-08,No cumplió mis expectativas
+345,231,4,2021-09-20,Servicio un poco lento
+345,219,5,2023-07-05,Nada especial
+346,211,5,2024-12-28,Comida deliciosa
+346,8,4,2022-04-16,Lugar muy acogedor
+346,37,5,2026-03-06,Repetiría sin dudarlo
+346,230,5,2024-12-30,Tardaron mucho en servir
+347,101,4,2021-01-10,Ingredientes frescos
+347,49,5,2021-11-20,Nada especial
+347,85,4,2021-10-09,Excelente relación calidad-precio
+347,150,5,2024-05-07,Lugar muy acogedor
+347,87,3,2024-09-02,Porciones generosas
+347,161,4,2021-12-13,Buen ambiente
+347,174,3,2025-02-28,Muy buena experiencia
+347,215,5,2024-04-29,Precios razonables
+348,213,5,2021-05-18,La comida podría mejorar
+348,105,3,2026-02-17,No cumplió mis expectativas
+348,41,4,2025-07-24,Lugar muy acogedor
+348,239,4,2021-03-18,No cumplió mis expectativas
+348,172,3,2026-01-21,Nada especial
+349,130,5,2021-04-25,Muy buena experiencia
+349,190,4,2024-07-09,Servicio un poco lento
+349,178,4,2024-02-24,Porciones generosas
+349,173,5,2021-07-25,Servicio un poco lento
+349,206,5,2022-01-03,Atención muy amable
+349,169,4,2024-03-17,Buen ambiente
+349,102,4,2023-02-11,Muy buena experiencia
+350,54,2,2025-02-10,Muy buena experiencia
+350,216,3,2024-02-23,Sabores auténticos
+350,82,4,2023-01-13,Buena ubicación
+350,15,5,2022-10-16,Lugar muy acogedor
+350,40,4,2026-11-02,Servicio un poco lento
+350,59,3,2023-08-16,Excelente comida y servicio
+351,5,5,2023-06-02,Lugar muy acogedor
+351,35,5,2023-07-30,Excelente comida y servicio
+351,85,3,2023-11-05,Sabores auténticos
+351,103,4,2021-10-05,Comida deliciosa
+351,147,4,2025-10-19,Buena ubicación
+352,239,2,2026-05-14,Una experiencia gastronómica única
+352,209,4,2024-07-15,La comida podría mejorar
+352,3,5,2021-08-21,Precios razonables
+352,113,3,2025-02-25,Lugar muy acogedor
+352,220,2,2022-12-10,La comida podría mejorar
+352,110,5,2023-11-25,Atención muy amable
+353,61,4,2022-06-24,Muy buena experiencia
+353,8,4,2024-04-27,Buena ubicación
+353,56,1,2021-03-09,Buen ambiente
+353,70,2,2022-10-30,Precios razonables
+353,184,4,2022-06-27,No cumplió mis expectativas
+354,226,5,2025-08-22,Excelente relación calidad-precio
+354,96,4,2026-03-10,Comida deliciosa
+354,15,5,2026-05-05,Atención muy amable
+354,113,3,2023-12-03,Sabores auténticos
+355,160,5,2023-01-20,Excelente relación calidad-precio
+355,202,2,2025-01-13,Ingredientes frescos
+355,214,3,2025-12-11,Servicio un poco lento
+355,154,5,2026-04-06,Servicio un poco lento
+356,130,3,2021-06-14,Nada especial
+356,224,5,2024-11-06,Porciones generosas
+356,239,4,2026-12-27,No cumplió mis expectativas
+356,17,5,2026-09-09,Servicio un poco lento
+356,47,5,2026-06-12,La comida podría mejorar
+356,40,5,2026-01-23,Nada especial
+357,204,2,2021-07-13,Comida deliciosa
+357,48,5,2026-10-05,Muy buena experiencia
+357,26,4,2024-11-20,Ingredientes frescos
+357,34,4,2021-07-24,Buen ambiente
+358,219,1,2023-07-13,Una experiencia gastronómica única
+358,13,4,2022-03-01,Nada especial
+358,221,5,2023-10-29,Ambiente ruidoso
+358,212,3,2024-07-27,Comida deliciosa
+358,125,4,2022-12-09,Precios razonables
+358,75,1,2026-07-10,Porciones generosas
+358,178,5,2023-10-21,La comida podría mejorar
+359,117,2,2025-03-19,Precios razonables
+359,47,4,2024-08-05,Excelente relación calidad-precio
+359,42,5,2025-04-16,Lugar muy acogedor
+359,6,5,2021-01-07,Ingredientes frescos
+359,93,5,2023-04-09,No cumplió mis expectativas
+359,220,3,2025-12-19,Excelente comida y servicio
+359,75,2,2026-10-26,Atención muy amable
+359,39,5,2024-09-16,Excelente comida y servicio
+360,119,4,2025-03-27,Tardaron mucho en servir
+360,6,5,2021-10-20,Una experiencia gastronómica única
+360,206,5,2024-07-06,Lugar muy acogedor
+360,43,5,2026-01-10,Atención muy amable
+360,3,4,2023-01-15,Porciones generosas
+360,221,4,2023-05-07,Precios razonables
+361,190,4,2024-07-30,Precios razonables
+361,82,3,2025-01-09,Nada especial
+361,107,3,2025-09-10,Buen ambiente
+361,60,4,2024-12-01,Ingredientes frescos
+361,69,1,2022-07-03,Excelente comida y servicio
+361,48,5,2022-10-08,Servicio un poco lento
+361,116,4,2022-04-25,Buen ambiente
+361,236,3,2025-08-09,Lugar muy acogedor
+362,39,5,2025-07-06,La comida podría mejorar
+362,152,4,2026-03-13,Servicio un poco lento
+362,82,4,2022-12-07,Una experiencia gastronómica única
+362,81,5,2023-01-07,Muy buena experiencia
+363,97,1,2024-10-23,Comida deliciosa
+363,20,4,2022-03-15,La comida podría mejorar
+363,86,4,2021-06-15,Muy buena experiencia
+363,170,3,2026-12-30,La comida podría mejorar
+363,67,3,2022-10-06,Buen ambiente
+363,160,5,2021-12-09,Precios razonables
+363,132,5,2022-01-22,Precios razonables
+364,96,4,2022-04-07,Ambiente ruidoso
+364,192,4,2025-11-19,Ingredientes frescos
+364,76,2,2026-08-08,Porciones generosas
+364,131,3,2021-02-04,Comida deliciosa
+365,29,4,2024-06-05,Servicio un poco lento
+365,136,5,2021-01-04,Muy buena experiencia
+365,84,5,2022-12-29,Nada especial
+365,68,4,2026-08-02,Buena ubicación
+365,143,4,2026-05-22,La comida podría mejorar
+365,138,5,2026-11-04,Repetiría sin dudarlo
+365,15,5,2025-05-08,Porciones generosas
+365,100,3,2025-06-24,No cumplió mis expectativas
+366,153,3,2023-01-09,Comida deliciosa
+366,112,4,2025-11-22,Servicio un poco lento
+366,186,3,2023-03-03,Precios razonables
+366,34,3,2021-09-19,Muy buena experiencia
+367,42,5,2024-02-27,Atención muy amable
+367,157,5,2022-04-04,Buen ambiente
+367,65,2,2026-01-03,Servicio un poco lento
+367,137,5,2025-07-23,Nada especial
+367,56,3,2024-02-12,Nada especial
+367,204,4,2022-01-31,Precios razonables
+368,179,5,2025-09-26,Sabores auténticos
+368,51,1,2022-11-20,Excelente comida y servicio
+368,29,3,2024-11-25,Lugar muy acogedor
+368,189,5,2024-10-10,Lugar muy acogedor
+368,141,4,2023-02-12,Comida deliciosa
+368,6,3,2021-07-10,Repetiría sin dudarlo
+368,15,5,2024-01-12,La comida podría mejorar
+368,57,4,2023-08-21,Ingredientes frescos
+369,240,3,2025-09-08,Una experiencia gastronómica única
+369,91,3,2021-09-13,Muy buena experiencia
+369,142,4,2026-12-28,Sabores auténticos
+369,177,3,2026-02-17,Sabores auténticos
+370,220,5,2023-04-28,Tardaron mucho en servir
+370,59,3,2025-04-28,Lugar muy acogedor
+370,46,4,2026-06-05,Sabores auténticos
+370,217,5,2021-12-08,Tardaron mucho en servir
+370,143,3,2022-04-13,Ingredientes frescos
+371,46,4,2022-03-22,Excelente comida y servicio
+371,102,5,2023-02-17,Servicio un poco lento
+371,117,4,2022-10-05,Lugar muy acogedor
+371,27,5,2022-09-17,Comida deliciosa
+371,64,3,2026-09-13,La comida podría mejorar
+371,112,3,2023-02-05,Buena ubicación
+371,142,5,2021-09-17,Tardaron mucho en servir
+372,84,4,2026-05-30,Atención muy amable
+372,182,4,2021-06-27,Sabores auténticos
+372,241,5,2025-02-25,Nada especial
+372,196,3,2026-11-11,Comida deliciosa
+372,189,5,2023-12-28,La comida podría mejorar
+372,180,5,2022-06-06,Buena ubicación
+372,6,5,2025-08-06,Comida deliciosa
+373,236,4,2026-12-25,La comida podría mejorar
+373,129,4,2024-05-09,Ambiente ruidoso
+373,178,4,2022-12-31,Excelente comida y servicio
+373,29,5,2022-09-10,Porciones generosas
+373,91,4,2025-06-24,Ingredientes frescos
+373,249,4,2022-12-01,Una experiencia gastronómica única
+373,152,5,2022-01-21,Servicio un poco lento
+374,115,4,2022-10-28,Repetiría sin dudarlo
+374,53,2,2024-01-23,Sabores auténticos
+374,79,3,2021-02-06,Buena ubicación
+374,158,5,2022-07-14,Nada especial
+374,130,5,2021-04-03,Buena ubicación
+374,152,3,2026-05-01,Servicio un poco lento
+375,106,4,2026-06-08,Excelente comida y servicio
+375,109,4,2026-02-17,No cumplió mis expectativas
+375,152,4,2026-08-02,Excelente relación calidad-precio
+375,78,3,2024-03-10,Porciones generosas
+375,17,4,2026-09-17,Lugar muy acogedor
+375,196,5,2026-08-27,No cumplió mis expectativas
+375,113,2,2026-03-08,La comida podría mejorar
+375,147,3,2026-02-21,Tardaron mucho en servir
+376,53,2,2025-04-09,No cumplió mis expectativas
+376,103,5,2026-12-27,Excelente comida y servicio
+376,188,3,2024-07-18,Excelente comida y servicio
+376,149,5,2022-11-14,Tardaron mucho en servir
+376,138,5,2021-02-10,Repetiría sin dudarlo
+376,207,5,2022-04-30,Muy buena experiencia
+377,103,4,2024-04-02,Ingredientes frescos
+377,36,5,2021-09-08,Excelente comida y servicio
+377,247,5,2023-01-04,Excelente relación calidad-precio
+377,118,4,2023-11-01,Ambiente ruidoso
+377,11,5,2023-06-27,Excelente comida y servicio
+378,225,1,2026-05-31,No cumplió mis expectativas
+378,139,4,2023-08-29,Una experiencia gastronómica única
+378,147,4,2026-04-25,Excelente relación calidad-precio
+378,143,5,2022-03-11,Ingredientes frescos
+378,49,4,2023-08-27,Excelente comida y servicio
+378,224,2,2026-01-06,Ambiente ruidoso
+378,171,5,2021-07-13,Excelente comida y servicio
+378,206,3,2024-11-13,Porciones generosas
+379,27,5,2021-03-12,Ambiente ruidoso
+379,152,4,2022-02-02,Ingredientes frescos
+379,228,3,2023-02-24,Buena ubicación
+379,223,5,2024-04-20,Sabores auténticos
+379,200,4,2021-08-01,Tardaron mucho en servir
+379,153,5,2021-03-21,Comida deliciosa
+379,92,4,2022-10-26,Sabores auténticos
+380,8,4,2025-03-06,Comida deliciosa
+380,29,3,2024-01-17,No cumplió mis expectativas
+380,162,3,2023-10-30,Servicio un poco lento
+380,193,4,2021-06-27,Porciones generosas
+381,71,4,2025-03-13,Precios razonables
+381,171,3,2021-06-08,Porciones generosas
+381,88,2,2022-06-01,Comida deliciosa
+381,245,3,2024-11-10,Una experiencia gastronómica única
+381,109,4,2026-05-11,Servicio un poco lento
+381,144,3,2025-10-09,Precios razonables
+381,232,3,2023-01-11,Comida deliciosa
+382,3,4,2021-05-01,Excelente relación calidad-precio
+382,85,4,2026-05-22,Porciones generosas
+382,61,2,2024-03-27,Repetiría sin dudarlo
+382,56,2,2023-07-02,Una experiencia gastronómica única
+382,239,4,2022-12-01,Comida deliciosa
+382,163,5,2023-08-08,Ingredientes frescos
+382,166,3,2021-01-26,Atención muy amable
+382,169,5,2022-07-16,No cumplió mis expectativas
+383,187,5,2021-08-19,Excelente comida y servicio
+383,90,5,2025-06-04,Servicio un poco lento
+383,56,3,2022-01-10,Buen ambiente
+383,27,5,2026-04-19,La comida podría mejorar
+383,43,5,2022-08-10,Buena ubicación
+383,180,4,2025-10-10,Excelente relación calidad-precio
+384,165,5,2024-08-08,Ingredientes frescos
+384,140,3,2023-01-12,Nada especial
+384,188,4,2022-11-29,Ambiente ruidoso
+384,64,1,2024-07-04,Comida deliciosa
+384,159,4,2026-08-20,Repetiría sin dudarlo
+384,89,4,2021-12-11,Buena ubicación
+384,143,2,2024-10-08,Muy buena experiencia
+384,83,4,2021-07-13,Ambiente ruidoso
+385,154,3,2023-08-02,Ambiente ruidoso
+385,24,5,2024-12-31,Servicio un poco lento
+385,67,2,2026-12-07,No cumplió mis expectativas
+385,115,2,2026-03-05,Comida deliciosa
+385,117,4,2024-05-14,Nada especial
+385,79,2,2023-12-01,No cumplió mis expectativas
+386,53,2,2022-05-27,Tardaron mucho en servir
+386,10,4,2021-12-07,Buen ambiente
+386,86,4,2023-09-09,Tardaron mucho en servir
+386,60,4,2023-01-17,Sabores auténticos
+386,126,5,2026-10-03,Atención muy amable
+386,131,4,2022-12-19,Ingredientes frescos
+386,137,2,2022-12-15,Atención muy amable
+386,8,5,2023-03-16,Excelente comida y servicio
+387,212,2,2023-01-14,Comida deliciosa
+387,143,4,2024-06-06,Sabores auténticos
+387,112,3,2023-05-22,Repetiría sin dudarlo
+387,48,5,2026-05-31,Tardaron mucho en servir
+387,81,2,2026-09-28,Nada especial
+387,176,5,2024-12-30,Sabores auténticos
+388,49,5,2025-12-19,Porciones generosas
+388,75,4,2025-06-17,Nada especial
+388,72,4,2024-06-25,La comida podría mejorar
+388,223,3,2025-06-11,Servicio un poco lento
+388,98,4,2023-11-19,Porciones generosas
+388,128,4,2025-10-28,Excelente relación calidad-precio
+388,23,5,2024-10-30,Muy buena experiencia
+389,151,1,2024-10-25,Atención muy amable
+389,148,3,2021-03-11,Ingredientes frescos
+389,150,5,2024-10-26,Precios razonables
+389,203,2,2021-12-15,Ingredientes frescos
+389,8,5,2026-11-09,No cumplió mis expectativas
+389,177,5,2022-11-29,No cumplió mis expectativas
+389,10,4,2026-10-09,Tardaron mucho en servir
+389,29,4,2026-02-19,Nada especial
+390,113,5,2026-07-02,Repetiría sin dudarlo
+390,44,5,2024-11-28,Tardaron mucho en servir
+390,144,2,2026-10-25,Comida deliciosa
+390,234,5,2021-07-30,Precios razonables
+390,225,2,2025-12-12,Nada especial
+390,95,4,2021-10-31,Servicio un poco lento
+391,136,5,2021-12-02,Buena ubicación
+391,139,1,2024-09-06,Nada especial
+391,49,5,2023-12-12,Repetiría sin dudarlo
+391,164,5,2023-12-26,Lugar muy acogedor
+391,156,4,2022-10-17,Tardaron mucho en servir
+391,233,5,2026-11-14,Comida deliciosa
+392,47,3,2026-12-04,Tardaron mucho en servir
+392,186,3,2025-11-15,Ingredientes frescos
+392,56,1,2021-12-02,Nada especial
+392,164,3,2026-07-07,Ingredientes frescos
+393,71,3,2021-04-03,Una experiencia gastronómica única
+393,242,4,2022-11-15,Comida deliciosa
+393,235,4,2021-07-12,Ambiente ruidoso
+393,87,3,2025-10-08,Sabores auténticos
+394,54,3,2026-08-29,Ingredientes frescos
+394,57,3,2026-03-19,Excelente comida y servicio
+394,211,5,2024-07-28,Lugar muy acogedor
+394,203,2,2025-06-05,Excelente comida y servicio
+394,96,5,2022-05-13,Comida deliciosa
+394,23,5,2021-11-23,Excelente comida y servicio
+394,161,3,2026-12-22,Servicio un poco lento
+394,213,5,2026-04-27,No cumplió mis expectativas
+395,166,3,2025-10-14,Muy buena experiencia
+395,222,4,2026-12-16,Repetiría sin dudarlo
+395,81,5,2022-02-18,Tardaron mucho en servir
+395,90,5,2021-06-24,No cumplió mis expectativas
+395,32,4,2022-07-10,No cumplió mis expectativas
+396,183,5,2026-12-15,Atención muy amable
+396,119,3,2025-07-05,Servicio un poco lento
+396,53,4,2021-11-20,Lugar muy acogedor
+396,103,4,2026-09-19,Una experiencia gastronómica única
+396,18,4,2023-10-02,Lugar muy acogedor
+397,62,3,2024-08-10,Sabores auténticos
+397,205,2,2024-04-10,Buena ubicación
+397,159,4,2021-12-19,Repetiría sin dudarlo
+397,16,5,2025-03-19,La comida podría mejorar
+397,181,4,2023-02-01,Ambiente ruidoso
+397,2,4,2022-04-19,Comida deliciosa
+398,75,3,2026-09-13,La comida podría mejorar
+398,64,2,2023-01-15,Buena ubicación
+398,101,1,2022-10-11,Ingredientes frescos
+398,245,4,2025-03-30,Sabores auténticos
+398,174,1,2023-10-19,No cumplió mis expectativas
+398,158,3,2021-12-03,Porciones generosas
+398,11,5,2023-11-17,Buen ambiente
+399,20,5,2024-08-17,Lugar muy acogedor
+399,9,4,2024-05-12,Sabores auténticos
+399,229,5,2021-06-25,Ambiente ruidoso
+399,27,5,2021-06-03,Lugar muy acogedor
+399,160,4,2021-01-06,Servicio un poco lento
+399,179,4,2023-05-27,Excelente comida y servicio
+399,119,3,2026-06-17,Sabores auténticos
+400,109,5,2023-12-15,Excelente relación calidad-precio
+400,35,5,2026-01-31,Comida deliciosa
+400,240,4,2023-07-31,Nada especial
+400,220,3,2023-05-16,Excelente comida y servicio
+400,131,4,2021-07-03,Sabores auténticos
+401,103,5,2021-01-15,Nada especial
+401,67,1,2026-09-03,Ingredientes frescos
+401,178,5,2024-02-14,Una experiencia gastronómica única
+401,194,4,2024-01-10,Repetiría sin dudarlo
+401,221,5,2024-12-07,Comida deliciosa
+401,235,5,2023-08-30,Repetiría sin dudarlo
+401,169,4,2026-02-02,Servicio un poco lento
+402,32,5,2022-05-06,Comida deliciosa
+402,117,5,2024-01-15,Muy buena experiencia
+402,69,2,2023-05-04,Nada especial
+402,228,4,2026-11-12,Buen ambiente
+402,51,2,2023-04-22,Ingredientes frescos
+402,6,4,2025-01-11,Tardaron mucho en servir
+402,165,3,2023-08-17,Lugar muy acogedor
+403,73,1,2021-02-04,Una experiencia gastronómica única
+403,195,1,2022-04-07,Ambiente ruidoso
+403,122,3,2025-09-13,Excelente comida y servicio
+403,116,3,2022-06-08,Porciones generosas
+403,4,4,2023-12-20,Precios razonables
+403,213,5,2023-12-10,Buen ambiente
+403,65,3,2022-11-29,La comida podría mejorar
+404,157,4,2026-03-07,Servicio un poco lento
+404,9,3,2024-02-19,Buen ambiente
+404,186,1,2026-07-20,Nada especial
+404,168,5,2024-01-20,Comida deliciosa
+405,56,3,2021-09-01,Una experiencia gastronómica única
+405,41,4,2024-06-21,Comida deliciosa
+405,70,4,2022-08-15,Servicio un poco lento
+405,96,5,2026-03-23,Excelente comida y servicio
+405,200,4,2026-04-29,Servicio un poco lento
+405,62,3,2023-11-14,Nada especial
+405,216,4,2023-01-21,Precios razonables
+405,142,4,2026-07-25,No cumplió mis expectativas
+406,48,5,2023-05-27,Precios razonables
+406,75,2,2022-03-18,Ingredientes frescos
+406,4,5,2021-07-31,Muy buena experiencia
+406,68,1,2025-04-17,Tardaron mucho en servir
+406,214,4,2025-04-12,Lugar muy acogedor
+407,122,4,2022-11-27,Muy buena experiencia
+407,4,5,2022-09-13,Muy buena experiencia
+407,39,3,2024-10-05,La comida podría mejorar
+407,140,4,2025-08-24,Servicio un poco lento
+408,147,5,2021-05-08,Excelente comida y servicio
+408,93,3,2026-05-03,Una experiencia gastronómica única
+408,51,2,2021-09-03,Comida deliciosa
+408,105,4,2022-07-14,Repetiría sin dudarlo
+409,248,3,2021-05-22,Buena ubicación
+409,4,4,2022-01-19,Comida deliciosa
+409,7,4,2025-04-09,Nada especial
+409,205,1,2026-09-18,Atención muy amable
+409,119,5,2025-05-16,Atención muy amable
+409,56,1,2022-05-07,Excelente comida y servicio
+409,158,5,2023-11-06,Repetiría sin dudarlo
+409,23,5,2024-02-19,Sabores auténticos
+410,127,4,2021-10-08,Atención muy amable
+410,29,5,2026-02-06,Excelente relación calidad-precio
+410,146,3,2025-07-26,Muy buena experiencia
+410,43,5,2022-08-16,La comida podría mejorar
+411,76,1,2022-08-14,Buen ambiente
+411,220,4,2021-03-05,Servicio un poco lento
+411,202,3,2023-05-30,Nada especial
+411,239,3,2021-12-04,Servicio un poco lento
+411,232,5,2021-03-11,Nada especial
+411,34,4,2026-01-02,Atención muy amable
+412,97,3,2024-12-17,Repetiría sin dudarlo
+412,158,2,2022-06-19,Atención muy amable
+412,6,4,2026-03-23,Una experiencia gastronómica única
+412,54,3,2021-04-09,Servicio un poco lento
+412,173,3,2024-11-13,Ambiente ruidoso
+413,139,4,2024-08-02,Ingredientes frescos
+413,90,4,2022-01-08,Precios razonables
+413,29,5,2025-07-16,No cumplió mis expectativas
+413,98,5,2025-08-22,Excelente relación calidad-precio
+413,10,4,2025-10-19,Tardaron mucho en servir
+413,34,5,2022-06-04,Lugar muy acogedor
+413,28,4,2021-08-29,Excelente comida y servicio
+413,148,4,2024-01-08,No cumplió mis expectativas
+414,67,3,2021-12-29,Nada especial
+414,7,4,2021-05-14,Atención muy amable
+414,131,3,2022-06-20,Buen ambiente
+414,192,4,2021-06-28,Muy buena experiencia
+414,60,2,2026-12-08,Lugar muy acogedor
+414,113,4,2022-06-08,Lugar muy acogedor
+414,211,5,2023-08-02,Excelente relación calidad-precio
+415,69,2,2022-04-26,La comida podría mejorar
+415,131,4,2026-12-02,Sabores auténticos
+415,112,3,2025-11-04,Precios razonables
+415,70,1,2021-02-09,Precios razonables
+415,115,2,2022-11-13,Lugar muy acogedor
+415,242,5,2026-07-07,Servicio un poco lento
+415,244,5,2025-01-11,Repetiría sin dudarlo
+415,11,3,2023-05-03,Lugar muy acogedor
+416,16,5,2023-10-16,No cumplió mis expectativas
+416,6,5,2025-07-10,Buena ubicación
+416,5,4,2022-04-01,Una experiencia gastronómica única
+416,141,1,2026-10-16,Tardaron mucho en servir
+417,197,5,2021-04-05,Nada especial
+417,200,5,2022-01-14,Porciones generosas
+417,146,4,2022-09-16,La comida podría mejorar
+417,24,4,2026-07-19,Lugar muy acogedor
+417,32,5,2026-12-19,Nada especial
+417,65,3,2021-07-03,Porciones generosas
+417,31,3,2024-10-11,No cumplió mis expectativas
+417,104,4,2021-12-03,Ingredientes frescos
+418,123,5,2026-10-11,Excelente relación calidad-precio
+418,67,3,2023-10-18,Sabores auténticos
+418,100,2,2022-02-01,La comida podría mejorar
+418,63,4,2021-12-04,Comida deliciosa
+418,11,5,2021-12-15,Repetiría sin dudarlo
+418,13,3,2025-02-21,Excelente relación calidad-precio
+418,6,4,2022-08-03,Nada especial
+419,39,5,2021-02-19,Buen ambiente
+419,250,4,2024-08-19,La comida podría mejorar
+419,5,4,2025-08-11,Excelente comida y servicio
+419,49,4,2025-03-17,Nada especial
+419,163,4,2023-10-23,No cumplió mis expectativas
+419,67,3,2024-01-25,Porciones generosas
+420,114,2,2021-03-07,Servicio un poco lento
+420,38,5,2022-01-11,Tardaron mucho en servir
+420,184,3,2022-07-19,La comida podría mejorar
+420,14,5,2024-03-29,Excelente comida y servicio
+420,25,4,2025-05-21,Servicio un poco lento
+420,15,3,2024-11-20,Tardaron mucho en servir
+420,141,5,2026-07-29,Excelente relación calidad-precio
+421,232,4,2023-03-01,Sabores auténticos
+421,35,4,2023-06-30,Ambiente ruidoso
+421,120,5,2021-03-13,Excelente comida y servicio
+421,59,2,2022-10-16,Una experiencia gastronómica única
+421,203,2,2022-07-26,Ingredientes frescos
+421,234,5,2022-03-16,Ingredientes frescos
+422,176,4,2024-09-02,Ambiente ruidoso
+422,108,4,2024-03-20,Porciones generosas
+422,241,2,2021-05-10,Muy buena experiencia
+422,18,4,2022-12-10,La comida podría mejorar
+423,68,1,2022-06-08,Ingredientes frescos
+423,110,3,2022-08-11,Buena ubicación
+423,105,2,2022-01-03,Precios razonables
+423,7,4,2022-06-05,Nada especial
+424,18,4,2026-12-21,Ambiente ruidoso
+424,90,1,2025-10-25,Sabores auténticos
+424,23,5,2023-07-09,Excelente relación calidad-precio
+424,33,4,2021-07-08,No cumplió mis expectativas
+424,8,5,2022-08-15,Buena ubicación
+424,168,4,2023-06-16,No cumplió mis expectativas
+424,232,4,2021-04-14,Comida deliciosa
+425,23,5,2023-04-20,No cumplió mis expectativas
+425,86,4,2022-09-02,Excelente relación calidad-precio
+425,61,2,2025-09-24,Buen ambiente
+425,2,4,2025-08-06,Ingredientes frescos
+425,94,3,2024-07-25,Comida deliciosa
+425,128,5,2022-06-01,Buena ubicación
+425,185,4,2023-01-21,Porciones generosas
+425,191,4,2021-01-16,Tardaron mucho en servir
+426,217,5,2025-06-28,Servicio un poco lento
+426,108,5,2024-02-05,Buen ambiente
+426,181,5,2025-12-16,Sabores auténticos
+426,208,5,2025-12-16,Tardaron mucho en servir
+426,100,5,2024-01-10,Una experiencia gastronómica única
+426,240,3,2026-03-29,Buen ambiente
+426,90,4,2021-09-04,Lugar muy acogedor
+427,4,5,2024-05-27,Tardaron mucho en servir
+427,10,5,2024-05-19,Servicio un poco lento
+427,106,2,2024-07-06,Excelente relación calidad-precio
+427,250,5,2024-06-13,Muy buena experiencia
+427,239,3,2025-09-14,Porciones generosas
+427,28,5,2022-03-29,Servicio un poco lento
+428,87,5,2024-12-30,Precios razonables
+428,203,4,2022-12-06,Excelente comida y servicio
+428,164,5,2024-02-07,No cumplió mis expectativas
+428,111,4,2021-12-27,Comida deliciosa
+429,172,5,2021-11-25,Tardaron mucho en servir
+429,182,2,2023-10-18,Excelente comida y servicio
+429,157,5,2025-10-24,La comida podría mejorar
+429,127,3,2024-10-13,Nada especial
+430,129,2,2026-10-18,Excelente relación calidad-precio
+430,224,4,2025-09-16,Ingredientes frescos
+430,222,1,2025-07-18,Porciones generosas
+430,207,3,2021-03-16,Ambiente ruidoso
+430,46,5,2022-02-17,Muy buena experiencia
+430,186,3,2022-10-22,Ambiente ruidoso
+431,51,3,2023-10-10,Excelente comida y servicio
+431,169,2,2025-07-03,Muy buena experiencia
+431,192,3,2026-12-03,Sabores auténticos
+431,72,1,2023-09-09,Atención muy amable
+431,22,4,2026-09-01,Porciones generosas
+431,206,2,2021-08-28,Lugar muy acogedor
+432,16,4,2021-07-22,Buen ambiente
+432,179,2,2024-02-05,Muy buena experiencia
+432,52,4,2023-05-10,No cumplió mis expectativas
+432,27,5,2026-04-29,Comida deliciosa
+432,153,3,2026-07-27,Comida deliciosa
+433,211,5,2025-05-09,Servicio un poco lento
+433,120,5,2024-12-24,Una experiencia gastronómica única
+433,196,5,2021-07-28,Tardaron mucho en servir
+433,167,3,2024-03-12,Buena ubicación
+433,143,5,2024-09-08,Ambiente ruidoso
+433,107,5,2022-05-09,Buen ambiente
+433,12,4,2025-11-28,Repetiría sin dudarlo
+433,200,3,2026-12-12,Precios razonables
+434,6,5,2025-12-23,Tardaron mucho en servir
+434,121,5,2026-04-16,Servicio un poco lento
+434,237,5,2021-08-19,La comida podría mejorar
+434,43,4,2025-08-29,Comida deliciosa
+435,8,4,2022-09-26,Servicio un poco lento
+435,142,5,2025-04-23,Excelente relación calidad-precio
+435,177,4,2022-05-10,Ingredientes frescos
+435,132,3,2024-10-19,La comida podría mejorar
+435,29,3,2025-09-14,Ingredientes frescos
+435,200,5,2021-01-29,Precios razonables
+435,158,5,2021-03-03,Ingredientes frescos
+436,201,1,2022-11-27,Excelente relación calidad-precio
+436,91,4,2024-04-15,Lugar muy acogedor
+436,120,5,2022-07-07,Lugar muy acogedor
+436,222,5,2023-02-02,Precios razonables
+436,249,5,2022-05-13,Porciones generosas
+436,129,4,2025-04-24,Una experiencia gastronómica única
+437,142,4,2025-05-13,Buena ubicación
+437,91,4,2024-12-31,Buen ambiente
+437,217,4,2022-04-30,La comida podría mejorar
+437,117,4,2025-02-02,Servicio un poco lento
+437,67,1,2021-08-13,Comida deliciosa
+437,102,5,2024-05-06,Servicio un poco lento
+437,171,4,2021-01-19,Atención muy amable
+438,56,4,2026-11-11,Excelente relación calidad-precio
+438,51,4,2022-10-04,No cumplió mis expectativas
+438,94,5,2022-04-06,Una experiencia gastronómica única
+438,12,5,2023-06-29,Nada especial
+439,74,1,2021-04-07,Excelente comida y servicio
+439,139,3,2022-03-15,Sabores auténticos
+439,219,4,2021-11-02,Excelente comida y servicio
+439,75,2,2023-07-26,Muy buena experiencia
+439,129,2,2025-02-17,Buen ambiente
+440,122,5,2024-04-06,Porciones generosas
+440,185,5,2023-10-01,La comida podría mejorar
+440,94,4,2024-09-13,La comida podría mejorar
+440,196,3,2022-01-07,Buen ambiente
+440,207,1,2021-03-11,Comida deliciosa
+440,183,5,2024-02-06,Atención muy amable
+440,141,4,2022-09-29,Atención muy amable
+441,210,3,2023-10-08,Ingredientes frescos
+441,207,3,2022-04-01,Servicio un poco lento
+441,150,4,2021-11-09,Buena ubicación
+441,202,5,2024-09-11,Comida deliciosa
+441,109,2,2025-03-05,Nada especial
+441,220,4,2022-02-08,Repetiría sin dudarlo
+441,246,4,2022-09-26,Porciones generosas
+441,32,5,2021-07-06,Una experiencia gastronómica única
+442,42,5,2025-11-18,Ambiente ruidoso
+442,59,3,2025-09-28,Buena ubicación
+442,188,4,2021-05-31,Ambiente ruidoso
+442,99,2,2022-02-21,Excelente comida y servicio
+442,5,4,2021-09-08,Tardaron mucho en servir
+442,40,4,2025-01-21,Porciones generosas
+442,76,3,2026-05-23,Ingredientes frescos
+443,124,2,2024-07-26,No cumplió mis expectativas
+443,171,5,2026-12-12,Excelente comida y servicio
+443,186,5,2025-12-17,No cumplió mis expectativas
+443,16,5,2024-05-20,Tardaron mucho en servir
+443,56,3,2026-02-24,Precios razonables
+444,13,5,2026-12-04,Porciones generosas
+444,42,5,2026-01-21,Precios razonables
+444,145,4,2024-05-14,Muy buena experiencia
+444,45,4,2025-10-22,Excelente relación calidad-precio
+444,86,2,2025-12-30,Porciones generosas
+444,67,3,2022-08-13,Atención muy amable
+444,198,5,2023-04-26,Repetiría sin dudarlo
+445,187,4,2022-07-21,Ambiente ruidoso
+445,141,4,2023-06-12,Tardaron mucho en servir
+445,248,4,2026-08-27,Atención muy amable
+445,236,4,2025-07-23,Excelente comida y servicio
+445,103,5,2026-10-19,Tardaron mucho en servir
+446,152,5,2023-08-22,Excelente relación calidad-precio
+446,174,1,2021-04-15,Tardaron mucho en servir
+446,60,4,2022-08-17,Atención muy amable
+446,46,4,2025-09-09,Buen ambiente
+446,15,5,2024-09-02,Una experiencia gastronómica única
+446,178,5,2025-10-24,Excelente relación calidad-precio
+446,86,5,2024-07-11,Lugar muy acogedor
+447,106,4,2026-03-13,Atención muy amable
+447,116,5,2024-11-11,Excelente relación calidad-precio
+447,15,4,2021-11-12,Nada especial
+447,189,5,2021-04-24,La comida podría mejorar
+447,122,5,2026-11-29,Excelente relación calidad-precio
+447,129,2,2023-01-12,Atención muy amable
+448,221,4,2023-04-25,Precios razonables
+448,104,2,2022-12-23,Precios razonables
+448,192,5,2022-08-27,Atención muy amable
+448,215,2,2021-11-04,Buena ubicación
+448,34,5,2026-07-01,Sabores auténticos
+449,31,4,2025-03-04,Comida deliciosa
+449,248,3,2025-07-14,Nada especial
+449,126,4,2021-05-13,Ambiente ruidoso
+449,28,4,2022-03-01,Sabores auténticos
+449,109,5,2021-02-02,Lugar muy acogedor
+449,43,5,2023-01-04,Precios razonables
+449,15,3,2023-01-09,Sabores auténticos
+449,200,5,2021-02-26,Comida deliciosa
+450,48,3,2025-09-26,Ingredientes frescos
+450,174,1,2021-10-20,Buena ubicación
+450,102,4,2021-03-21,Lugar muy acogedor
+450,69,3,2021-11-26,Porciones generosas
+450,127,5,2025-12-31,Muy buena experiencia
+450,213,5,2021-02-14,Muy buena experiencia
+451,150,4,2023-11-06,Excelente relación calidad-precio
+451,51,2,2023-07-06,Comida deliciosa
+451,54,4,2025-12-10,Precios razonables
+451,48,5,2025-12-22,Sabores auténticos
+451,106,5,2021-01-22,Ingredientes frescos
+451,214,3,2021-05-14,Porciones generosas
+452,67,3,2024-08-24,Comida deliciosa
+452,16,5,2023-06-16,Una experiencia gastronómica única
+452,41,4,2026-03-08,Precios razonables
+452,226,5,2026-07-14,Precios razonables
+452,90,4,2021-12-23,Precios razonables
+452,158,5,2022-04-28,Porciones generosas
+453,90,5,2025-10-25,Muy buena experiencia
+453,167,2,2025-10-30,Sabores auténticos
+453,13,4,2024-09-18,Precios razonables
+453,77,2,2022-11-12,Ingredientes frescos
+453,250,4,2024-12-28,Lugar muy acogedor
+454,126,4,2021-01-03,Tardaron mucho en servir
+454,68,4,2025-11-17,No cumplió mis expectativas
+454,160,5,2025-09-11,Atención muy amable
+454,192,5,2025-08-18,Excelente comida y servicio
+454,161,3,2021-02-11,Comida deliciosa
+454,151,4,2022-12-05,Una experiencia gastronómica única
+454,96,1,2023-02-02,Buen ambiente
+454,6,5,2024-05-10,La comida podría mejorar
+455,9,4,2022-10-05,Ambiente ruidoso
+455,72,4,2023-10-10,Lugar muy acogedor
+455,67,1,2022-11-19,La comida podría mejorar
+455,139,4,2021-06-16,Servicio un poco lento
+455,147,5,2024-09-19,Ambiente ruidoso
+455,234,5,2021-09-01,Comida deliciosa
+455,150,4,2023-07-16,Repetiría sin dudarlo
+455,58,2,2021-05-17,La comida podría mejorar
+456,149,4,2023-05-03,Una experiencia gastronómica única
+456,130,3,2023-10-03,Lugar muy acogedor
+456,209,5,2024-04-21,La comida podría mejorar
+456,142,4,2022-10-31,Nada especial
+456,207,4,2021-01-30,Ingredientes frescos
+456,144,1,2023-08-03,Comida deliciosa
+456,73,1,2024-01-09,Excelente relación calidad-precio
+457,42,4,2024-09-27,Una experiencia gastronómica única
+457,226,4,2022-07-03,Muy buena experiencia
+457,149,2,2023-09-22,Atención muy amable
+457,15,4,2021-11-05,Atención muy amable
+458,80,1,2023-01-17,Una experiencia gastronómica única
+458,151,5,2024-01-04,Buen ambiente
+458,96,4,2026-01-10,Repetiría sin dudarlo
+458,72,3,2022-02-05,Nada especial
+458,41,4,2025-06-09,Buena ubicación
+458,17,3,2023-07-28,Comida deliciosa
+458,233,4,2023-08-09,Porciones generosas
+459,242,4,2022-09-12,Tardaron mucho en servir
+459,109,4,2025-06-21,Excelente relación calidad-precio
+459,219,4,2022-08-05,Excelente comida y servicio
+459,244,5,2025-10-10,Comida deliciosa
+459,71,2,2023-07-26,Excelente comida y servicio
+460,147,5,2026-12-24,Excelente relación calidad-precio
+460,152,3,2022-07-17,Excelente relación calidad-precio
+460,41,3,2022-11-12,Comida deliciosa
+460,169,2,2023-08-02,Repetiría sin dudarlo
+461,3,5,2022-02-16,Nada especial
+461,82,4,2024-05-11,La comida podría mejorar
+461,25,5,2021-07-22,Tardaron mucho en servir
+461,70,4,2026-06-11,Nada especial
+461,54,2,2022-07-27,Excelente relación calidad-precio
+461,185,4,2022-06-04,Ambiente ruidoso
+462,221,4,2023-11-08,Repetiría sin dudarlo
+462,34,5,2022-03-25,Nada especial
+462,40,4,2021-01-31,No cumplió mis expectativas
+462,249,5,2026-06-02,Atención muy amable
+462,24,3,2026-07-12,Porciones generosas
+462,129,5,2023-03-24,Lugar muy acogedor
+463,194,4,2025-01-06,Una experiencia gastronómica única
+463,44,5,2022-11-11,Repetiría sin dudarlo
+463,151,4,2024-04-02,Sabores auténticos
+463,143,3,2026-10-30,Repetiría sin dudarlo
+463,111,4,2025-01-11,Tardaron mucho en servir
+464,50,5,2026-05-12,Servicio un poco lento
+464,213,4,2022-12-06,Excelente comida y servicio
+464,190,5,2023-12-27,Porciones generosas
+464,139,4,2022-11-21,Ambiente ruidoso
+464,44,4,2023-06-07,Repetiría sin dudarlo
+464,250,5,2021-11-25,Nada especial
+464,199,4,2022-10-14,Precios razonables
+464,83,3,2024-12-06,Excelente comida y servicio
+465,137,5,2025-07-20,Precios razonables
+465,47,5,2024-05-13,Buena ubicación
+465,91,3,2025-08-12,Lugar muy acogedor
+465,187,4,2023-10-29,Precios razonables
+466,24,5,2023-10-04,Excelente relación calidad-precio
+466,218,2,2022-12-18,Una experiencia gastronómica única
+466,243,1,2021-02-25,Una experiencia gastronómica única
+466,44,5,2025-09-07,Porciones generosas
+467,213,4,2021-01-02,Excelente relación calidad-precio
+467,178,5,2024-11-04,Muy buena experiencia
+467,114,5,2025-01-19,Sabores auténticos
+467,11,4,2021-10-01,Atención muy amable
+467,35,5,2021-06-11,Excelente comida y servicio
+468,158,2,2023-06-19,La comida podría mejorar
+468,20,4,2023-04-03,Ingredientes frescos
+468,13,5,2022-07-05,Precios razonables
+468,189,3,2026-03-15,Buen ambiente
+468,195,2,2023-06-30,Porciones generosas
+469,178,1,2026-12-07,Servicio un poco lento
+469,12,4,2021-06-02,Repetiría sin dudarlo
+469,108,4,2025-06-28,Comida deliciosa
+469,248,5,2025-09-09,Muy buena experiencia
+470,250,5,2024-12-20,Excelente comida y servicio
+470,112,1,2024-08-26,La comida podría mejorar
+470,223,4,2023-03-30,Excelente relación calidad-precio
+470,34,4,2025-12-27,Sabores auténticos
+470,101,4,2023-07-03,Comida deliciosa
+470,73,2,2023-03-23,Sabores auténticos
+470,56,1,2023-11-27,No cumplió mis expectativas
+471,248,5,2022-02-11,Porciones generosas
+471,112,3,2024-03-24,Comida deliciosa
+471,77,4,2023-03-17,Buena ubicación
+471,36,4,2026-04-09,Porciones generosas
+472,93,4,2023-05-04,Excelente relación calidad-precio
+472,123,4,2023-01-08,Una experiencia gastronómica única
+472,244,5,2024-02-11,Sabores auténticos
+472,108,5,2026-04-23,Repetiría sin dudarlo
+472,229,5,2022-02-14,Tardaron mucho en servir
+472,236,4,2021-03-22,Buen ambiente
+472,193,5,2026-07-19,Una experiencia gastronómica única
+472,9,5,2023-02-13,Precios razonables
+473,179,4,2025-12-29,No cumplió mis expectativas
+473,47,4,2023-12-31,Buen ambiente
+473,11,5,2022-11-21,La comida podría mejorar
+473,226,3,2025-10-21,Repetiría sin dudarlo
+473,44,5,2026-08-15,Porciones generosas
+473,74,3,2026-01-12,Nada especial
+474,43,5,2025-02-23,La comida podría mejorar
+474,92,4,2022-07-15,Sabores auténticos
+474,224,4,2021-06-19,Excelente relación calidad-precio
+474,76,3,2022-12-10,Lugar muy acogedor
+475,112,1,2024-10-20,La comida podría mejorar
+475,188,4,2024-10-13,Repetiría sin dudarlo
+475,181,4,2024-01-03,Precios razonables
+475,69,1,2024-02-15,La comida podría mejorar
+475,17,4,2021-03-07,Muy buena experiencia
+475,168,4,2023-06-22,Atención muy amable
+475,4,5,2023-12-09,Sabores auténticos
+475,246,1,2026-06-25,Sabores auténticos
+476,76,4,2026-11-11,Excelente relación calidad-precio
+476,57,2,2026-02-16,Muy buena experiencia
+476,117,4,2025-03-17,Buen ambiente
+476,130,4,2026-01-23,Ambiente ruidoso
+477,66,4,2023-08-16,Porciones generosas
+477,230,4,2021-10-03,Ambiente ruidoso
+477,107,4,2021-12-23,Tardaron mucho en servir
+477,218,4,2026-10-21,Una experiencia gastronómica única
+477,120,4,2021-09-02,Servicio un poco lento
+477,34,4,2022-11-15,Nada especial
+477,174,5,2021-02-15,Tardaron mucho en servir
+478,86,5,2025-04-27,Excelente comida y servicio
+478,11,4,2023-08-26,Ambiente ruidoso
+478,179,4,2025-10-21,Muy buena experiencia
+478,117,3,2021-05-30,La comida podría mejorar
+478,167,5,2025-12-25,Excelente relación calidad-precio
+478,216,5,2026-09-17,La comida podría mejorar
+479,7,5,2021-04-02,Porciones generosas
+479,102,4,2022-05-08,Ingredientes frescos
+479,124,5,2023-01-20,Precios razonables
+479,166,4,2026-05-02,Nada especial
+479,113,4,2021-11-29,Una experiencia gastronómica única
+480,198,4,2025-10-31,Repetiría sin dudarlo
+480,132,3,2024-09-11,Una experiencia gastronómica única
+480,116,5,2021-07-11,Porciones generosas
+480,131,4,2023-04-21,Nada especial
+481,53,3,2026-08-26,Atención muy amable
+481,78,4,2021-04-09,Repetiría sin dudarlo
+481,175,5,2024-08-14,Excelente comida y servicio
+481,209,5,2024-05-24,Nada especial
+481,44,4,2022-04-29,Buena ubicación
+481,179,2,2025-09-27,Buen ambiente
+481,132,4,2025-07-03,Buena ubicación
+482,105,5,2021-10-13,Porciones generosas
+482,101,5,2021-03-02,Atención muy amable
+482,53,1,2022-12-28,Tardaron mucho en servir
+482,48,5,2021-11-25,Nada especial
+483,239,3,2023-04-16,La comida podría mejorar
+483,41,4,2026-02-18,Excelente comida y servicio
+483,126,4,2024-06-15,Una experiencia gastronómica única
+483,31,4,2025-07-18,Nada especial
+483,144,3,2021-05-04,Lugar muy acogedor
+483,40,5,2023-08-19,Buen ambiente
+483,108,4,2023-08-31,Repetiría sin dudarlo
+483,180,3,2021-03-20,Comida deliciosa
+484,92,1,2025-04-08,Una experiencia gastronómica única
+484,199,3,2024-10-24,Ingredientes frescos
+484,145,4,2021-01-09,Ambiente ruidoso
+484,157,3,2026-12-13,Precios razonables
+484,108,5,2024-01-18,La comida podría mejorar
+484,116,4,2026-10-01,Excelente relación calidad-precio
+485,208,5,2021-11-05,Buena ubicación
+485,14,5,2022-04-03,Sabores auténticos
+485,179,4,2021-01-23,Porciones generosas
+485,38,5,2024-01-16,La comida podría mejorar
+485,201,4,2024-11-08,Tardaron mucho en servir
+486,222,4,2023-11-01,Nada especial
+486,194,5,2022-08-05,Tardaron mucho en servir
+486,195,2,2021-01-07,Lugar muy acogedor
+486,232,5,2021-07-09,Comida deliciosa
+486,236,4,2022-10-02,Sabores auténticos
+486,14,5,2021-06-24,Buena ubicación
+486,27,5,2023-04-14,Excelente comida y servicio
+486,98,4,2021-05-09,Tardaron mucho en servir
+487,117,4,2025-08-26,Ingredientes frescos
+487,41,4,2024-04-27,No cumplió mis expectativas
+487,103,5,2024-08-29,Excelente comida y servicio
+487,39,5,2021-03-20,Buena ubicación
+488,133,3,2023-01-24,Buena ubicación
+488,130,4,2021-12-30,Buen ambiente
+488,169,4,2021-01-09,Sabores auténticos
+488,149,5,2022-04-06,Una experiencia gastronómica única
+488,248,5,2025-04-26,Comida deliciosa
+489,205,1,2021-05-16,Tardaron mucho en servir
+489,121,2,2021-03-10,La comida podría mejorar
+489,104,4,2026-02-12,Muy buena experiencia
+489,101,4,2022-12-19,Sabores auténticos
+489,34,4,2023-12-20,Excelente relación calidad-precio
+490,56,3,2023-11-03,Repetiría sin dudarlo
+490,84,5,2026-06-08,Excelente comida y servicio
+490,206,2,2021-02-14,No cumplió mis expectativas
+490,153,5,2022-08-08,No cumplió mis expectativas
+490,98,3,2025-03-12,Lugar muy acogedor
+490,162,4,2021-03-18,Nada especial
+491,241,3,2025-01-31,La comida podría mejorar
+491,238,1,2023-12-27,Nada especial
+491,40,4,2021-08-29,La comida podría mejorar
+491,245,4,2026-01-13,Excelente comida y servicio
+492,236,3,2024-06-16,Muy buena experiencia
+492,194,4,2023-06-30,Sabores auténticos
+492,76,2,2021-11-21,Ingredientes frescos
+492,63,3,2025-02-13,Excelente relación calidad-precio
+492,97,4,2023-09-23,Porciones generosas
+493,216,2,2026-01-25,Atención muy amable
+493,225,3,2025-02-22,Excelente relación calidad-precio
+493,231,5,2025-06-27,Sabores auténticos
+493,131,3,2023-03-21,Servicio un poco lento
+493,140,3,2021-06-07,Porciones generosas
+493,38,4,2026-03-14,Una experiencia gastronómica única
+494,249,4,2026-06-08,Precios razonables
+494,136,2,2021-07-26,Excelente relación calidad-precio
+494,105,3,2026-11-19,Porciones generosas
+494,73,1,2025-08-10,Nada especial
+494,150,4,2021-02-15,Porciones generosas
+494,19,4,2021-10-25,Buena ubicación
+494,34,5,2025-07-30,Precios razonables
+494,96,3,2024-11-13,Porciones generosas
+495,152,4,2023-10-13,Lugar muy acogedor
+495,233,3,2026-05-10,Porciones generosas
+495,228,4,2026-03-16,Atención muy amable
+495,243,4,2023-02-07,Ambiente ruidoso
+495,154,5,2025-11-12,Excelente comida y servicio
+495,169,3,2023-10-09,Excelente relación calidad-precio
+495,211,4,2021-07-20,Tardaron mucho en servir
+495,40,5,2023-10-28,Una experiencia gastronómica única
+496,25,5,2021-12-13,Servicio un poco lento
+496,84,5,2025-07-07,Excelente comida y servicio
+496,52,1,2021-09-30,No cumplió mis expectativas
+496,155,3,2026-03-26,Porciones generosas
+496,136,2,2021-10-03,No cumplió mis expectativas
+497,219,5,2021-10-17,Lugar muy acogedor
+497,9,4,2021-03-10,Lugar muy acogedor
+497,223,4,2026-07-24,Repetiría sin dudarlo
+497,73,1,2026-04-10,Servicio un poco lento
+497,188,1,2025-11-16,Repetiría sin dudarlo
+498,77,1,2021-02-16,Repetiría sin dudarlo
+498,41,5,2022-09-12,Muy buena experiencia
+498,191,4,2023-08-15,Repetiría sin dudarlo
+498,202,5,2021-05-07,Nada especial
+498,171,5,2025-10-14,Sabores auténticos
+498,241,4,2022-02-24,Una experiencia gastronómica única
+498,179,5,2025-06-30,Servicio un poco lento
+499,241,4,2025-02-24,Porciones generosas
+499,212,4,2021-01-18,Buen ambiente
+499,199,4,2025-02-01,La comida podría mejorar
+499,140,4,2021-01-12,Buena ubicación
+499,236,4,2025-08-03,Comida deliciosa
+499,250,5,2025-10-30,Nada especial
+499,210,3,2026-05-22,Servicio un poco lento
+499,9,5,2024-04-04,Excelente comida y servicio
+500,64,1,2022-11-01,Repetiría sin dudarlo
+500,204,3,2021-10-25,Lugar muy acogedor
+500,241,4,2024-07-17,Porciones generosas
+500,79,1,2021-08-01,Atención muy amable
+500,126,4,2023-03-16,Precios razonables
+500,66,1,2024-12-03,Muy buena experiencia
+501,108,4,2021-07-04,Servicio un poco lento
+501,23,5,2021-10-18,Nada especial
+501,194,3,2026-06-07,Lugar muy acogedor
+501,148,3,2021-06-15,Lugar muy acogedor
+501,196,3,2023-01-24,No cumplió mis expectativas
+502,71,1,2024-01-15,Atención muy amable
+502,217,4,2025-12-24,Ingredientes frescos
+502,115,4,2022-06-12,La comida podría mejorar
+502,74,2,2021-09-27,Excelente comida y servicio
+502,141,4,2026-04-11,Sabores auténticos
+502,156,3,2021-10-20,Atención muy amable
+503,236,5,2025-01-03,Buen ambiente
+503,177,4,2023-09-06,Precios razonables
+503,143,5,2024-11-22,Buen ambiente
+503,219,3,2025-04-20,Lugar muy acogedor
+504,10,4,2021-01-06,Ambiente ruidoso
+504,155,3,2021-11-20,Comida deliciosa
+504,209,3,2026-01-25,Excelente relación calidad-precio
+504,19,4,2025-05-27,Ambiente ruidoso
+504,143,3,2022-04-25,Porciones generosas
+504,204,1,2026-07-08,Atención muy amable
+505,13,4,2021-02-21,No cumplió mis expectativas
+505,73,2,2024-06-30,Comida deliciosa
+505,3,5,2021-03-17,La comida podría mejorar
+505,151,4,2022-09-05,Precios razonables
+506,206,3,2025-04-17,Porciones generosas
+506,139,5,2021-06-13,La comida podría mejorar
+506,7,5,2025-06-24,Excelente relación calidad-precio
+506,175,4,2021-03-28,Buena ubicación
+507,139,3,2025-04-15,No cumplió mis expectativas
+507,4,5,2023-04-27,Lugar muy acogedor
+507,39,5,2024-11-04,Sabores auténticos
+507,101,2,2021-08-16,Lugar muy acogedor
+507,83,4,2026-04-03,No cumplió mis expectativas
+507,41,4,2021-03-26,Tardaron mucho en servir
+507,156,5,2021-08-07,Sabores auténticos
+507,179,4,2026-09-02,Una experiencia gastronómica única
+508,124,4,2022-01-15,Ingredientes frescos
+508,249,5,2024-03-01,La comida podría mejorar
+508,11,3,2023-03-29,Servicio un poco lento
+508,153,5,2025-03-31,Comida deliciosa
+508,44,3,2024-02-04,Ingredientes frescos
+508,174,3,2021-07-12,Repetiría sin dudarlo
+508,184,3,2025-06-24,La comida podría mejorar
+508,31,4,2022-05-04,Comida deliciosa
+509,168,5,2022-08-25,Excelente comida y servicio
+509,104,3,2026-04-11,Excelente comida y servicio
+509,9,4,2024-01-22,Ambiente ruidoso
+509,76,3,2024-04-28,Atención muy amable
+509,117,5,2021-08-21,Ingredientes frescos
+509,205,4,2022-07-18,Lugar muy acogedor
+509,176,2,2021-09-18,No cumplió mis expectativas
+509,173,4,2021-10-28,Una experiencia gastronómica única
+510,87,4,2025-05-07,Sabores auténticos
+510,187,2,2025-07-27,Precios razonables
+510,63,2,2025-03-20,Excelente comida y servicio
+510,148,4,2021-02-25,Servicio un poco lento
+510,70,3,2021-10-29,Ingredientes frescos
+510,108,3,2022-06-16,Ambiente ruidoso
+510,225,4,2026-01-11,Excelente comida y servicio
+510,203,3,2025-05-10,Tardaron mucho en servir
+511,13,3,2025-06-10,La comida podría mejorar
+511,85,4,2021-02-04,Ambiente ruidoso
+511,238,1,2026-12-15,Buen ambiente
+511,209,4,2025-10-23,Excelente relación calidad-precio
+511,14,5,2022-05-10,Excelente comida y servicio
+511,101,5,2021-06-29,Nada especial
+511,61,1,2022-11-07,Muy buena experiencia
+512,164,1,2023-12-11,Repetiría sin dudarlo
+512,8,4,2023-03-31,Buena ubicación
+512,37,5,2026-03-30,Una experiencia gastronómica única
+512,94,4,2022-04-05,Nada especial
+512,35,5,2023-02-04,Porciones generosas
+513,13,4,2022-06-29,Buena ubicación
+513,160,3,2026-07-13,No cumplió mis expectativas
+513,184,4,2023-11-22,Excelente relación calidad-precio
+513,137,5,2022-07-16,Muy buena experiencia
+514,74,3,2024-09-11,La comida podría mejorar
+514,192,4,2022-05-25,Ingredientes frescos
+514,143,1,2022-05-10,Ingredientes frescos
+514,247,4,2024-11-25,Ambiente ruidoso
+514,155,4,2024-03-06,No cumplió mis expectativas
+514,73,3,2025-06-19,Porciones generosas
+515,222,4,2022-05-21,Atención muy amable
+515,43,5,2021-08-03,Repetiría sin dudarlo
+515,153,4,2025-04-06,Excelente comida y servicio
+515,204,3,2025-07-31,Comida deliciosa
+515,176,5,2022-07-26,No cumplió mis expectativas
+516,109,5,2025-07-22,Excelente comida y servicio
+516,8,4,2024-12-18,Buen ambiente
+516,115,4,2025-02-04,Excelente comida y servicio
+516,3,3,2023-03-27,Excelente comida y servicio
+516,76,1,2023-08-02,Buen ambiente
+516,222,4,2022-01-20,Repetiría sin dudarlo
+516,164,4,2024-11-21,Tardaron mucho en servir
+516,40,4,2021-09-11,Ambiente ruidoso
+517,46,4,2024-08-29,No cumplió mis expectativas
+517,66,2,2023-12-23,Muy buena experiencia
+517,78,3,2023-12-19,Ambiente ruidoso
+517,20,4,2024-08-03,Buena ubicación
+517,54,3,2024-07-31,Buena ubicación
+518,147,5,2026-11-20,Nada especial
+518,239,4,2025-11-16,No cumplió mis expectativas
+518,189,5,2025-07-16,Nada especial
+518,21,4,2024-09-14,Porciones generosas
+519,142,3,2026-07-21,Excelente relación calidad-precio
+519,61,3,2026-02-28,Porciones generosas
+519,50,5,2021-01-29,Ambiente ruidoso
+519,226,4,2021-07-21,Precios razonables
+520,191,5,2021-12-30,Ingredientes frescos
+520,178,3,2021-01-25,Comida deliciosa
+520,123,4,2022-11-03,Excelente comida y servicio
+520,217,4,2025-11-07,Atención muy amable
+520,122,3,2023-02-16,Servicio un poco lento
+521,179,5,2025-07-17,No cumplió mis expectativas
+521,123,3,2023-02-02,Ingredientes frescos
+521,55,4,2024-08-12,La comida podría mejorar
+521,202,5,2025-06-06,Buena ubicación
+521,175,4,2023-02-05,Excelente relación calidad-precio
+521,35,4,2026-04-24,La comida podría mejorar
+521,54,3,2022-10-16,La comida podría mejorar
+521,145,5,2024-10-17,Servicio un poco lento
+522,35,3,2022-01-20,Excelente relación calidad-precio
+522,62,3,2021-01-01,Buen ambiente
+522,176,4,2023-02-13,La comida podría mejorar
+522,47,5,2022-12-19,Tardaron mucho en servir
+523,76,3,2026-11-22,Servicio un poco lento
+523,36,5,2021-02-07,Atención muy amable
+523,55,2,2024-08-08,Buen ambiente
+523,247,3,2024-01-06,Repetiría sin dudarlo
+523,77,1,2025-05-13,Muy buena experiencia
+523,127,5,2025-12-18,Repetiría sin dudarlo
+524,146,5,2022-05-25,Excelente comida y servicio
+524,177,1,2025-05-31,No cumplió mis expectativas
+524,156,5,2023-05-25,Servicio un poco lento
+524,160,3,2025-11-07,Servicio un poco lento
+524,18,5,2026-07-12,Buena ubicación
+524,52,2,2023-06-14,Lugar muy acogedor
+524,142,5,2025-08-24,Tardaron mucho en servir
+525,245,3,2026-05-13,Excelente comida y servicio
+525,102,5,2025-12-20,Excelente comida y servicio
+525,103,3,2025-01-20,Muy buena experiencia
+525,238,3,2021-05-22,Repetiría sin dudarlo
+526,81,3,2021-06-03,Atención muy amable
+526,44,5,2024-05-03,Muy buena experiencia
+526,160,2,2026-07-25,Excelente relación calidad-precio
+526,129,1,2025-11-15,Atención muy amable
+526,204,5,2025-02-11,Tardaron mucho en servir
+526,78,1,2026-02-01,Sabores auténticos
+526,35,4,2021-01-10,Sabores auténticos
+526,162,5,2021-02-26,Muy buena experiencia
+527,181,4,2025-01-01,Porciones generosas
+527,104,5,2023-12-11,Sabores auténticos
+527,49,5,2024-03-04,Nada especial
+527,207,4,2024-07-14,Una experiencia gastronómica única
+527,131,4,2023-05-06,Comida deliciosa
+528,237,5,2024-02-12,Una experiencia gastronómica única
+528,56,3,2023-11-22,Una experiencia gastronómica única
+528,151,5,2026-09-04,Sabores auténticos
+528,179,1,2024-07-14,Repetiría sin dudarlo
+528,198,1,2024-03-01,Una experiencia gastronómica única
+528,147,5,2023-05-01,Servicio un poco lento
+528,174,5,2025-11-23,No cumplió mis expectativas
+528,125,3,2022-06-24,La comida podría mejorar
+529,66,3,2026-12-26,Buen ambiente
+529,229,4,2022-03-04,Repetiría sin dudarlo
+529,98,4,2024-10-22,La comida podría mejorar
+529,26,4,2021-01-17,Buen ambiente
+529,34,4,2026-01-19,Sabores auténticos
+529,41,5,2022-11-01,Servicio un poco lento
+529,184,5,2026-12-16,No cumplió mis expectativas
+529,141,5,2024-05-14,Precios razonables
+530,88,4,2026-07-07,Buen ambiente
+530,102,5,2026-08-15,Tardaron mucho en servir
+530,184,2,2022-06-12,Lugar muy acogedor
+530,119,4,2026-06-02,Muy buena experiencia
+530,192,3,2024-04-03,Buen ambiente
+531,134,4,2023-11-13,Nada especial
+531,13,5,2025-06-30,No cumplió mis expectativas
+531,99,4,2024-01-16,Porciones generosas
+531,179,1,2024-08-22,Tardaron mucho en servir
+531,20,4,2025-12-23,Una experiencia gastronómica única
+531,188,3,2025-05-04,Lugar muy acogedor
+531,52,4,2023-09-16,Excelente comida y servicio
+532,220,2,2021-09-01,Nada especial
+532,236,5,2025-09-05,Buen ambiente
+532,114,4,2022-06-27,Excelente comida y servicio
+532,40,3,2024-08-14,Ambiente ruidoso
+532,52,4,2026-01-16,Tardaron mucho en servir
+532,102,4,2024-02-12,Repetiría sin dudarlo
+532,206,4,2026-11-12,Porciones generosas
+532,31,4,2025-01-08,Atención muy amable
+533,26,4,2021-01-29,Muy buena experiencia
+533,248,4,2026-01-03,Repetiría sin dudarlo
+533,45,5,2025-08-27,Tardaron mucho en servir
+533,66,4,2024-04-07,Muy buena experiencia
+533,121,4,2025-08-26,Porciones generosas
+533,111,4,2024-08-24,Comida deliciosa
+534,45,4,2026-09-30,Nada especial
+534,229,4,2024-04-27,Excelente comida y servicio
+534,66,1,2023-04-07,Lugar muy acogedor
+534,221,4,2026-12-29,Sabores auténticos
+534,78,1,2023-08-14,Repetiría sin dudarlo
+535,223,3,2023-03-06,Muy buena experiencia
+535,11,5,2024-05-06,Excelente relación calidad-precio
+535,187,3,2023-05-20,Tardaron mucho en servir
+535,17,5,2021-09-06,Precios razonables
+535,116,1,2024-09-25,Muy buena experiencia
+535,6,5,2026-12-31,La comida podría mejorar
+535,246,1,2024-02-13,Buen ambiente
+536,69,3,2021-09-29,Una experiencia gastronómica única
+536,172,4,2026-06-09,Nada especial
+536,149,5,2022-07-07,Excelente relación calidad-precio
+536,4,4,2022-09-19,Ingredientes frescos
+536,150,3,2023-05-10,Ambiente ruidoso
+537,157,1,2023-04-19,Ambiente ruidoso
+537,70,3,2025-03-27,Atención muy amable
+537,135,3,2026-09-18,Excelente comida y servicio
+537,4,5,2026-08-03,La comida podría mejorar
+537,77,3,2021-03-19,Repetiría sin dudarlo
+537,82,4,2021-07-04,Servicio un poco lento
+537,235,4,2025-11-06,Excelente comida y servicio
+538,184,4,2021-07-01,La comida podría mejorar
+538,158,5,2024-12-20,Tardaron mucho en servir
+538,65,3,2022-07-28,Repetiría sin dudarlo
+538,70,2,2021-03-13,Buena ubicación
+538,38,4,2024-07-02,Servicio un poco lento
+539,59,2,2026-02-27,Atención muy amable
+539,25,4,2025-11-25,Buena ubicación
+539,145,4,2025-02-05,Comida deliciosa
+539,191,4,2021-10-01,Tardaron mucho en servir
+540,189,3,2026-08-14,Tardaron mucho en servir
+540,69,3,2022-06-13,Una experiencia gastronómica única
+540,233,3,2026-10-31,Porciones generosas
+540,176,4,2024-02-07,Comida deliciosa
+540,134,4,2022-10-14,La comida podría mejorar
+540,185,4,2023-06-20,Precios razonables
+540,41,5,2025-10-25,Excelente comida y servicio
+541,185,3,2026-02-25,Sabores auténticos
+541,141,5,2024-04-13,Tardaron mucho en servir
+541,97,3,2025-12-22,Lugar muy acogedor
+541,184,4,2025-04-22,Porciones generosas
+541,160,3,2023-05-26,Buen ambiente
+541,194,4,2026-12-10,Buen ambiente
+542,139,4,2025-01-21,Repetiría sin dudarlo
+542,129,4,2025-08-25,Una experiencia gastronómica única
+542,39,5,2021-04-06,Sabores auténticos
+542,76,4,2023-08-23,Servicio un poco lento
+542,200,4,2022-08-15,La comida podría mejorar
+542,38,5,2022-05-03,Buena ubicación
+542,227,4,2021-04-21,Servicio un poco lento
+543,59,1,2025-10-21,Repetiría sin dudarlo
+543,121,5,2026-01-10,Muy buena experiencia
+543,174,4,2024-02-24,Buena ubicación
+543,212,5,2024-08-15,Excelente relación calidad-precio
+543,147,2,2025-12-29,Sabores auténticos
+544,81,5,2021-06-12,Buena ubicación
+544,52,3,2026-03-11,Tardaron mucho en servir
+544,152,2,2021-09-23,Repetiría sin dudarlo
+544,135,4,2021-08-26,Ingredientes frescos
+544,20,5,2025-02-22,Tardaron mucho en servir
+544,210,5,2025-05-19,Precios razonables
+544,225,4,2023-05-11,Tardaron mucho en servir
+545,141,1,2022-09-30,Excelente comida y servicio
+545,132,4,2025-06-21,Buen ambiente
+545,114,3,2025-06-23,Comida deliciosa
+545,106,3,2021-04-25,Repetiría sin dudarlo
+545,53,3,2022-02-13,Servicio un poco lento
+545,135,5,2026-11-13,Porciones generosas
+546,131,5,2026-06-24,Excelente comida y servicio
+546,197,5,2025-05-09,Una experiencia gastronómica única
+546,35,3,2022-05-01,Muy buena experiencia
+546,209,4,2022-06-25,La comida podría mejorar
+547,200,4,2023-08-05,La comida podría mejorar
+547,38,4,2026-09-26,Sabores auténticos
+547,151,4,2026-02-04,Muy buena experiencia
+547,143,3,2024-07-19,Muy buena experiencia
+547,37,4,2024-09-05,Buena ubicación
+547,100,4,2025-08-22,Tardaron mucho en servir
+547,142,5,2023-07-12,Lugar muy acogedor
+548,91,4,2022-02-20,Precios razonables
+548,177,5,2023-06-13,Comida deliciosa
+548,115,3,2024-10-25,Muy buena experiencia
+548,4,5,2024-07-27,Buena ubicación
+548,205,4,2021-05-15,Ambiente ruidoso
+548,125,2,2022-01-19,Tardaron mucho en servir
+549,159,3,2024-02-22,Excelente relación calidad-precio
+549,155,1,2025-02-14,Tardaron mucho en servir
+549,173,4,2022-03-05,Buen ambiente
+549,225,3,2024-06-17,Atención muy amable
+549,190,5,2022-02-24,Servicio un poco lento
+549,57,4,2024-08-14,Muy buena experiencia
+549,133,3,2025-12-24,Comida deliciosa
+550,161,4,2021-11-02,Muy buena experiencia
+550,193,4,2025-11-29,Buena ubicación
+550,101,4,2021-08-07,Servicio un poco lento
+550,210,3,2024-05-24,Excelente relación calidad-precio
+550,240,4,2026-09-30,No cumplió mis expectativas
+550,199,3,2026-04-22,Nada especial
+551,7,4,2025-10-17,No cumplió mis expectativas
+551,235,5,2021-09-29,Sabores auténticos
+551,195,3,2022-07-06,Una experiencia gastronómica única
+551,60,2,2023-06-15,Atención muy amable
+551,210,4,2023-05-04,Comida deliciosa
+551,198,4,2026-08-03,Ambiente ruidoso
+552,181,4,2023-08-15,Comida deliciosa
+552,235,4,2023-05-04,Muy buena experiencia
+552,42,4,2021-12-30,Repetiría sin dudarlo
+552,154,4,2024-05-31,Precios razonables
+552,233,5,2023-07-18,La comida podría mejorar
+552,172,3,2022-01-06,Porciones generosas
+552,38,5,2025-03-08,Buen ambiente
+553,89,5,2021-04-09,Buena ubicación
+553,161,5,2024-05-13,No cumplió mis expectativas
+553,190,5,2026-04-13,Excelente relación calidad-precio
+553,66,2,2022-05-17,Ambiente ruidoso
+553,138,5,2025-01-01,Ingredientes frescos
+553,64,2,2021-12-04,Atención muy amable
+553,150,3,2022-04-16,Sabores auténticos
+553,111,2,2021-01-13,Repetiría sin dudarlo
+554,243,2,2022-01-21,Porciones generosas
+554,42,5,2021-10-22,No cumplió mis expectativas
+554,230,5,2022-02-10,La comida podría mejorar
+554,43,5,2024-05-13,Excelente relación calidad-precio
+555,99,5,2023-04-14,Atención muy amable
+555,179,5,2024-03-24,Excelente comida y servicio
+555,228,5,2022-06-11,Nada especial
+555,15,5,2022-05-29,Ingredientes frescos
+555,181,4,2023-09-16,Lugar muy acogedor
+555,152,5,2021-04-28,Servicio un poco lento
+555,66,2,2024-11-25,Excelente comida y servicio
+556,186,4,2023-02-12,Sabores auténticos
+556,166,4,2026-02-26,Comida deliciosa
+556,150,4,2025-03-27,Sabores auténticos
+556,99,4,2021-11-16,Excelente comida y servicio
+556,182,2,2024-07-07,Porciones generosas
+556,210,5,2024-02-13,Precios razonables
+556,48,5,2021-05-12,Servicio un poco lento
+556,30,5,2022-06-09,Servicio un poco lento
+557,69,1,2023-05-06,Buena ubicación
+557,158,5,2023-06-24,Sabores auténticos
+557,151,4,2021-03-08,Comida deliciosa
+557,140,4,2026-01-27,Una experiencia gastronómica única
+557,11,3,2022-09-06,No cumplió mis expectativas
+558,209,4,2023-05-16,La comida podría mejorar
+558,104,5,2024-12-06,Buen ambiente
+558,31,4,2025-06-08,Ambiente ruidoso
+558,71,2,2024-06-12,Servicio un poco lento
+558,76,4,2025-03-24,Muy buena experiencia
+558,7,4,2025-04-21,La comida podría mejorar
+559,193,5,2025-01-01,Porciones generosas
+559,33,5,2024-10-03,Ambiente ruidoso
+559,98,4,2022-10-09,Precios razonables
+559,56,2,2025-12-02,Porciones generosas
+559,18,5,2023-12-13,Buen ambiente
+559,146,3,2021-07-04,Excelente comida y servicio
+559,150,3,2024-08-17,Excelente comida y servicio
+560,191,5,2023-05-04,Excelente relación calidad-precio
+560,206,5,2023-11-14,Ingredientes frescos
+560,86,4,2022-07-31,Precios razonables
+560,88,4,2023-07-26,Nada especial
+560,17,3,2026-04-05,La comida podría mejorar
+561,17,4,2021-12-09,Ambiente ruidoso
+561,65,3,2024-04-12,Nada especial
+561,237,5,2022-09-02,Ambiente ruidoso
+561,93,2,2023-12-04,Nada especial
+561,71,2,2026-10-19,Buena ubicación
+562,211,3,2024-08-12,No cumplió mis expectativas
+562,82,3,2026-07-23,Sabores auténticos
+562,55,2,2026-10-06,Lugar muy acogedor
+562,17,3,2026-12-05,Ambiente ruidoso
+562,35,5,2021-09-02,Comida deliciosa
+562,224,5,2026-05-22,La comida podría mejorar
+562,177,2,2023-04-25,Nada especial
+562,3,3,2022-01-13,Buen ambiente
+563,59,3,2021-03-02,Atención muy amable
+563,111,5,2021-11-14,Ingredientes frescos
+563,124,4,2021-07-05,Una experiencia gastronómica única
+563,137,4,2026-11-19,Repetiría sin dudarlo
+563,106,4,2022-06-12,Repetiría sin dudarlo
+563,44,5,2021-08-05,Sabores auténticos
+564,167,4,2023-09-29,Buen ambiente
+564,215,4,2023-12-15,Precios razonables
+564,1,5,2023-03-15,Excelente comida y servicio
+564,37,4,2021-08-05,Precios razonables
+564,222,3,2023-01-28,Tardaron mucho en servir
+564,110,4,2024-10-05,Repetiría sin dudarlo
+564,211,5,2021-03-19,Repetiría sin dudarlo
+564,149,5,2022-07-20,Precios razonables
+565,190,4,2026-05-22,Muy buena experiencia
+565,25,4,2021-11-05,Excelente relación calidad-precio
+565,75,2,2022-08-04,Excelente comida y servicio
+565,202,2,2025-07-04,Sabores auténticos
+565,40,5,2023-04-23,Tardaron mucho en servir
+565,7,4,2022-07-10,Servicio un poco lento
+566,10,4,2022-12-23,Muy buena experiencia
+566,9,4,2022-07-27,Excelente comida y servicio
+566,82,2,2021-07-09,Buen ambiente
+566,60,1,2023-05-01,Excelente relación calidad-precio
+566,223,4,2023-05-07,La comida podría mejorar
+566,151,4,2023-02-28,La comida podría mejorar
+567,94,5,2023-05-30,Precios razonables
+567,47,4,2023-11-08,Repetiría sin dudarlo
+567,133,5,2025-08-14,No cumplió mis expectativas
+567,97,3,2023-06-07,No cumplió mis expectativas
+567,245,3,2025-06-26,No cumplió mis expectativas
+568,157,3,2026-09-29,Sabores auténticos
+568,114,4,2024-01-02,Precios razonables
+568,110,5,2024-12-31,La comida podría mejorar
+568,204,4,2026-02-02,Atención muy amable
+568,2,5,2023-09-21,Excelente relación calidad-precio
+568,45,5,2025-01-16,Precios razonables
+569,121,3,2022-12-29,Porciones generosas
+569,213,5,2025-07-14,Ambiente ruidoso
+569,60,3,2021-09-29,Excelente relación calidad-precio
+569,92,4,2025-05-17,Precios razonables
+569,104,4,2023-10-06,Tardaron mucho en servir
+569,214,2,2025-09-03,Sabores auténticos
+569,199,3,2023-12-28,Atención muy amable
+569,24,5,2025-02-22,La comida podría mejorar
+570,104,3,2025-12-14,Excelente relación calidad-precio
+570,218,5,2025-06-02,Sabores auténticos
+570,149,5,2023-08-14,Repetiría sin dudarlo
+570,179,3,2025-07-29,Servicio un poco lento
+570,95,5,2024-10-20,La comida podría mejorar
+571,75,3,2025-05-10,Atención muy amable
+571,52,4,2022-09-10,No cumplió mis expectativas
+571,225,2,2026-04-29,Buen ambiente
+571,234,3,2026-02-18,Sabores auténticos
+571,182,5,2023-07-09,Repetiría sin dudarlo
+572,55,2,2025-10-24,La comida podría mejorar
+572,241,4,2021-04-18,Sabores auténticos
+572,169,5,2025-05-30,Ingredientes frescos
+572,74,1,2026-04-11,Nada especial
+572,106,4,2021-11-13,Sabores auténticos
+572,141,2,2023-07-09,Tardaron mucho en servir
+573,26,5,2023-03-17,Buena ubicación
+573,101,2,2023-09-30,Excelente comida y servicio
+573,230,4,2023-05-03,Atención muy amable
+573,201,2,2021-08-30,Atención muy amable
+574,199,2,2025-10-02,Atención muy amable
+574,213,5,2021-03-20,Ingredientes frescos
+574,198,5,2025-05-03,Excelente relación calidad-precio
+574,2,5,2022-04-28,Servicio un poco lento
+574,242,5,2024-03-15,Porciones generosas
+575,152,4,2023-01-24,Repetiría sin dudarlo
+575,197,4,2022-08-14,Nada especial
+575,77,4,2022-11-05,Porciones generosas
+575,201,5,2024-04-29,Ambiente ruidoso
+575,198,5,2023-04-21,Lugar muy acogedor
+576,28,5,2024-05-16,Excelente comida y servicio
+576,118,3,2023-12-11,Tardaron mucho en servir
+576,36,5,2021-11-24,Comida deliciosa
+576,192,3,2025-08-22,Porciones generosas
+576,239,5,2026-02-28,Buen ambiente
+576,150,4,2026-01-24,Excelente comida y servicio
+576,221,4,2023-07-08,Lugar muy acogedor
+576,207,3,2022-03-31,Muy buena experiencia
+577,245,3,2021-04-23,Comida deliciosa
+577,100,4,2023-10-09,Nada especial
+577,28,5,2021-05-19,Buen ambiente
+577,44,4,2023-08-07,Excelente relación calidad-precio
+578,56,2,2023-04-21,Excelente relación calidad-precio
+578,122,4,2022-02-16,No cumplió mis expectativas
+578,235,1,2023-12-23,Buen ambiente
+578,171,5,2021-10-19,Sabores auténticos
+578,108,4,2023-06-06,Muy buena experiencia
+578,214,2,2023-10-26,Ingredientes frescos
+579,27,4,2021-12-07,Excelente comida y servicio
+579,103,1,2024-06-30,Precios razonables
+579,3,5,2021-06-08,Servicio un poco lento
+579,250,4,2025-09-05,Sabores auténticos
+580,104,5,2021-10-24,Una experiencia gastronómica única
+580,235,4,2023-10-07,No cumplió mis expectativas
+580,140,2,2023-04-02,Excelente relación calidad-precio
+580,9,5,2024-09-10,No cumplió mis expectativas
+581,67,2,2026-05-13,Nada especial
+581,228,5,2022-01-29,Atención muy amable
+581,40,5,2022-02-13,Lugar muy acogedor
+581,16,5,2025-04-15,Muy buena experiencia
+581,54,1,2026-05-23,Comida deliciosa
+581,82,5,2021-12-20,Atención muy amable
+581,51,1,2022-07-08,Comida deliciosa
+581,20,5,2024-06-21,Excelente comida y servicio
+582,78,1,2026-11-04,Ingredientes frescos
+582,232,5,2021-12-28,No cumplió mis expectativas
+582,119,2,2022-06-27,Ingredientes frescos
+582,172,4,2024-05-10,Repetiría sin dudarlo
+582,223,2,2026-06-08,Buen ambiente
+583,55,2,2025-10-22,Lugar muy acogedor
+583,249,4,2023-09-06,Ingredientes frescos
+583,112,5,2021-11-23,Muy buena experiencia
+583,122,5,2026-08-08,No cumplió mis expectativas
+583,218,4,2022-04-01,Porciones generosas
+583,131,2,2024-03-18,Precios razonables
+583,95,3,2022-09-14,Comida deliciosa
+583,126,3,2021-07-16,Buen ambiente
+584,22,3,2025-11-10,Precios razonables
+584,236,4,2025-07-24,Ingredientes frescos
+584,86,3,2024-11-11,Repetiría sin dudarlo
+584,56,1,2024-08-16,Precios razonables
+584,85,5,2026-07-29,No cumplió mis expectativas
+585,1,4,2021-09-24,Buena ubicación
+585,36,5,2024-02-05,Tardaron mucho en servir
+585,163,4,2025-01-10,Sabores auténticos
+585,94,4,2024-03-02,Tardaron mucho en servir
+586,244,5,2024-10-27,Sabores auténticos
+586,154,4,2025-07-05,Lugar muy acogedor
+586,57,2,2026-08-30,No cumplió mis expectativas
+586,15,5,2023-01-25,Buena ubicación
+586,8,5,2021-12-20,Buena ubicación
+586,95,3,2025-07-14,Servicio un poco lento
+586,28,5,2025-01-21,Porciones generosas
+586,152,4,2023-11-27,Porciones generosas
+587,122,2,2024-01-30,Comida deliciosa
+587,6,5,2021-01-21,Porciones generosas
+587,170,4,2025-09-21,Precios razonables
+587,11,4,2026-09-28,Buena ubicación
+588,225,4,2025-08-14,Sabores auténticos
+588,2,5,2021-08-30,Excelente relación calidad-precio
+588,1,5,2022-02-15,Atención muy amable
+588,248,2,2022-07-31,Excelente comida y servicio
+589,105,4,2022-10-23,Servicio un poco lento
+589,44,4,2022-08-30,Precios razonables
+589,50,4,2022-09-27,No cumplió mis expectativas
+589,129,1,2024-02-12,Atención muy amable
+589,185,3,2022-09-30,Tardaron mucho en servir
+589,29,4,2024-05-02,Muy buena experiencia
+589,32,3,2022-01-13,Muy buena experiencia
+590,69,3,2022-04-18,La comida podría mejorar
+590,116,3,2021-05-02,Repetiría sin dudarlo
+590,155,3,2025-12-20,Servicio un poco lento
+590,206,3,2026-12-14,Nada especial
+590,30,4,2021-02-01,Sabores auténticos
+590,59,2,2025-01-12,Atención muy amable
+590,96,4,2021-06-17,Una experiencia gastronómica única
+590,228,5,2026-11-18,La comida podría mejorar
+591,33,5,2021-04-08,No cumplió mis expectativas
+591,238,2,2024-03-24,Repetiría sin dudarlo
+591,139,3,2021-11-13,Una experiencia gastronómica única
+591,5,4,2022-06-02,Tardaron mucho en servir
+592,239,4,2025-08-07,Buena ubicación
+592,168,3,2022-06-12,Ingredientes frescos
+592,68,1,2021-12-15,Tardaron mucho en servir
+592,74,3,2023-07-04,Excelente comida y servicio
+593,57,3,2021-04-13,La comida podría mejorar
+593,194,4,2022-04-18,Servicio un poco lento
+593,89,2,2025-12-27,Excelente relación calidad-precio
+593,128,5,2023-09-09,Porciones generosas
+593,234,4,2021-02-26,Repetiría sin dudarlo
+593,144,5,2024-08-16,Ambiente ruidoso
+593,165,5,2025-03-05,Nada especial
+594,79,3,2021-01-03,Sabores auténticos
+594,179,4,2025-10-27,Nada especial
+594,197,4,2024-05-05,Ambiente ruidoso
+594,6,5,2026-10-31,Una experiencia gastronómica única
+594,140,5,2025-10-24,Excelente comida y servicio
+594,195,4,2021-07-18,Porciones generosas
+594,72,2,2026-02-26,La comida podría mejorar
+594,48,4,2024-01-25,Ambiente ruidoso
+595,229,4,2023-07-02,Sabores auténticos
+595,12,5,2021-10-11,No cumplió mis expectativas
+595,22,5,2021-08-28,Servicio un poco lento
+595,103,4,2021-03-25,Tardaron mucho en servir
+595,82,3,2026-05-16,Porciones generosas
+595,37,5,2022-10-21,Una experiencia gastronómica única
+595,114,5,2024-04-26,Excelente relación calidad-precio
+596,118,3,2021-02-07,Ingredientes frescos
+596,199,3,2023-01-25,La comida podría mejorar
+596,215,5,2023-10-24,Precios razonables
+596,128,3,2026-09-30,Excelente comida y servicio
+596,221,5,2024-01-27,Buen ambiente
+596,233,4,2022-06-01,No cumplió mis expectativas
+597,185,5,2025-06-20,Una experiencia gastronómica única
+597,85,2,2026-12-30,Repetiría sin dudarlo
+597,88,3,2024-02-29,Nada especial
+597,64,4,2025-04-23,Precios razonables
+598,145,4,2021-09-09,La comida podría mejorar
+598,208,5,2023-05-23,La comida podría mejorar
+598,97,4,2024-10-16,Una experiencia gastronómica única
+598,4,4,2023-01-13,La comida podría mejorar
+598,42,5,2024-08-12,Ingredientes frescos
+598,72,4,2022-07-25,Tardaron mucho en servir
+598,43,4,2021-07-08,Excelente relación calidad-precio
+599,234,4,2023-01-23,Una experiencia gastronómica única
+599,213,4,2025-12-18,Precios razonables
+599,36,3,2024-04-25,Precios razonables
+599,155,4,2022-06-21,Excelente comida y servicio
+600,23,4,2022-05-04,Ambiente ruidoso
+600,105,4,2022-12-23,Porciones generosas
+600,119,4,2023-05-10,Atención muy amable
+600,139,5,2021-01-21,Porciones generosas
+600,238,3,2022-06-01,Ambiente ruidoso
+600,197,5,2023-06-02,Comida deliciosa

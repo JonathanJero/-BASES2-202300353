@@ -1,0 +1,283 @@
+{
+  "nodes": [
+    {
+      "id": "node_usuario",
+      "position": {
+        "x": 100,
+        "y": 150
+      },
+      "caption": "Usuario",
+      "style": {
+        "node-color": "#4C8EDA",
+        "border-color": "#2870C2",
+        "border-width": 3,
+        "caption-color": "#FFFFFF",
+        "radius": 60
+      },
+      "labels": [
+        "Usuario"
+      ],
+      "properties": {
+        "user_id": "Integer (PK)",
+        "nombre": "String",
+        "email": "String (UNIQUE)",
+        "edad": "Integer",
+        "pais": "String"
+      }
+    },
+    {
+      "id": "node_restaurante",
+      "position": {
+        "x": 650,
+        "y": 150
+      },
+      "caption": "Restaurante",
+      "style": {
+        "node-color": "#F16667",
+        "border-color": "#EB2728",
+        "border-width": 3,
+        "caption-color": "#FFFFFF",
+        "radius": 65
+      },
+      "labels": [
+        "Restaurante"
+      ],
+      "properties": {
+        "rest_id": "Integer (PK)",
+        "nombre": "String",
+        "anio_apertura": "Integer",
+        "rango_precios": "String ($, $$, $$$, $$$$)",
+        "descripcion": "String"
+      }
+    },
+    {
+      "id": "node_tipo_cocina",
+      "position": {
+        "x": 950,
+        "y": 380
+      },
+      "caption": "TipoCocina",
+      "style": {
+        "node-color": "#C990C0",
+        "border-color": "#B261A5",
+        "border-width": 3,
+        "caption-color": "#FFFFFF",
+        "radius": 60
+      },
+      "labels": [
+        "TipoCocina"
+      ],
+      "properties": {
+        "tipo_id": "Integer (PK)",
+        "nombre_tipo": "String (UNIQUE)",
+        "descripcion": "String"
+      }
+    },
+    {
+      "id": "node_chef",
+      "position": {
+        "x": 250,
+        "y": 550
+      },
+      "caption": "Chef",
+      "style": {
+        "node-color": "#F79767",
+        "border-color": "#F36924",
+        "border-width": 3,
+        "caption-color": "#FFFFFF",
+        "radius": 60
+      },
+      "labels": [
+        "Chef"
+      ],
+      "properties": {
+        "chef_id": "Integer (PK)",
+        "nombre": "String",
+        "fecha_nacimiento": "Date",
+        "nacionalidad": "String"
+      }
+    },
+    {
+      "id": "node_platillo",
+      "position": {
+        "x": 650,
+        "y": 550
+      },
+      "caption": "Platillo",
+      "style": {
+        "node-color": "#57C7E3",
+        "border-color": "#23B3D7",
+        "border-width": 3,
+        "caption-color": "#FFFFFF",
+        "radius": 60
+      },
+      "labels": [
+        "Platillo"
+      ],
+      "properties": {
+        "platillo_id": "Integer (PK)",
+        "nombre": "String",
+        "precio": "Float",
+        "descripcion": "String"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_es_amigo_de",
+      "fromId": "node_usuario",
+      "toId": "node_usuario",
+      "type": "ES_AMIGO_DE",
+      "properties": {
+        "fecha_amistad": "Date"
+      },
+      "style": {
+        "arrow-color": "#4C8EDA",
+        "line-color": "#4C8EDA"
+      }
+    },
+    {
+      "id": "rel_visito",
+      "fromId": "node_usuario",
+      "toId": "node_restaurante",
+      "type": "VISITÓ",
+      "properties": {
+        "fecha_visita": "Date",
+        "consumo": "Float",
+        "con_reserva": "Boolean"
+      },
+      "style": {
+        "arrow-color": "#EB2728",
+        "line-color": "#EB2728"
+      }
+    },
+    {
+      "id": "rel_califico",
+      "fromId": "node_usuario",
+      "toId": "node_restaurante",
+      "type": "CALIFICÓ",
+      "properties": {
+        "puntuacion": "Integer (1-5)",
+        "fecha": "Date",
+        "comentario": "String"
+      },
+      "style": {
+        "arrow-color": "#F79767",
+        "line-color": "#F79767"
+      }
+    },
+    {
+      "id": "rel_le_gusta",
+      "fromId": "node_usuario",
+      "toId": "node_tipo_cocina",
+      "type": "LE_GUSTA",
+      "properties": {
+        "nivel_interes": "Integer (1-5)"
+      },
+      "style": {
+        "arrow-color": "#B261A5",
+        "line-color": "#B261A5"
+      }
+    },
+    {
+      "id": "rel_trabaja_en",
+      "fromId": "node_chef",
+      "toId": "node_restaurante",
+      "type": "TRABAJA_EN",
+      "properties": {
+        "fecha_inicio": "Date",
+        "puesto": "String"
+      },
+      "style": {
+        "arrow-color": "#F36924",
+        "line-color": "#F36924"
+      }
+    },
+    {
+      "id": "rel_prepara",
+      "fromId": "node_chef",
+      "toId": "node_platillo",
+      "type": "PREPARA",
+      "properties": {
+        "estilo": "String",
+        "especialidad": "String"
+      },
+      "style": {
+        "arrow-color": "#23B3D7",
+        "line-color": "#23B3D7"
+      }
+    },
+    {
+      "id": "rel_ofrece",
+      "fromId": "node_restaurante",
+      "toId": "node_platillo",
+      "type": "OFRECE",
+      "properties": {
+        "precio": "Float",
+        "disponible": "Boolean"
+      },
+      "style": {
+        "arrow-color": "#23B3D7",
+        "line-color": "#23B3D7"
+      }
+    },
+    {
+      "id": "rel_pertenece_a",
+      "fromId": "node_restaurante",
+      "toId": "node_tipo_cocina",
+      "type": "PERTENECE_A",
+      "properties": {},
+      "style": {
+        "arrow-color": "#B261A5",
+        "line-color": "#B261A5"
+      }
+    }
+  ],
+  "style": {
+    "font-family": "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+    "background-color": "#FFFFFF",
+    "node-color": "#4C8EDA",
+    "border-width": 3,
+    "border-color": "#2870C2",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-color": "#ffffff",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 14,
+    "caption-font-weight": "bold",
+    "label-position": "inside",
+    "label-display": "pill",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 0,
+    "label-font-size": 10,
+    "label-padding": 2,
+    "label-margin": 2,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 2,
+    "arrow-color": "#848484",
+    "line-color": "#848484",
+    "relationship-margin": 2,
+    "type-color": "#333333",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#848484",
+    "type-border-width": 1,
+    "type-font-size": 11,
+    "type-padding": 4,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#333333",
+    "property-font-size": 10,
+    "property-font-weight": "normal"
+  }
+}

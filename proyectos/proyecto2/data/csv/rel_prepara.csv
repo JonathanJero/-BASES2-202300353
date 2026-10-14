@@ -1,0 +1,432 @@
+chef_id,platillo_id,estilo,especialidad
+1,30,Vanguardista,Plato fuerte
+1,17,Rústico,Sopa
+2,53,Fusión,Postre
+2,3,Moderno,Ensalada
+2,6,Clásico,Entrada
+3,15,Moderno,Ensalada
+3,8,Vanguardista,Ensalada
+3,4,Clásico,Sopa
+3,21,Rústico,Plato fuerte
+3,5,Moderno,Postre
+4,6,Tradicional,Plato fuerte
+4,25,Moderno,Sopa
+4,9,Rústico,Entrada
+5,9,Moderno,Sopa
+5,70,Moderno,Ensalada
+5,25,Vanguardista,Postre
+5,7,Moderno,Plato fuerte
+6,57,Rústico,Aperitivo
+6,25,Clásico,Plato fuerte
+6,17,Rústico,Sopa
+7,4,Moderno,Ensalada
+7,8,Tradicional,Ensalada
+8,16,Moderno,Postre
+8,37,Fusión,Ensalada
+8,10,Rústico,Aperitivo
+8,2,Clásico,Ensalada
+8,39,Rústico,Postre
+9,4,Clásico,Sopa
+9,13,Moderno,Sopa
+9,3,Fusión,Postre
+9,16,Rústico,Postre
+9,10,Fusión,Ensalada
+10,48,Clásico,Ensalada
+10,13,Clásico,Plato fuerte
+10,12,Moderno,Ensalada
+10,9,Moderno,Ensalada
+11,14,Vanguardista,Ensalada
+11,15,Vanguardista,Plato fuerte
+11,23,Vanguardista,Sopa
+12,5,Tradicional,Entrada
+12,11,Tradicional,Postre
+13,38,Rústico,Aperitivo
+13,9,Fusión,Aperitivo
+13,20,Rústico,Sopa
+13,23,Tradicional,Aperitivo
+13,55,Vanguardista,Postre
+14,18,Fusión,Aperitivo
+14,21,Tradicional,Aperitivo
+14,19,Clásico,Entrada
+15,8,Clásico,Ensalada
+15,22,Moderno,Plato fuerte
+15,50,Moderno,Ensalada
+16,14,Fusión,Postre
+16,22,Clásico,Postre
+16,10,Vanguardista,Aperitivo
+16,76,Moderno,Sopa
+17,2,Vanguardista,Plato fuerte
+17,16,Fusión,Aperitivo
+18,24,Vanguardista,Postre
+18,21,Clásico,Aperitivo
+18,27,Fusión,Ensalada
+19,65,Fusión,Plato fuerte
+19,22,Fusión,Aperitivo
+20,5,Fusión,Aperitivo
+20,71,Vanguardista,Ensalada
+20,4,Vanguardista,Ensalada
+20,40,Fusión,Aperitivo
+21,13,Moderno,Postre
+21,18,Rústico,Plato fuerte
+22,11,Clásico,Entrada
+22,22,Tradicional,Plato fuerte
+23,6,Moderno,Postre
+23,7,Clásico,Postre
+23,33,Clásico,Plato fuerte
+23,18,Tradicional,Postre
+24,41,Rústico,Sopa
+24,20,Fusión,Sopa
+24,24,Rústico,Sopa
+24,7,Moderno,Sopa
+25,21,Vanguardista,Sopa
+25,32,Tradicional,Entrada
+26,1,Clásico,Entrada
+26,31,Vanguardista,Postre
+26,6,Tradicional,Ensalada
+26,13,Moderno,Ensalada
+26,3,Rústico,Ensalada
+27,25,Rústico,Postre
+27,21,Fusión,Sopa
+27,79,Rústico,Aperitivo
+28,14,Clásico,Postre
+28,8,Tradicional,Plato fuerte
+28,24,Tradicional,Aperitivo
+28,5,Clásico,Entrada
+28,7,Moderno,Plato fuerte
+29,11,Vanguardista,Ensalada
+29,25,Fusión,Aperitivo
+29,15,Rústico,Aperitivo
+29,5,Clásico,Plato fuerte
+29,4,Fusión,Ensalada
+30,15,Moderno,Sopa
+30,14,Clásico,Entrada
+30,9,Fusión,Aperitivo
+31,13,Clásico,Plato fuerte
+31,34,Tradicional,Aperitivo
+32,4,Tradicional,Aperitivo
+32,18,Rústico,Ensalada
+33,19,Fusión,Postre
+33,8,Rústico,Sopa
+33,14,Fusión,Entrada
+33,15,Clásico,Ensalada
+34,21,Fusión,Sopa
+34,16,Tradicional,Ensalada
+35,3,Fusión,Plato fuerte
+35,57,Moderno,Ensalada
+35,9,Tradicional,Entrada
+35,23,Clásico,Sopa
+35,19,Fusión,Entrada
+36,10,Moderno,Sopa
+36,4,Vanguardista,Sopa
+37,8,Tradicional,Ensalada
+37,25,Moderno,Entrada
+38,10,Fusión,Sopa
+38,6,Tradicional,Aperitivo
+38,3,Clásico,Ensalada
+38,23,Vanguardista,Plato fuerte
+39,4,Vanguardista,Sopa
+39,72,Fusión,Ensalada
+39,32,Fusión,Ensalada
+40,5,Moderno,Ensalada
+40,12,Clásico,Postre
+40,11,Rústico,Ensalada
+40,2,Fusión,Plato fuerte
+41,5,Clásico,Aperitivo
+41,2,Rústico,Ensalada
+42,24,Clásico,Aperitivo
+42,25,Moderno,Postre
+43,12,Fusión,Ensalada
+43,8,Rústico,Entrada
+44,4,Vanguardista,Sopa
+44,76,Clásico,Aperitivo
+44,25,Fusión,Plato fuerte
+44,17,Moderno,Ensalada
+44,1,Moderno,Entrada
+45,75,Moderno,Postre
+45,14,Tradicional,Plato fuerte
+45,5,Rústico,Sopa
+45,18,Fusión,Entrada
+46,16,Rústico,Postre
+46,26,Fusión,Sopa
+47,2,Moderno,Aperitivo
+47,38,Moderno,Aperitivo
+47,69,Moderno,Postre
+47,1,Tradicional,Aperitivo
+47,4,Vanguardista,Plato fuerte
+48,25,Vanguardista,Plato fuerte
+48,4,Fusión,Plato fuerte
+48,7,Rústico,Postre
+48,18,Fusión,Postre
+49,2,Fusión,Ensalada
+49,39,Clásico,Aperitivo
+49,20,Rústico,Postre
+49,52,Fusión,Plato fuerte
+50,5,Rústico,Sopa
+50,18,Clásico,Aperitivo
+50,2,Clásico,Postre
+50,9,Vanguardista,Entrada
+50,23,Moderno,Postre
+51,50,Fusión,Ensalada
+51,12,Tradicional,Postre
+51,3,Rústico,Ensalada
+51,21,Fusión,Aperitivo
+51,62,Vanguardista,Plato fuerte
+52,6,Moderno,Aperitivo
+52,13,Clásico,Entrada
+52,2,Fusión,Entrada
+52,20,Rústico,Plato fuerte
+52,32,Fusión,Ensalada
+53,71,Clásico,Aperitivo
+53,20,Moderno,Plato fuerte
+53,19,Fusión,Plato fuerte
+53,16,Moderno,Entrada
+53,60,Clásico,Aperitivo
+54,2,Moderno,Aperitivo
+54,9,Fusión,Sopa
+55,42,Moderno,Ensalada
+55,6,Clásico,Plato fuerte
+55,9,Rústico,Sopa
+55,50,Tradicional,Ensalada
+55,14,Fusión,Plato fuerte
+56,8,Moderno,Aperitivo
+56,37,Moderno,Sopa
+56,23,Moderno,Postre
+56,54,Fusión,Sopa
+57,12,Clásico,Entrada
+57,11,Vanguardista,Ensalada
+57,61,Rústico,Postre
+57,19,Tradicional,Aperitivo
+57,4,Tradicional,Aperitivo
+58,4,Clásico,Entrada
+58,25,Clásico,Ensalada
+58,9,Rústico,Aperitivo
+58,7,Tradicional,Ensalada
+59,18,Moderno,Aperitivo
+59,17,Moderno,Sopa
+60,22,Fusión,Sopa
+60,34,Tradicional,Postre
+61,3,Fusión,Aperitivo
+61,46,Tradicional,Ensalada
+61,5,Rústico,Entrada
+61,19,Rústico,Aperitivo
+62,21,Moderno,Sopa
+62,19,Vanguardista,Entrada
+62,25,Rústico,Postre
+62,5,Tradicional,Ensalada
+63,16,Fusión,Plato fuerte
+63,6,Tradicional,Ensalada
+63,12,Tradicional,Plato fuerte
+63,20,Vanguardista,Postre
+63,15,Moderno,Ensalada
+64,12,Rústico,Sopa
+64,17,Tradicional,Entrada
+65,75,Moderno,Aperitivo
+65,20,Tradicional,Postre
+65,25,Rústico,Sopa
+66,20,Moderno,Ensalada
+66,17,Clásico,Plato fuerte
+66,16,Vanguardista,Ensalada
+67,1,Moderno,Postre
+67,21,Moderno,Plato fuerte
+67,16,Vanguardista,Sopa
+68,17,Clásico,Postre
+68,8,Rústico,Entrada
+68,49,Fusión,Postre
+69,13,Rústico,Plato fuerte
+69,22,Moderno,Aperitivo
+69,15,Vanguardista,Ensalada
+69,1,Fusión,Entrada
+70,60,Vanguardista,Plato fuerte
+70,37,Rústico,Entrada
+70,17,Rústico,Aperitivo
+70,32,Rústico,Sopa
+71,21,Clásico,Postre
+71,23,Clásico,Sopa
+71,58,Tradicional,Postre
+71,25,Fusión,Postre
+72,7,Clásico,Plato fuerte
+72,17,Fusión,Entrada
+73,10,Tradicional,Plato fuerte
+73,8,Vanguardista,Plato fuerte
+73,2,Rústico,Sopa
+74,17,Fusión,Postre
+74,19,Fusión,Ensalada
+74,16,Tradicional,Plato fuerte
+75,14,Moderno,Ensalada
+75,3,Tradicional,Entrada
+75,80,Clásico,Sopa
+75,23,Vanguardista,Postre
+76,71,Tradicional,Sopa
+76,13,Fusión,Plato fuerte
+76,54,Moderno,Entrada
+76,33,Moderno,Sopa
+77,20,Rústico,Entrada
+77,16,Fusión,Plato fuerte
+77,19,Rústico,Postre
+78,17,Clásico,Plato fuerte
+78,7,Clásico,Aperitivo
+78,14,Moderno,Aperitivo
+79,2,Vanguardista,Postre
+79,12,Clásico,Sopa
+79,22,Tradicional,Plato fuerte
+79,18,Clásico,Plato fuerte
+79,10,Clásico,Plato fuerte
+80,8,Clásico,Plato fuerte
+80,1,Rústico,Plato fuerte
+80,9,Fusión,Plato fuerte
+80,13,Tradicional,Aperitivo
+80,22,Rústico,Aperitivo
+81,6,Vanguardista,Aperitivo
+81,19,Moderno,Entrada
+82,22,Rústico,Sopa
+82,71,Rústico,Postre
+83,15,Tradicional,Postre
+83,21,Rústico,Ensalada
+83,57,Tradicional,Aperitivo
+83,5,Moderno,Entrada
+83,24,Fusión,Ensalada
+84,37,Moderno,Ensalada
+84,14,Rústico,Entrada
+84,22,Fusión,Aperitivo
+84,4,Rústico,Sopa
+84,47,Clásico,Sopa
+85,38,Clásico,Entrada
+85,8,Moderno,Postre
+85,3,Vanguardista,Entrada
+86,18,Rústico,Plato fuerte
+86,20,Rústico,Sopa
+86,59,Clásico,Plato fuerte
+86,1,Clásico,Postre
+86,3,Tradicional,Plato fuerte
+87,18,Tradicional,Aperitivo
+87,2,Moderno,Entrada
+87,69,Moderno,Entrada
+87,10,Rústico,Aperitivo
+87,50,Fusión,Postre
+88,19,Clásico,Plato fuerte
+88,80,Tradicional,Plato fuerte
+88,13,Tradicional,Postre
+89,3,Vanguardista,Sopa
+89,20,Moderno,Sopa
+90,9,Fusión,Aperitivo
+90,12,Rústico,Plato fuerte
+90,25,Clásico,Aperitivo
+90,3,Clásico,Entrada
+90,5,Clásico,Plato fuerte
+91,2,Clásico,Sopa
+91,10,Rústico,Sopa
+91,12,Clásico,Sopa
+91,22,Tradicional,Entrada
+92,3,Moderno,Ensalada
+92,59,Tradicional,Aperitivo
+92,49,Fusión,Ensalada
+93,6,Tradicional,Sopa
+93,14,Tradicional,Plato fuerte
+93,21,Fusión,Plato fuerte
+93,9,Moderno,Ensalada
+93,16,Rústico,Postre
+94,4,Fusión,Entrada
+94,8,Clásico,Postre
+94,5,Rústico,Entrada
+94,20,Rústico,Postre
+94,14,Moderno,Aperitivo
+95,12,Fusión,Ensalada
+95,17,Clásico,Entrada
+95,8,Tradicional,Entrada
+95,68,Tradicional,Ensalada
+96,22,Rústico,Sopa
+96,15,Tradicional,Postre
+96,25,Rústico,Plato fuerte
+96,52,Moderno,Sopa
+97,6,Fusión,Ensalada
+97,75,Tradicional,Ensalada
+97,5,Moderno,Sopa
+97,41,Clásico,Plato fuerte
+97,21,Moderno,Postre
+98,2,Rústico,Aperitivo
+98,52,Rústico,Aperitivo
+98,22,Moderno,Postre
+98,5,Moderno,Aperitivo
+98,19,Moderno,Sopa
+99,7,Rústico,Plato fuerte
+99,11,Moderno,Postre
+99,14,Rústico,Entrada
+99,12,Moderno,Plato fuerte
+100,23,Clásico,Postre
+100,7,Fusión,Ensalada
+100,15,Fusión,Sopa
+100,9,Rústico,Sopa
+101,64,Tradicional,Aperitivo
+101,11,Vanguardista,Postre
+101,8,Fusión,Entrada
+101,3,Clásico,Aperitivo
+101,14,Rústico,Plato fuerte
+102,8,Fusión,Plato fuerte
+102,21,Clásico,Aperitivo
+102,20,Fusión,Plato fuerte
+102,38,Rústico,Ensalada
+102,7,Tradicional,Aperitivo
+103,2,Tradicional,Entrada
+103,73,Moderno,Sopa
+103,1,Fusión,Plato fuerte
+103,42,Vanguardista,Sopa
+103,20,Fusión,Plato fuerte
+104,13,Clásico,Plato fuerte
+104,17,Vanguardista,Entrada
+104,80,Vanguardista,Entrada
+104,21,Moderno,Plato fuerte
+105,62,Tradicional,Aperitivo
+105,24,Tradicional,Plato fuerte
+106,21,Vanguardista,Ensalada
+106,14,Vanguardista,Ensalada
+107,20,Moderno,Postre
+107,52,Tradicional,Aperitivo
+107,10,Rústico,Postre
+107,5,Moderno,Plato fuerte
+108,75,Moderno,Entrada
+108,10,Vanguardista,Sopa
+108,4,Fusión,Entrada
+109,12,Tradicional,Sopa
+109,10,Rústico,Sopa
+109,17,Clásico,Sopa
+110,11,Fusión,Aperitivo
+110,6,Clásico,Plato fuerte
+110,8,Moderno,Entrada
+110,10,Vanguardista,Entrada
+110,5,Moderno,Aperitivo
+111,78,Tradicional,Ensalada
+111,2,Vanguardista,Aperitivo
+112,5,Clásico,Sopa
+112,6,Fusión,Entrada
+112,22,Vanguardista,Postre
+112,20,Fusión,Sopa
+113,4,Tradicional,Entrada
+113,20,Tradicional,Entrada
+113,23,Tradicional,Entrada
+114,13,Vanguardista,Ensalada
+114,11,Clásico,Sopa
+114,7,Moderno,Postre
+114,22,Clásico,Entrada
+115,9,Vanguardista,Entrada
+115,66,Rústico,Ensalada
+115,18,Moderno,Aperitivo
+115,31,Rústico,Entrada
+115,7,Clásico,Plato fuerte
+116,57,Vanguardista,Postre
+116,1,Fusión,Postre
+116,35,Fusión,Entrada
+116,20,Clásico,Aperitivo
+116,9,Tradicional,Sopa
+117,54,Rústico,Aperitivo
+117,19,Fusión,Aperitivo
+117,16,Rústico,Plato fuerte
+118,22,Moderno,Entrada
+118,20,Fusión,Postre
+118,66,Tradicional,Aperitivo
+119,13,Fusión,Entrada
+119,6,Rústico,Plato fuerte
+119,4,Rústico,Entrada
+120,16,Clásico,Aperitivo
+120,11,Vanguardista,Sopa
+120,17,Moderno,Ensalada
+120,21,Moderno,Entrada

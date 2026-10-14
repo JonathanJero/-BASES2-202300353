@@ -1,0 +1,18 @@
+# Archivos del enunciado
+enunciado.txt
+Proyecto 2.pdf
+
+# Neo4j data volumes
+neo4j_data/
+neo4j_logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db

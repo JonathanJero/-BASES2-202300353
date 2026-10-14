@@ -1,0 +1,21 @@
+tipo_id,nombre_tipo,descripcion
+1,Mexicana,Cocina tradicional mexicana con influencias prehispánicas y coloniales
+2,Italiana,"Cocina italiana famosa por pastas, pizzas y risottos"
+3,Japonesa,"Cocina japonesa destacada por sushi, ramen y tempura"
+4,China,"Cocina china con técnicas de wok, dim sum y sabores umami"
+5,Francesa,Alta cocina francesa con salsas refinadas y técnicas clásicas
+6,Tailandesa,"Cocina tailandesa con equilibrio entre dulce, ácido, salado y picante"
+7,India,"Cocina india rica en especias, curries y panes naan"
+8,Peruana,"Cocina peruana con ceviches, lomo saltado y fusión nikkei"
+9,Española,"Cocina española con tapas, paellas y jamón ibérico"
+10,Americana,"Cocina americana con burgers, steaks y BBQ"
+11,Coreana,"Cocina coreana con kimchi, bibimbap y BBQ coreano"
+12,Mediterránea,"Cocina mediterránea basada en aceite de oliva, vegetales y mariscos"
+13,Árabe,"Cocina árabe con hummus, falafel, shawarma y especias"
+14,Brasileña,"Cocina brasileña con churrasco, feijoada y açaí"
+15,Vietnamita,"Cocina vietnamita con pho, banh mi y rolls frescos"
+16,Griega,"Cocina griega con moussaka, gyros y ensalada griega"
+17,Turca,"Cocina turca con kebabs, baklava y mezes"
+18,Colombiana,"Cocina colombiana con bandeja paisa, arepas y empanadas"
+19,Guatemalteca,"Cocina guatemalteca con pepián, kak'ik y tamales"
+20,Fusión,Cocina de fusión que combina técnicas y sabores de múltiples tradiciones

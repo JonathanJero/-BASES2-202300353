@@ -1,0 +1,251 @@
+rest_id,nombre,anio_apertura,rango_precios,descripcion
+1,La Terraza de la Sierra,1996,$$,Restaurante de cocina selecta inaugurado en 1996
+2,La Terraza de Azafrán,2021,$$$,Restaurante de cocina selecta inaugurado en 2021
+3,Bistró Lila,2025,$,Restaurante de cocina selecta inaugurado en 2025
+4,La Hacienda de Mario,2010,$$$,Restaurante de cocina selecta inaugurado en 2010
+5,La Terraza de Luna,2015,$,Restaurante de cocina selecta inaugurado en 2015
+6,La Brasserie de Menta,2016,$,Restaurante de cocina selecta inaugurado en 2016
+7,Delicias de Coral,2013,$$$$,Restaurante de cocina selecta inaugurado en 2013
+8,La Hacienda de Lila,1993,$$,Restaurante de cocina selecta inaugurado en 1993
+9,El Paladar de Ámbar,1998,$$$,Restaurante de cocina selecta inaugurado en 1998
+10,La Hacienda de los Volcanes,2021,$,Restaurante de cocina selecta inaugurado en 2021
+11,La Casa de Nogal,2005,$$,Restaurante de cocina selecta inaugurado en 2005
+12,Aromas de Ámbar,1990,$$$$,Restaurante de cocina selecta inaugurado en 1990
+13,Sabores de Mar,1997,$$$$,Restaurante de cocina selecta inaugurado en 1997
+14,El Jardín de Nogal,1999,$$$$,Restaurante de cocina selecta inaugurado en 1999
+15,Aromas de Coral,2007,$$$$,Restaurante de cocina selecta inaugurado en 2007
+16,El Puerto de Orquídea,2005,$$$$,Restaurante de cocina selecta inaugurado en 2005
+17,La Brasserie de Sol,2014,$$,Restaurante de cocina selecta inaugurado en 2014
+18,Café de Coral,1998,$,Restaurante de cocina selecta inaugurado en 1998
+19,El Paladar de Lila,2016,$$$,Restaurante de cocina selecta inaugurado en 2016
+20,Maison Jade,1990,$$$,Restaurante de cocina selecta inaugurado en 1990
+21,Aromas de Roble,2021,$$,Restaurante de cocina selecta inaugurado en 2021
+22,La Hacienda de Ámbar,2020,$$$,Restaurante de cocina selecta inaugurado en 2020
+23,La Terraza de Ámbar,2024,$$$$,Restaurante de cocina selecta inaugurado en 2024
+24,La Hacienda de Fuego,2002,$$,Restaurante de cocina selecta inaugurado en 2002
+25,El Mercado de Canela,2004,$$$$,Restaurante de cocina selecta inaugurado en 2004
+26,El Rincón de Fuego,2020,$$$$,Restaurante de cocina selecta inaugurado en 2020
+27,Bistró la Sierra,1999,$$$$,Restaurante de cocina selecta inaugurado en 1999
+28,El Rincón de Sol,2022,$$$,Restaurante de cocina selecta inaugurado en 2022
+29,El Jardín de Menta,1996,$$$$,Restaurante de cocina selecta inaugurado en 1996
+30,La Casa de Rosa,1999,$$$$,Restaurante de cocina selecta inaugurado en 1999
+31,La Mesa de Mario,2020,$$$,Restaurante de cocina selecta inaugurado en 2020
+32,La Terraza de Cerezo,2015,$,Restaurante de cocina selecta inaugurado en 2015
+33,La Brasserie de Canela,2010,$$$$,Restaurante de cocina selecta inaugurado en 2010
+34,La Brasserie de la Abuela,1994,$$,Restaurante de cocina selecta inaugurado en 1994
+35,Aromas de Mar,1995,$$$$,Restaurante de cocina selecta inaugurado en 1995
+36,El Jardín de Lila,1996,$$$$,Restaurante de cocina selecta inaugurado en 1996
+37,El Fogón de los Volcanes,2009,$,Restaurante de cocina selecta inaugurado en 2009
+38,El Rincón de Oliva,2012,$$$,Restaurante de cocina selecta inaugurado en 2012
+39,Trattoria Sol,2005,$$$$,Restaurante de cocina selecta inaugurado en 2005
+40,El Mercado de la Sierra,2001,$$,Restaurante de cocina selecta inaugurado en 2001
+41,El Fogón de Mario,2014,$$,Restaurante de cocina selecta inaugurado en 2014
+42,El Puerto de Roble,1999,$$,Restaurante de cocina selecta inaugurado en 1999
+43,La Hacienda de Nogal,2006,$$$$,Restaurante de cocina selecta inaugurado en 2006
+44,El Paladar de la Sierra,1990,$$$$,Restaurante de cocina selecta inaugurado en 1990
+45,Aromas de la Sierra,2024,$$,Restaurante de cocina selecta inaugurado en 2024
+46,Sabores de Menta,2012,$$$,Restaurante de cocina selecta inaugurado en 2012
+47,Trattoria los Volcanes,2006,$$$$,Restaurante de cocina selecta inaugurado en 2006
+48,Aromas de la Montaña,2014,$$$$,Restaurante de cocina selecta inaugurado en 2014
+49,El Jardín de Mar,2014,$$$,Restaurante de cocina selecta inaugurado en 2014
+50,El Mercado de Oliva,2008,$,Restaurante de cocina selecta inaugurado en 2008
+51,Bistró Jade,1990,$,Restaurante de cocina selecta inaugurado en 1990
+52,Café de Rosa,2021,$$$,Restaurante de cocina selecta inaugurado en 2021
+53,La Cocina de Cerezo,2012,$$,Restaurante de cocina selecta inaugurado en 2012
+54,Delicias de Cerezo,2006,$$,Restaurante de cocina selecta inaugurado en 2006
+55,La Hacienda de la Abuela,2013,$$,Restaurante de cocina selecta inaugurado en 2013
+56,Sabores de Oliva,2010,$$$$,Restaurante de cocina selecta inaugurado en 2010
+57,El Fogón de la Montaña,1998,$$$,Restaurante de cocina selecta inaugurado en 1998
+58,Maison Coral,2007,$$,Restaurante de cocina selecta inaugurado en 2007
+59,El Paladar de Orquídea,2008,$$$,Restaurante de cocina selecta inaugurado en 2008
+60,Sabores de Sol,2004,$$$$,Restaurante de cocina selecta inaugurado en 2004
+61,La Brasserie de Bambú,1995,$$$$,Restaurante de cocina selecta inaugurado en 1995
+62,La Casa de Jade,2024,$,Restaurante de cocina selecta inaugurado en 2024
+63,La Hacienda de Bambú,2006,$$$$,Restaurante de cocina selecta inaugurado en 2006
+64,El Asador de Luna,2004,$$$$,Restaurante de cocina selecta inaugurado en 2004
+65,La Casa de Cerezo,2025,$$$,Restaurante de cocina selecta inaugurado en 2025
+66,Café de Mar,1994,$$$$,Restaurante de cocina selecta inaugurado en 1994
+67,Aromas de Nogal,2016,$,Restaurante de cocina selecta inaugurado en 2016
+68,La Mesa de la Abuela,1992,$$$,Restaurante de cocina selecta inaugurado en 1992
+69,El Puerto de Luna,1996,$$,Restaurante de cocina selecta inaugurado en 1996
+70,Bistró Menta,2013,$$$$,Restaurante de cocina selecta inaugurado en 2013
+71,El Mercado de Rosa,1999,$$$$,Restaurante de cocina selecta inaugurado en 1999
+72,El Jardín de Orquídea,2016,$$$,Restaurante de cocina selecta inaugurado en 2016
+73,El Rincón de los Volcanes,2013,$$,Restaurante de cocina selecta inaugurado en 2013
+74,La Hacienda de Menta,2005,$$$,Restaurante de cocina selecta inaugurado en 2005
+75,El Jardín de la Sierra,2013,$$$,Restaurante de cocina selecta inaugurado en 2013
+76,El Rincón de Canela,2007,$$,Restaurante de cocina selecta inaugurado en 2007
+77,Sabores de la Sierra,2003,$,Restaurante de cocina selecta inaugurado en 2003
+78,La Cocina de Sol,2003,$,Restaurante de cocina selecta inaugurado en 2003
+79,La Brasserie de la Montaña,2003,$$,Restaurante de cocina selecta inaugurado en 2003
+80,La Terraza de Lila,1999,$,Restaurante de cocina selecta inaugurado en 1999
+81,El Paladar de Sol,1998,$$$,Restaurante de cocina selecta inaugurado en 1998
+82,El Fogón de Luna,1991,$$,Restaurante de cocina selecta inaugurado en 1991
+83,La Casa de Bambú,2005,$$$,Restaurante de cocina selecta inaugurado en 2005
+84,La Casa de los Andes,2006,$,Restaurante de cocina selecta inaugurado en 2006
+85,La Mesa de Rosa,2016,$,Restaurante de cocina selecta inaugurado en 2016
+86,Sabores de Orquídea,2018,$$$,Restaurante de cocina selecta inaugurado en 2018
+87,Maison Roble,1996,$$$$,Restaurante de cocina selecta inaugurado en 1996
+88,Maison Mar,1992,$$$,Restaurante de cocina selecta inaugurado en 1992
+89,La Casa de la Abuela,2020,$$$$,Restaurante de cocina selecta inaugurado en 2020
+90,Trattoria la Sierra,1996,$$$$,Restaurante de cocina selecta inaugurado en 1996
+91,Sabores de Fuego,1999,$,Restaurante de cocina selecta inaugurado en 1999
+92,La Mesa de Jade,2025,$$$,Restaurante de cocina selecta inaugurado en 2025
+93,Bistró Cerezo,2023,$$$,Restaurante de cocina selecta inaugurado en 2023
+94,La Hacienda de Coral,2017,$,Restaurante de cocina selecta inaugurado en 2017
+95,La Brasserie de Rosa,2003,$$$$,Restaurante de cocina selecta inaugurado en 2003
+96,La Hacienda de Mar,2016,$$$,Restaurante de cocina selecta inaugurado en 2016
+97,La Hacienda de Canela,2016,$,Restaurante de cocina selecta inaugurado en 2016
+98,El Paladar de Bambú,1999,$$$$,Restaurante de cocina selecta inaugurado en 1999
+99,Sabores de Mario,1995,$,Restaurante de cocina selecta inaugurado en 1995
+100,Trattoria Luna,2013,$$,Restaurante de cocina selecta inaugurado en 2013
+101,El Mercado de Ámbar,2025,$$$,Restaurante de cocina selecta inaugurado en 2025
+102,El Jardín de Azafrán,2012,$$$$,Restaurante de cocina selecta inaugurado en 2012
+103,Café de Oliva,2012,$,Restaurante de cocina selecta inaugurado en 2012
+104,El Mercado de Coral,2003,$$,Restaurante de cocina selecta inaugurado en 2003
+105,El Puerto de Mar,1996,$$$,Restaurante de cocina selecta inaugurado en 1996
+106,El Paladar de Roble,2004,$$$$,Restaurante de cocina selecta inaugurado en 2004
+107,La Brasserie de Lila,2025,$,Restaurante de cocina selecta inaugurado en 2025
+108,Café de la Sierra,2007,$,Restaurante de cocina selecta inaugurado en 2007
+109,El Fogón de Jade,2009,$$$,Restaurante de cocina selecta inaugurado en 2009
+110,El Asador de Don Pedro,2001,$$,Restaurante de cocina selecta inaugurado en 2001
+111,Bistró Mario,1999,$,Restaurante de cocina selecta inaugurado en 1999
+112,Sabores de Rosa,2023,$$,Restaurante de cocina selecta inaugurado en 2023
+113,Bistró Azafrán,2019,$$$,Restaurante de cocina selecta inaugurado en 2019
+114,El Fogón de Bambú,2009,$$$,Restaurante de cocina selecta inaugurado en 2009
+115,El Mercado de Cerezo,1995,$,Restaurante de cocina selecta inaugurado en 1995
+116,La Mesa de los Andes,1993,$,Restaurante de cocina selecta inaugurado en 1993
+117,El Paladar de Menta,2017,$$$$,Restaurante de cocina selecta inaugurado en 2017
+118,Café de Menta,2016,$$$,Restaurante de cocina selecta inaugurado en 2016
+119,Delicias de Lila,2022,$,Restaurante de cocina selecta inaugurado en 2022
+120,El Asador de Azafrán,1997,$$$,Restaurante de cocina selecta inaugurado en 1997
+121,El Mercado de Orquídea,2023,$$$,Restaurante de cocina selecta inaugurado en 2023
+122,El Rincón de Mar,2015,$,Restaurante de cocina selecta inaugurado en 2015
+123,La Casa de la Montaña,2009,$$,Restaurante de cocina selecta inaugurado en 2009
+124,La Mesa de Lila,2006,$$$,Restaurante de cocina selecta inaugurado en 2006
+125,La Casa de Orquídea,2017,$$,Restaurante de cocina selecta inaugurado en 2017
+126,La Mesa de Canela,2024,$$,Restaurante de cocina selecta inaugurado en 2024
+127,Maison Ámbar,2012,$,Restaurante de cocina selecta inaugurado en 2012
+128,Bistró Rosa,1992,$$$$,Restaurante de cocina selecta inaugurado en 1992
+129,La Casa de Menta,1994,$$$,Restaurante de cocina selecta inaugurado en 1994
+130,El Mercado de Azafrán,2015,$$$$,Restaurante de cocina selecta inaugurado en 2015
+131,Aromas de Luna,2015,$,Restaurante de cocina selecta inaugurado en 2015
+132,La Terraza de los Andes,2019,$$$,Restaurante de cocina selecta inaugurado en 2019
+133,Sabores de Azafrán,1996,$$,Restaurante de cocina selecta inaugurado en 1996
+134,Trattoria Roble,2015,$,Restaurante de cocina selecta inaugurado en 2015
+135,Bistró Oliva,2011,$$,Restaurante de cocina selecta inaugurado en 2011
+136,Maison Nogal,1997,$$,Restaurante de cocina selecta inaugurado en 1997
+137,El Asador de Bambú,1999,$$,Restaurante de cocina selecta inaugurado en 1999
+138,El Jardín de Sol,2006,$$,Restaurante de cocina selecta inaugurado en 2006
+139,El Fogón de Cerezo,1999,$,Restaurante de cocina selecta inaugurado en 1999
+140,El Fogón de Lila,2021,$$$$,Restaurante de cocina selecta inaugurado en 2021
+141,El Mercado de Lila,2018,$$$,Restaurante de cocina selecta inaugurado en 2018
+142,La Terraza de Sol,2018,$,Restaurante de cocina selecta inaugurado en 2018
+143,El Puerto de Menta,2009,$$$,Restaurante de cocina selecta inaugurado en 2009
+144,El Mercado de la Abuela,2012,$,Restaurante de cocina selecta inaugurado en 2012
+145,Aromas de Menta,2018,$,Restaurante de cocina selecta inaugurado en 2018
+146,El Rincón de Bambú,2008,$,Restaurante de cocina selecta inaugurado en 2008
+147,Sabores de Cerezo,2022,$$$$,Restaurante de cocina selecta inaugurado en 2022
+148,La Hacienda de Roble,2025,$,Restaurante de cocina selecta inaugurado en 2025
+149,Delicias de Fuego,2020,$$,Restaurante de cocina selecta inaugurado en 2020
+150,El Rincón de Menta,1996,$$$,Restaurante de cocina selecta inaugurado en 1996
+151,Sabores de Coral,2001,$,Restaurante de cocina selecta inaugurado en 2001
+152,La Cocina de los Volcanes,2018,$$$$,Restaurante de cocina selecta inaugurado en 2018
+153,Café de los Andes,2013,$$$,Restaurante de cocina selecta inaugurado en 2013
+154,Aromas de Canela,2016,$$$,Restaurante de cocina selecta inaugurado en 2016
+155,Café de la Abuela,2011,$,Restaurante de cocina selecta inaugurado en 2011
+156,La Brasserie de la Sierra,2014,$$$,Restaurante de cocina selecta inaugurado en 2014
+157,El Paladar de Rosa,1999,$$$,Restaurante de cocina selecta inaugurado en 1999
+158,Sabores de Roble,1999,$$$,Restaurante de cocina selecta inaugurado en 1999
+159,Bistró Sol,1995,$$$,Restaurante de cocina selecta inaugurado en 1995
+160,Maison Mario,2017,$$$,Restaurante de cocina selecta inaugurado en 2017
+161,Aromas de los Andes,2003,$$$,Restaurante de cocina selecta inaugurado en 2003
+162,El Puerto de la Montaña,2004,$$,Restaurante de cocina selecta inaugurado en 2004
+163,Maison Lila,2024,$,Restaurante de cocina selecta inaugurado en 2024
+164,Café de Sol,2014,$$,Restaurante de cocina selecta inaugurado en 2014
+165,El Fogón de los Andes,2000,$$$$,Restaurante de cocina selecta inaugurado en 2000
+166,El Rincón de Azafrán,2013,$$,Restaurante de cocina selecta inaugurado en 2013
+167,La Hacienda de Cerezo,2008,$$$$,Restaurante de cocina selecta inaugurado en 2008
+168,La Cocina de Ámbar,2005,$$$,Restaurante de cocina selecta inaugurado en 2005
+169,El Asador de la Sierra,2018,$$$$,Restaurante de cocina selecta inaugurado en 2018
+170,Aromas de Lila,2014,$$$$,Restaurante de cocina selecta inaugurado en 2014
+171,El Paladar de la Abuela,2020,$$$,Restaurante de cocina selecta inaugurado en 2020
+172,La Brasserie de Luna,2023,$,Restaurante de cocina selecta inaugurado en 2023
+173,Aromas de Mario,2000,$$$,Restaurante de cocina selecta inaugurado en 2000
+174,La Mesa de Azafrán,1995,$$,Restaurante de cocina selecta inaugurado en 1995
+175,La Casa de Azafrán,1993,$$$$,Restaurante de cocina selecta inaugurado en 1993
+176,Maison Bambú,2005,$$$$,Restaurante de cocina selecta inaugurado en 2005
+177,Sabores de Bambú,2004,$,Restaurante de cocina selecta inaugurado en 2004
+178,Aromas de Orquídea,1998,$$$$,Restaurante de cocina selecta inaugurado en 1998
+179,La Casa de Mario,1991,$$$,Restaurante de cocina selecta inaugurado en 1991
+180,Delicias de Sol,2025,$$$$,Restaurante de cocina selecta inaugurado en 2025
+181,Trattoria Nogal,2019,$,Restaurante de cocina selecta inaugurado en 2019
+182,Café de Ámbar,1991,$$,Restaurante de cocina selecta inaugurado en 1991
+183,La Mesa de Oliva,2017,$,Restaurante de cocina selecta inaugurado en 2017
+184,Café de Bambú,2005,$$$$,Restaurante de cocina selecta inaugurado en 2005
+185,El Fogón de la Sierra,1995,$$$,Restaurante de cocina selecta inaugurado en 1995
+186,La Brasserie de Coral,2022,$,Restaurante de cocina selecta inaugurado en 2022
+187,Bistró Orquídea,1992,$$$$,Restaurante de cocina selecta inaugurado en 1992
+188,El Asador de Jade,1991,$$$,Restaurante de cocina selecta inaugurado en 1991
+189,La Cocina de Rosa,1996,$$$,Restaurante de cocina selecta inaugurado en 1996
+190,El Asador de Ámbar,2011,$$,Restaurante de cocina selecta inaugurado en 2011
+191,El Puerto de Nogal,2001,$$,Restaurante de cocina selecta inaugurado en 2001
+192,Sabores de los Volcanes,2019,$,Restaurante de cocina selecta inaugurado en 2019
+193,El Rincón de la Montaña,1992,$$$,Restaurante de cocina selecta inaugurado en 1992
+194,Bistró Ámbar,2020,$$$,Restaurante de cocina selecta inaugurado en 2020
+195,El Rincón de Lila,2002,$$$,Restaurante de cocina selecta inaugurado en 2002
+196,El Asador de Lila,1993,$$$,Restaurante de cocina selecta inaugurado en 1993
+197,El Paladar de Luna,2013,$$$$,Restaurante de cocina selecta inaugurado en 2013
+198,El Puerto de los Volcanes,2021,$$$,Restaurante de cocina selecta inaugurado en 2021
+199,Trattoria Mario,2017,$$,Restaurante de cocina selecta inaugurado en 2017
+200,La Brasserie de Oliva,2010,$,Restaurante de cocina selecta inaugurado en 2010
+201,Aromas de Oliva,2018,$$$$,Restaurante de cocina selecta inaugurado en 2018
+202,El Asador de Cerezo,2017,$$$,Restaurante de cocina selecta inaugurado en 2017
+203,El Rincón de Mario,2015,$$$,Restaurante de cocina selecta inaugurado en 2015
+204,Maison Rosa,2000,$,Restaurante de cocina selecta inaugurado en 2000
+205,La Mesa de Cerezo,2018,$,Restaurante de cocina selecta inaugurado en 2018
+206,La Cocina de Lila,2013,$$$,Restaurante de cocina selecta inaugurado en 2013
+207,Bistró Roble,1992,$$,Restaurante de cocina selecta inaugurado en 1992
+208,El Asador de Menta,1994,$$,Restaurante de cocina selecta inaugurado en 1994
+209,Bistró Fuego,2007,$$,Restaurante de cocina selecta inaugurado en 2007
+210,El Jardín de Don Pedro,2001,$$$$,Restaurante de cocina selecta inaugurado en 2001
+211,Maison Canela,2025,$,Restaurante de cocina selecta inaugurado en 2025
+212,El Paladar de los Volcanes,2018,$$,Restaurante de cocina selecta inaugurado en 2018
+213,El Asador de los Volcanes,1994,$$$,Restaurante de cocina selecta inaugurado en 1994
+214,El Jardín de la Montaña,1998,$$,Restaurante de cocina selecta inaugurado en 1998
+215,El Puerto de Don Pedro,2013,$$$,Restaurante de cocina selecta inaugurado en 2013
+216,El Puerto de Coral,2016,$$$$,Restaurante de cocina selecta inaugurado en 2016
+217,El Mercado de Mario,1998,$$$,Restaurante de cocina selecta inaugurado en 1998
+218,La Hacienda de la Sierra,2023,$$$,Restaurante de cocina selecta inaugurado en 2023
+219,La Brasserie de Nogal,2001,$$,Restaurante de cocina selecta inaugurado en 2001
+220,Trattoria Coral,1993,$,Restaurante de cocina selecta inaugurado en 1993
+221,Maison Sol,2009,$$,Restaurante de cocina selecta inaugurado en 2009
+222,El Fogón de Fuego,2004,$$$,Restaurante de cocina selecta inaugurado en 2004
+223,Maison Oliva,1995,$$$,Restaurante de cocina selecta inaugurado en 1995
+224,Delicias de Nogal,2025,$$$,Restaurante de cocina selecta inaugurado en 2025
+225,La Mesa de Nogal,2009,$,Restaurante de cocina selecta inaugurado en 2009
+226,El Fogón de Roble,1999,$$,Restaurante de cocina selecta inaugurado en 1999
+227,Café de Fuego,1992,$,Restaurante de cocina selecta inaugurado en 1992
+228,Sabores de la Abuela,2006,$$,Restaurante de cocina selecta inaugurado en 2006
+229,Café de Nogal,1991,$$$$,Restaurante de cocina selecta inaugurado en 1991
+230,La Cocina de la Sierra,2015,$$$,Restaurante de cocina selecta inaugurado en 2015
+231,El Rincón de los Andes,2018,$$$$,Restaurante de cocina selecta inaugurado en 2018
+232,La Terraza de los Volcanes,2010,$$$,Restaurante de cocina selecta inaugurado en 2010
+233,El Asador de Coral,2025,$,Restaurante de cocina selecta inaugurado en 2025
+234,La Terraza de Mar,2019,$,Restaurante de cocina selecta inaugurado en 2019
+235,El Jardín de la Abuela,2008,$$$$,Restaurante de cocina selecta inaugurado en 2008
+236,Café de Azafrán,2005,$$,Restaurante de cocina selecta inaugurado en 2005
+237,La Terraza de Roble,2010,$$,Restaurante de cocina selecta inaugurado en 2010
+238,El Fogón de Orquídea,2022,$$$$,Restaurante de cocina selecta inaugurado en 2022
+239,El Puerto de Oliva,2021,$,Restaurante de cocina selecta inaugurado en 2021
+240,Sabores de Canela,2022,$$$$,Restaurante de cocina selecta inaugurado en 2022
+241,La Cocina de la Montaña,2012,$,Restaurante de cocina selecta inaugurado en 2012
+242,El Puerto de Cerezo,2020,$$$,Restaurante de cocina selecta inaugurado en 2020
+243,La Brasserie de Don Pedro,1996,$$$$,Restaurante de cocina selecta inaugurado en 1996
+244,Bistró Bambú,1992,$$$$,Restaurante de cocina selecta inaugurado en 1992
+245,El Rincón de Roble,2025,$$,Restaurante de cocina selecta inaugurado en 2025
+246,Bistró Coral,2018,$$$,Restaurante de cocina selecta inaugurado en 2018
+247,Café de Luna,1998,$,Restaurante de cocina selecta inaugurado en 1998
+248,La Mesa de la Montaña,2022,$$$$,Restaurante de cocina selecta inaugurado en 2022
+249,Maison la Abuela,1992,$,Restaurante de cocina selecta inaugurado en 1992
+250,La Mesa de los Volcanes,2011,$$$$,Restaurante de cocina selecta inaugurado en 2011

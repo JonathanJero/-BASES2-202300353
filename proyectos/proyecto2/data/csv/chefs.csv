@@ -1,0 +1,121 @@
+chef_id,nombre,fecha_nacimiento,nacionalidad
+1,Héctor Ocaña Bartolomé,1983-04-18,España
+2,América de Suarez,1966-09-06,Costa Rica
+3,Eric Rebollo Escolano,2000-01-24,Estados Unidos
+4,Rodolfo Rivera Perelló,1966-04-09,Chile
+5,Jacinta Pina Peña,1987-07-02,Chile
+6,Néstor Cañas Oliveras,1967-04-16,Ecuador
+7,Chuy Pozo Ángel,1987-08-27,El Salvador
+8,Prudencio Gisbert Acevedo,1997-10-18,Perú
+9,Eustaquio Sierra Rodrigo,1986-08-19,Chile
+10,Fortunata de Huertas,1982-10-03,Venezuela
+11,Fanny Cortina Llorens,1982-11-12,Estados Unidos
+12,Urbano Carbajo,1981-12-21,El Salvador
+13,Sandalio Rius Alcázar,1985-04-01,Perú
+14,Cristian de Cabrero,1981-04-20,Venezuela
+15,Alexandra Itziar Atienza Hierro,1960-09-29,Chile
+16,Herberto Ródenas Guillén,1974-11-10,Honduras
+17,Concha de Chaves,1964-11-30,Ecuador
+18,Ema Guillén,1986-03-08,Perú
+19,Esther Montes-Gálvez,1995-09-28,El Salvador
+20,Urbano Calixto Vázquez Giner,1999-02-13,El Salvador
+21,Emperatriz Llopis Barrera,1988-03-23,Guatemala
+22,Marta de Roldán,1986-10-10,España
+23,Leocadia de Ocaña,1971-11-29,Honduras
+24,Roberta Zamorano Montalbán,1995-02-13,Panamá
+25,Guadalupe Company Marín,1985-12-12,Costa Rica
+26,Catalina Sáenz Hernando,1970-03-17,El Salvador
+27,Eutimio de Sierra,1962-04-21,Costa Rica
+28,Lisandro Rey Riera,1981-07-20,Colombia
+29,Luisa de Pont,1983-07-08,Honduras
+30,Edu de Murillo,1992-05-07,Costa Rica
+31,Íñigo Sandoval Peláez,1994-09-30,Venezuela
+32,Julio Farré Aznar,1977-01-20,Colombia
+33,Gonzalo Ariza-Beltran,1996-11-09,Honduras
+34,Samu Gaya,1970-11-12,Guatemala
+35,Claudia Méndez Mateo,1985-09-06,El Salvador
+36,Curro Falcón Carpio,1964-12-05,Argentina
+37,Zoraida Herrera Fuente,1960-11-06,España
+38,Zoraida Heras Montoya,1974-01-26,Ecuador
+39,Goyo Joan Palomar Mendez,1966-10-17,Ecuador
+40,Geraldo Vilalta-Valencia,1990-12-22,Argentina
+41,Ariel Soria Montero,1978-05-29,Estados Unidos
+42,Gil Milla,1994-10-06,Costa Rica
+43,Amalia Giralt Coello,1981-02-25,Venezuela
+44,Eladio Rios Marquez,1998-01-20,El Salvador
+45,Clímaco Murcia Grau,1992-08-17,Guatemala
+46,Mariana Hoyos Valera,1991-08-29,Colombia
+47,Morena del Jiménez,1983-04-08,Argentina
+48,Paloma Trujillo Serna,1985-02-27,Chile
+49,Quique Ortuño Dominguez,1989-09-14,España
+50,Plácido Torres Espejo,1983-07-28,Ecuador
+51,Miguela de Zamora,1974-01-27,Colombia
+52,Simón Benavente Atienza,1980-08-14,Estados Unidos
+53,Hilario Cervantes Guardia,1975-05-10,Estados Unidos
+54,Paulino Corbacho Agullo,1975-11-22,Honduras
+55,José Antonio Sarmiento,1994-08-18,Venezuela
+56,América Tomas Torrents,1992-05-03,Honduras
+57,Abraham Reina Albero,1988-11-08,Panamá
+58,Juan Manuel Llobet Madrid,1991-02-06,Perú
+59,José Ros Escobar,1987-05-14,España
+60,Ángel Bárcena Zamora,1968-08-16,Argentina
+61,Dionisio Fernandez Zurita,1972-07-07,Estados Unidos
+62,Saturnino Pablo-Lastra,1973-05-22,Argentina
+63,Ani Perea Ramis,1973-05-08,Panamá
+64,Marcia Hervia Gonzalez,1972-12-18,El Salvador
+65,Octavio Severiano Berrocal Angulo,1969-04-19,El Salvador
+66,Hermenegildo Pinilla Pi,1991-08-16,España
+67,Juanita de Agustí,1974-03-22,España
+68,Ariel Valero Roura,1975-08-24,Estados Unidos
+69,Marcia Bustos Álvarez,1995-09-05,El Salvador
+70,Darío Galván Talavera,1972-04-07,Perú
+71,Alonso Benavente-Lozano,1965-06-19,Costa Rica
+72,Marcela de Escobar,1990-05-08,Estados Unidos
+73,Adriana Galan Cobos,1977-01-11,Ecuador
+74,Áurea Benítez Martínez,1996-09-16,Chile
+75,Lope Hernandez Porcel,1994-09-04,Panamá
+76,Eusebia del Chaves,1966-07-27,Perú
+77,Josué Oliva Baeza,1961-11-20,Perú
+78,Isaías Guerra Benitez,1992-01-13,México
+79,María Del Carmen Puente Morera,1975-07-15,España
+80,Maximiliano Llano Sanjuan,1989-06-04,Perú
+81,Corona Pagès Perez,1993-07-10,España
+82,Cayetana Pinto Boada,1969-08-06,Argentina
+83,Emiliana Rosalva Hoz Beltrán,1997-02-20,Estados Unidos
+84,Eloy Correa Pinto,1972-02-29,Estados Unidos
+85,Rafael Porras Moliner,1991-03-25,Perú
+86,Ascensión Bravo Adadia,1966-02-27,México
+87,Iván Geraldo Lerma Calatayud,1987-08-14,El Salvador
+88,Armando Exposito Rosa,1986-04-28,Argentina
+89,Manuela Vila Raya,1970-11-16,Guatemala
+90,Albert Borrás Otero,1990-01-17,Estados Unidos
+91,Araceli del Plaza,1970-02-14,Honduras
+92,Esteban Riba Pons,1970-06-11,Guatemala
+93,Primitivo Herrero Vázquez,1964-06-29,Ecuador
+94,Octavio Pintor Doménech,1974-10-25,El Salvador
+95,Eloy Mascaró Ledesma,1981-03-10,México
+96,Blanca Barroso Diego,1990-07-22,Panamá
+97,Eliana Robledo Marí,1966-03-02,Guatemala
+98,Ricarda Benítez Paniagua,1984-09-07,Colombia
+99,Duilio Valcárcel-Ferrán,1978-04-02,Honduras
+100,Ascensión Cerdá Mayo,1999-07-03,España
+101,Hector Márquez Pinto,1981-06-01,Honduras
+102,Isabela Nadal Ros,1968-12-11,Panamá
+103,Bernarda Emperatriz Montes Font,1972-11-19,Chile
+104,Estefanía Elías Puig,1972-10-20,Honduras
+105,Emelina Tudela Herrera,1962-08-27,Panamá
+106,Florina Lozano Pozo,1964-01-05,Honduras
+107,Aurora Folch Escolano,1985-10-02,Argentina
+108,Alba del Gallego,1984-01-02,El Salvador
+109,Rosalva Manuel Bayón,1992-06-08,Venezuela
+110,Nerea Valera Chaparro,1961-09-03,Colombia
+111,Dionisio Edmundo Correa Rocha,1978-09-29,Venezuela
+112,Angelina Sanchez Tello,1967-11-20,Guatemala
+113,Gracia Velázquez-Ripoll,1997-07-05,Ecuador
+114,Alicia del Blázquez,1995-05-06,España
+115,Rodrigo Hurtado Padilla,1968-05-10,El Salvador
+116,Moisés Arregui Pulido,1999-02-16,Perú
+117,Rosalinda Ros Camacho,1999-04-30,Guatemala
+118,Augusto Jordán Girona,1960-05-31,Perú
+119,Piedad Villena,1985-06-23,Costa Rica
+120,Marisa de Salinas,1964-10-24,Chile
